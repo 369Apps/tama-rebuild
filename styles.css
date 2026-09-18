@@ -295,6 +295,35 @@ ul.plain li::before{
 .ph{color:var(--gold);font-weight:600}
 .ph-note{font-size:13px;color:#D9B9CE}
 
+/* upcoming event banner thumbnails */
+.event-thumb{
+  flex:0 0 auto;width:76px;height:76px;object-fit:cover;border-radius:16px;
+  box-shadow:0 8px 18px rgba(149,43,113,.30);
+}
+
+/* committee grid */
+.committee-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:28px}
+@media(min-width:700px){.committee-grid{grid-template-columns:repeat(3,1fr)}}
+.committee-card{
+  background:#fff;border:1px solid var(--line);border-radius:18px;
+  padding:22px 16px;text-align:center;
+  box-shadow:0 12px 30px rgba(149,43,113,.10);
+}
+.committee-card img{
+  width:96px;height:96px;border-radius:50%;object-fit:cover;
+  border:3px solid var(--gold);box-shadow:0 8px 18px rgba(149,43,113,.25);
+}
+.committee-card h3{margin:12px 0 0;color:var(--purple);font-size:17px;font-weight:800}
+
+/* photo gallery */
+.gallery-grid{display:grid;grid-template-columns:1fr;gap:20px;margin-top:28px}
+@media(min-width:700px){.gallery-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1024px){.gallery-grid{grid-template-columns:repeat(3,1fr)}}
+.gallery-grid img{
+  width:100%;height:260px;object-fit:cover;border-radius:18px;display:block;
+  border:1px solid var(--line);box-shadow:0 12px 30px rgba(149,43,113,.14);
+}
+
 /* mobile tuning */
 @media(max-width:560px){
   .hero{padding:60px 0 54px}
