@@ -232,6 +232,63 @@ ul.plain li::before{
 .site-footer .fine{font-size:12.5px;color:#D9B9CE}
 .site-footer strong{color:var(--gold)}
 
+/* hero tight variant */
+.hero-tight{padding:58px 0 50px}
+
+/* upcoming events list */
+.event-list{margin-top:28px;display:grid;gap:16px}
+.event-row{
+  display:flex;align-items:center;gap:18px;flex-wrap:wrap;
+  background:#fff;border:1px solid var(--line);border-top:6px solid var(--purple);
+  border-radius:20px;padding:20px 22px;
+  box-shadow:0 12px 30px rgba(149,43,113,.10);
+}
+.event-date{
+  flex:0 0 auto;width:76px;height:76px;border-radius:16px;
+  background:linear-gradient(135deg,#952b71,#7A2359);color:#fff;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  box-shadow:0 8px 18px rgba(149,43,113,.30);
+}
+.event-date .dow{
+  font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase;
+  color:var(--gold);margin-bottom:4px;
+}
+.event-date .tbd{font-size:13px;font-weight:800;letter-spacing:.5px}
+.event-info{flex:1 1 220px;min-width:200px}
+.event-info h3{margin:0 0 6px;color:var(--purple);font-size:20px;font-weight:800}
+.event-meta{margin:0;color:var(--muted);font-size:15px}
+.btn-sm{padding:13px 26px;font-size:15.5px}
+
+/* clinic news head variant */
+.news-head.clinic{background:linear-gradient(135deg,#17A862,#0E7A43)}
+
+/* newsletter form */
+.news-form{
+  display:grid;grid-template-columns:1fr;gap:14px;
+  max-width:560px;margin-top:24px;
+}
+@media(min-width:700px){
+  .news-form{grid-template-columns:1fr 1fr auto;align-items:start}
+  .news-form .btn{white-space:nowrap}
+}
+.news-form input{
+  font:inherit;font-size:16px;color:var(--ink);
+  padding:14px 18px;border-radius:14px;
+  border:2px solid var(--line);background:#fff;
+}
+.news-form input:focus{outline:none;border-color:var(--purple)}
+
+/* expanded footer */
+.footer-grid{display:grid;grid-template-columns:1fr;gap:28px;margin-bottom:24px}
+@media(min-width:700px){.footer-grid{grid-template-columns:1.2fr 1fr 1fr}}
+.footer-col h4{
+  margin:0 0 12px;color:var(--gold);font-size:16px;font-weight:800;
+  letter-spacing:1.5px;text-transform:uppercase;
+}
+.footer-col p{margin:0 0 10px;font-size:15px;color:#F3E3EE;line-height:1.65}
+.ph{color:var(--gold);font-weight:600}
+.ph-note{font-size:13px;color:#D9B9CE}
+
 /* mobile tuning */
 @media(max-width:560px){
   .hero{padding:60px 0 54px}
@@ -241,4 +298,6 @@ ul.plain li::before{
   .head-row{padding:10px 16px}
   .brand-text{font-size:13.5px}
   .nav a{font-size:14px;padding:9px 11px}
+  .hero-tight{padding:48px 0 44px}
+  .event-row .btn{flex:1 1 100%;text-align:center}
 }
