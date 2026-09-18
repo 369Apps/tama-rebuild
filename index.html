@@ -25,50 +25,81 @@
 </header>
 
 <main>
-  <div class="hero">
+  <div class="hero hero-tight">
     <div class="wrap">
       <p class="eyebrow on-dark">Serving metro Atlanta since 1981</p>
       <h1>A home for Telugu culture in Atlanta.</h1>
-      <p class="lede">Since 1981, the Telugu Association of Metro Atlanta has brought families together around language, festivals, and community. Everyone is welcome.</p>
+      <p class="lede">Since 1981, TAMA has brought Telugu families together around language, festivals, and community. Everyone is welcome.</p>
       <div class="btn-row">
-        <a class="btn btn-gold" href="events.html">See our events</a>
-        <a class="btn btn-outline" href="membership.html">Become a member</a>
+        <a class="btn btn-gold" href="#upcoming-events">See upcoming events</a>
+        <a class="btn btn-outline" href="https://www.tama.org/member-registration">Become a member</a>
       </div>
     </div>
   </div>
   <div class="garland" aria-hidden="true"></div>
 
-  <section class="band tint">
+  <section class="band" id="upcoming-events">
     <div class="wrap">
-      <p class="eyebrow">TAMA at a glance</p>
-      <h2>What we do</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Festivals through the year</h3>
-          <p>Sankranthi, Ugadi, Bathukamma, Dussehra, and Deepavali, celebrated with music, dance, food, and family.</p>
-        </div>
-        <div class="card">
-          <h3>For kids and families</h3>
-          <p>KidsFest competitions, the Mana Badi weekend Telugu school, knowledge bowls, and a summer picnic.</p>
-        </div>
-        <div class="card">
-          <h3>Care for the community</h3>
-          <p>A Free Medical Clinic for the uninsured, sports tournaments, movie screenings, and volunteer service.</p>
-        </div>
+      <p class="eyebrow">Mark your calendar</p>
+      <h2>Upcoming events</h2>
+      <p class="body-copy">TAMA's major events through the year. Tap Register on any event to sign up.</p>
+      <div class="event-list">
+        <article class="event-row">
+          <div class="event-date"><span class="dow">Date</span><span class="tbd">TBD</span></div>
+          <div class="event-info">
+            <h3>Sankranthi Sambaralu</h3>
+            <p class="event-meta">Day, time, and venue to be confirmed.</p>
+          </div>
+          <a class="btn btn-gold btn-sm" href="#">Register</a>
+        </article>
+        <article class="event-row">
+          <div class="event-date"><span class="dow">Date</span><span class="tbd">TBD</span></div>
+          <div class="event-info">
+            <h3>Ugadi</h3>
+            <p class="event-meta">Day, time, and venue to be confirmed.</p>
+          </div>
+          <a class="btn btn-gold btn-sm" href="#">Register</a>
+        </article>
+        <article class="event-row">
+          <div class="event-date"><span class="dow">Date</span><span class="tbd">TBD</span></div>
+          <div class="event-info">
+            <h3>Bathukamma and Dussehra</h3>
+            <p class="event-meta">Day, time, and venue to be confirmed.</p>
+          </div>
+          <a class="btn btn-gold btn-sm" href="#">Register</a>
+        </article>
+        <article class="event-row">
+          <div class="event-date"><span class="dow">Date</span><span class="tbd">TBD</span></div>
+          <div class="event-info">
+            <h3>Deepavali</h3>
+            <p class="event-meta">Day, time, and venue to be confirmed.</p>
+          </div>
+          <a class="btn btn-gold btn-sm" href="#">Register</a>
+        </article>
+        <article class="event-row">
+          <div class="event-date"><span class="dow">Date</span><span class="tbd">TBD</span></div>
+          <div class="event-info">
+            <h3>KidsFest</h3>
+            <p class="event-meta">Day, time, and venue to be confirmed.</p>
+          </div>
+          <a class="btn btn-gold btn-sm" href="#">Register</a>
+        </article>
       </div>
+      <div class="flag">Placeholder. Event dates, times, venues, and registration links are to be confirmed by the committee. Each Register button will link to the event's real registration page once shared.</div>
     </div>
   </section>
 
-  <section class="band">
+  <section class="band tint">
     <div class="wrap">
       <div class="news">
-        <div class="news-head"><h2>Latest news</h2></div>
+        <div class="news-head clinic"><h2>Free Medical Clinic</h2></div>
         <div class="news-body">
-          <ul>
-            <li><strong>Free Medical Clinic reopened Jan 7, 2026.</strong> Walk in if you need care and have no insurance.</li>
-            <li><strong>Ugadi Cultural registrations are closed.</strong> Thank you to everyone who signed up.</li>
-          </ul>
-          <p class="news-note">From tama.org. This preview will carry full news once the committee shares updates.</p>
+          <p class="body-copy">TAMA runs a Free Medical Clinic for people with no health insurance. Walk in if you need care.</p>
+          <p class="event-meta">Clinic schedule: to be confirmed by the committee.</p>
+          <div class="btn-row" style="margin-top:18px">
+            <a class="btn btn-gold btn-sm" href="#">Clinic registration</a>
+          </div>
+          <div class="flag">Placeholder. The clinic registration link is to be confirmed by the committee.</div>
         </div>
       </div>
     </div>
@@ -79,8 +110,22 @@
       <div class="strip">
         <h2>Membership is open all year</h2>
         <p>Most events are open to the public. Members enjoy member benefits at events and get the regular TAMA newsletter.</p>
-        <a class="btn btn-gold" href="membership.html">Join TAMA</a>
+        <a class="btn btn-gold" href="https://www.tama.org/member-registration">Join TAMA</a>
       </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <p class="eyebrow">Stay in the loop</p>
+      <h2>TAMA newsletter</h2>
+      <p class="body-copy">Get event announcements and community news in your inbox.</p>
+      <form class="news-form" action="#" onsubmit="return false">
+        <input type="text" name="name" placeholder="Your name" aria-label="Your name">
+        <input type="email" name="email" placeholder="Email address" aria-label="Email address" required>
+        <button class="btn btn-gold" type="submit">Sign up</button>
+      </form>
+      <div class="flag">Draft only. This form is not connected to a mailing list yet. The committee will pick a newsletter provider, and signups will go there.</div>
     </div>
   </section>
 </main>
@@ -88,7 +133,23 @@
 <div class="garland" aria-hidden="true"></div>
 <footer class="site-footer">
   <div class="wrap">
-    <p><strong>Telugu Association of Metro Atlanta</strong> &middot; Serving Telugu families in metro Atlanta since 1981.</p>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Mailing address<br><span class="ph">To be confirmed: public listings show two different suite numbers.</span></p>
+        <p>Email: <span class="ph">info@tama.org</span> <span class="ph-note">(unverified)</span></p>
+        <p>Phone: <span class="ph">to be confirmed</span></p>
+      </div>
+      <div class="footer-col">
+        <h4>Follow TAMA</h4>
+        <p><span class="ph">Social media links to be confirmed by the committee.</span></p>
+      </div>
+      <div class="footer-col">
+        <h4>Nonprofit</h4>
+        <p>Telugu Association of Metro Atlanta is a nonprofit community organization.</p>
+        <p>Tax ID (EIN): <span class="ph">to be confirmed</span></p>
+      </div>
+    </div>
     <p class="fine">This is a draft preview of a rebuilt tama.org. Content is based on public sources. Details are marked for review by the TAMA committee before going live.</p>
   </div>
 </footer>
