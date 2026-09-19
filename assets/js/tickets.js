@@ -1,6 +1,6 @@
 /* TAMA member tickets. Talks to the tama-members Cloudflare Worker.
  * If the worker is unreachable, the built-in page content stays as is. */
-const WORKER_URL = "https://tama-members.WORKERS_SUBDOMAIN.workers.dev"; // set on deploy
+const WORKER_URL = "https://tama-members.news-ce2.workers.dev";
 window.TAMA_WORKER_URL = WORKER_URL;
 window.TAMA_WORKER_READY = !WORKER_URL.includes("WORKERS_SUBDOMAIN");
 
