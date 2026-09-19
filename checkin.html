@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ticket Check-in | TAMA Team</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="logo.png">
+<meta name="theme-color" content="#952b71">
+</head>
+<body>
+<div class="preview-note">Draft rebuild preview. Team page, not public.</div>
+<header class="site-header">
+  <div class="wrap head-row">
+    <a class="brand" href="index.html">
+      <img class="brand-logo" src="logo.png" alt="TAMA logo">
+      <span class="brand-text">Telugu Association<br>of Metro Atlanta</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="events.html">Events</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="membership.html">Membership</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Member Login</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="checkin-wrap">
+    <div id="key-card" class="auth-card" style="text-align:left">
+      <h1>Ticket check-in</h1>
+      <p class="sub">For volunteers at the door. Enter the team key once.</p>
+      <form class="auth-form" id="key-form">
+        <label for="adminkey">Team key</label>
+        <input type="password" id="adminkey" autocomplete="off" placeholder="Team key">
+        <div class="notice error" id="key-error" role="alert"></div>
+        <div style="margin-top:22px">
+          <button type="submit" class="btn btn-gold btn-block">Start check-in</button>
+        </div>
+      </form>
+    </div>
+
+    <div id="checkin-card" style="display:none">
+      <h1 style="font-size:clamp(26px,7vw,34px);color:var(--purple);margin:0">Ticket check-in</h1>
+      <p class="sub" style="color:var(--muted)">Type or scan the ticket code, then tap the button.</p>
+      <form id="checkin-form">
+        <input class="checkin-input" id="code" autocomplete="off" autocapitalize="characters"
+          placeholder="TAMA-XXXXXX" aria-label="Ticket code">
+        <button type="submit" class="btn btn-gold btn-block" id="checkin-btn" style="font-size:22px;padding:20px">CHECK IN</button>
+      </form>
+      <div class="checkin-result" id="result" role="status"></div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="fine">Team page for the TAMA website rebuild preview.</p>
+  </div>
+</footer>
+
+<script src="assets/js/tickets.js"></script>
+<script>
+(function () {
+  var WORKER = window.TAMA_WORKER_URL;
+  var key = sessionStorage.getItem("tama_admin_key") || "";
+
+  function showKey() {
+    document.getElementById("key-card").style.display = "block";
+    document.getElementById("checkin-card").style.display = "none";
+  }
+  function showCheckin() {
+    document.getElementById("key-card").style.display = "none";
+    document.getElementById("checkin-card").style.display = "block";
+    document.getElementById("code").focus();
+  }
+
+  document.getElementById("key-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    var k = document.getElementById("adminkey").value.trim();
+    if (!k) return;
+    // Validate the key with a cheap admin call before showing the form.
+    fetch(WORKER + "/api/admin/events/pending", {
+      headers: { "Authorization": "Bearer " + k }
+    })
+      .then(function (r) {
+        if (r.status === 403) {
+          var ke = document.getElementById("key-error");
+          ke.textContent = "That key did not work. Please try again.";
+          ke.classList.add("show");
+          return;
+        }
+        key = k;
+        sessionStorage.setItem("tama_admin_key", key);
+        showCheckin();
+      })
+      .catch(function () {
+        var ke = document.getElementById("key-error");
+        ke.textContent = "Could not reach the server. Check your connection and try again.";
+        ke.classList.add("show");
+      });
+  });
+
+  function showResult(kind, title, lines) {
+    var box = document.getElementById("result");
+    box.className = "checkin-result show " + kind;
+    box.innerHTML = "<h2>" + title + "</h2>" + lines.map(function (l) {
+      return "<p>" + l + "</p>";
+    }).join("");
+  }
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  }
+  function fmtTime(iso) {
+    try { return new Date(iso).toLocaleString(); } catch (e) { return iso; }
+  }
+
+  document.getElementById("checkin-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    var codeInput = document.getElementById("code");
+    var code = codeInput.value.trim();
+    var btn = document.getElementById("checkin-btn");
+    if (!code) return;
+    btn.disabled = true;
+    btn.innerHTML = '<span class="spin"></span>Checking...';
+    fetch(WORKER + "/api/checkin", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "Authorization": "Bearer " + key },
+      body: JSON.stringify({ code: code })
+    })
+      .then(function (r) { return r.json().then(function (d) { return { status: r.status, d: d }; }); })
+      .then(function (res) {
+        btn.disabled = false;
+        btn.textContent = "CHECK IN";
+        codeInput.value = "";
+        codeInput.focus();
+        var d = res.d;
+        if (res.status === 404) {
+          showResult("bad", "Not a valid ticket", ["Please check the code and try again."]);
+          return;
+        }
+        if (!d.ok) {
+          showResult("bad", "Something went wrong", ["Please try again."]);
+          return;
+        }
+        var name = esc(d.holder_name || d.email || "Guest");
+        var ev = esc(d.event_name || "");
+        if (d.checked_in) {
+          showResult("good", "Checked in", [name, ev].filter(Boolean));
+        } else if (d.already) {
+          showResult("warn", "Already checked in", [name, ev, "Checked in at " + fmtTime(d.checked_in_at)].filter(Boolean));
+        }
+      })
+      .catch(function () {
+        btn.disabled = false;
+        btn.textContent = "CHECK IN";
+        showResult("bad", "Something went wrong", ["Check your connection and try again."]);
+      });
+  });
+
+  if (key) showCheckin(); else showKey();
+})();
+</script>
+</body>
+</html>
