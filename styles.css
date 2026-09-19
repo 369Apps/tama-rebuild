@@ -631,8 +631,16 @@ img{max-width:100%}
 
 /* sticky mobile bar: slides up on load */
 @media(max-width:640px){
+  body{padding-bottom:78px}
   .mobile-cta{animation:ctaUp .5s .35s cubic-bezier(.2,.7,.2,1) both}
   @keyframes ctaUp{from{transform:translateY(110%)}to{transform:none}}
+}
+/* kill entrance motion on phones: no dancing while scrolling */
+@media(max-width:640px){
+  .hero .wrap>*,.page-hero .wrap>*{animation:none}
+  .mobile-cta{animation:none}
+  .band{padding:26px 0}
+  .event-row{gap:12px}
 }
 
 /* respect reduced motion */
