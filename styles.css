@@ -336,3 +336,57 @@ ul.plain li::before{
   .hero-tight{padding:48px 0 44px}
   .event-row .btn{flex:1 1 100%;text-align:center}
 }
+
+/* ===== mobile optimization: fast, app-like on phones ===== */
+html{scroll-behavior:smooth}
+section[id]{scroll-margin-top:120px}
+a{-webkit-tap-highlight-color:rgba(149,43,113,.18)}
+
+/* sticky bottom quick-action bar, phones only */
+.mobile-cta{display:none}
+@media(max-width:640px){
+  .mobile-cta{
+    display:flex;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:60;
+    padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+    background:#fff;border-top:1px solid var(--line);
+    box-shadow:0 -8px 22px rgba(0,0,0,.10);
+  }
+  .mobile-cta .btn{
+    flex:1 1 0;text-align:center;padding:13px 8px;font-size:16px;
+    box-shadow:0 6px 16px rgba(149,43,113,.25);
+  }
+  .mobile-cta .btn:hover{transform:none}
+  .mobile-cta .btn-outline{background:var(--green);border-color:var(--green);color:#fff}
+  .mobile-cta .btn-outline:hover{background:var(--green-dark);color:#fff}
+  body{padding-bottom:82px}
+
+  /* compact header: brand row plus one scrollable nav row */
+  .head-row{flex-direction:column;align-items:stretch;gap:4px;padding:10px 0 0}
+  .head-row .brand{padding:0 16px}
+  .brand-text{font-size:13px}
+  .nav{
+    flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;
+    scrollbar-width:none;margin:0;padding:4px 12px 12px;gap:6px;
+  }
+  .nav::-webkit-scrollbar{display:none}
+  .nav a{flex:0 0 auto;white-space:nowrap;font-size:14.5px;padding:12px 15px}
+
+  /* 44px+ tap targets on footer links */
+  .footer-col p{margin:0}
+  .footer-col p a{display:inline-block;padding:12px 10px 12px 0;min-height:44px}
+  .footer-grid{gap:18px}
+
+  /* lighter shadows, less paint work while scrolling */
+  .card,.news,.contact-box,.committee-card{box-shadow:0 8px 20px rgba(149,43,113,.08)}
+  .strip{box-shadow:0 12px 28px rgba(149,43,113,.22)}
+  .gallery-grid img{box-shadow:0 8px 20px rgba(149,43,113,.10)}
+
+  /* tighter rhythm so the hero fits about one screen */
+  .hero-tight{padding:44px 0 40px}
+  .hero h1{font-size:clamp(30px,8.5vw,40px);margin-bottom:14px}
+  .lede{font-size:17px;margin-bottom:24px}
+  .page-hero{padding:44px 0 40px}
+  .page-hero h1{font-size:clamp(30px,8vw,40px)}
+  .page-hero p{font-size:16.5px}
+  .band{padding:40px 0}
+}
