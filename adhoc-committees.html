@@ -1,0 +1,1764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ad Hoc Committees - Telugu Association of Metro Atlanta (TAMA)</title>
+<link rel="stylesheet" href="styles.css?v=4">
+<link rel="icon" href="logo.png">
+<meta name="theme-color" content="#952b71">
+</head>
+<body>
+<div class="preview-note">Draft rebuild preview. Not the live tama.org.</div>
+<div class="org-banner"><a class="org-brand" href="index.html"><img class="org-emblem" src="logo.png" alt="TAMA emblem" fetchpriority="high"><img class="org-name" src="logo-right.png" alt="Telugu Association of Metro Atlanta — అట్లాంటా తెలుగు సంఘం" fetchpriority="high"></a></div>
+<header class="site-header">
+  <div class="wrap head-row">
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <div class="nav-item"><a href="about.html" class="active" aria-haspopup="true">About Us</a><div class="drop" role="menu"><a href="about.html">Who we are</a><a href="executive-committee.html">Executive Committee</a><a href="board-of-directors.html">Board of Directors</a><a href="adhoc-committees.html">Ad Hoc Committees</a><a href="bylaws.html">Bylaws</a><a href="financials.html">Financials</a><a href="meeting-minutes.html">Meeting Minutes</a><a href="elections.html">Elections</a></div></div>
+      <div class="nav-item"><a href="activities.html" aria-haspopup="true">Activities</a><div class="drop" role="menu"><a href="activities.html">Activities home</a><a href="kalasala.html">Kalasala</a><a href="scholarship.html">Scholarship</a><a href="manabadi.html">Manabadi</a><a href="about-manabadi.html">About Manabadi</a><a href="locations-teachers.html">Locations & Teachers</a></div></div>
+      <a href="events.html">Events</a>
+      <div class="nav-item"><a href="gallery.html" aria-haspopup="true">Media</a><div class="drop" role="menu"><a href="gallery.html">Photo Gallery</a><a href="videos.html">Videos</a><a href="magazine.html">Magazine</a></div></div>
+      <a href="digital-library.html">Digital Library</a>
+      <a href="directory.html">Directory</a>
+      <a href="membership.html">Membership</a>
+      <a href="clinic.html">Free Clinic</a>
+      <div class="nav-item"><a href="sponsor-a-program.html" aria-haspopup="true">Support Us</a><div class="drop" role="menu"><a href="sponsor-a-program.html">Sponsor a program</a><a href="sponsors.html">Sponsors</a><a href="volunteers-list.html">Volunteers List</a></div></div>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Member Login</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow on-dark">About us</p>
+      <h1>Ad Hoc Committees</h1>
+      <p>TAMA's ad hoc committees through the years, as listed on tama.org.</p>
+    </div>
+  </div>
+  <div class="garland" aria-hidden="true"></div>
+
+  <section class="band">
+    <div class="wrap">
+
+      <div class="filter-bar">
+        <label for="yearSel">Year</label>
+        <select id="yearSel"></select>
+        <span class="filter-count" id="count"></span>
+      </div>
+      <div class="committee-grid" id="grid"></div>
+      <div class="empty-state" id="empty" style="display:none">No committee members found for this year.</div>
+<script>
+var DATA = {
+ "years": [
+  2015,
+  2016,
+  2017,
+  2019,
+  2021,
+  2022,
+  2023,
+  2024,
+  2025,
+  2026
+ ],
+ "members": [
+  {
+   "year": 2019,
+   "name": "Bharath Maddineni",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/3-bharathmaddineni.jpeg",
+   "local": "images/leadership/e74ec43ace01.jpg"
+  },
+  {
+   "year": 2019,
+   "name": "Aditya Gali",
+   "role": "secretary",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/8-adityagali.jpeg",
+   "local": "images/leadership/c42ca2e3aaf0.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Ranakumar Nadella",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/182-ranakumarnadella.jpeg",
+   "local": "images/leadership/39fb8b7b74c2.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Srinivas Lavu",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/59-srinivaslavu.jpeg",
+   "local": "images/leadership/ce5633e84d6a.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Viju Chiluveru",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/23-vijuchiluveru.jpeg",
+   "local": "images/leadership/b9e171591a6b.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Vinay Maddineni",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/15-vinaymaddineni.jpeg",
+   "local": "images/leadership/994b0332716b.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Rajesh Jampala",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/47-rajeshjampala.jpeg",
+   "local": "images/leadership/3fbb9d9a020f.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Ranakumar Nadella",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/182-ranakumarnadella.jpeg",
+   "local": "images/leadership/39fb8b7b74c2.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Srinivas Lavu",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/59-srinivaslavu.jpeg",
+   "local": "images/leadership/ce5633e84d6a.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Venkat Meesala",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/30-venkatmeesala.jpeg",
+   "local": "images/leadership/f0b1ff051f09.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Rajesh Jampala",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/47-rajeshjampala.jpeg",
+   "local": "images/leadership/3fbb9d9a020f.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Ranakumar Nadella",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/182-ranakumarnadella.jpeg",
+   "local": "images/leadership/39fb8b7b74c2.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Srinivas Lavu",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/59-srinivaslavu.jpeg",
+   "local": "images/leadership/ce5633e84d6a.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Venkat Meesala",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/30-venkatmeesala.jpeg",
+   "local": "images/leadership/f0b1ff051f09.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Rajesh Jampala",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/47-rajeshjampala.jpeg",
+   "local": "images/leadership/3fbb9d9a020f.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Sohini Ayinala",
+   "role": "Chairman",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/188-sohiniayinala.jpeg",
+   "local": "images/leadership/b2b5b6ac6e48.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Rajasekhar Chunduri",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/16-rajasekharchunduri.jpeg",
+   "local": "images/leadership/82bbe96a15ce.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Nagesh Doddaka",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/17-3BB31DAA14.jpeg",
+   "local": "images/leadership/54be6c01de56.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Sohini Ayinala",
+   "role": "Chairman",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/188-sohiniayinala.jpeg",
+   "local": "images/leadership/b2b5b6ac6e48.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Rajasekhar Chunduri",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/16-rajasekharchunduri.jpeg",
+   "local": "images/leadership/82bbe96a15ce.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Nagesh Doddaka",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/17-3BB31DAA14.jpeg",
+   "local": "images/leadership/54be6c01de56.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Sohini Ayinala",
+   "role": "Chairman",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/188-sohiniayinala.jpeg",
+   "local": "images/leadership/b2b5b6ac6e48.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Rajasekhar Chunduri",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/16-rajasekharchunduri.jpeg",
+   "local": "images/leadership/82bbe96a15ce.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Nagesh Doddaka",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/17-3BB31DAA14.jpeg",
+   "local": "images/leadership/54be6c01de56.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Mahesh Pawar",
+   "role": "Chairman",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/27-maheshpawar.jpeg",
+   "local": "images/leadership/bb31b1be537b.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Srinivas Lavu",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/59-srinivaslavu.jpeg",
+   "local": "images/leadership/ce5633e84d6a.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Bharath Maddineni",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/3-bharathmaddineni.jpeg",
+   "local": "images/leadership/e74ec43ace01.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Mahesh Pawar",
+   "role": "Chairman",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/27-maheshpawar.jpeg",
+   "local": "images/leadership/bb31b1be537b.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Srinivas Lavu",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/59-srinivaslavu.jpeg",
+   "local": "images/leadership/ce5633e84d6a.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Bharath Maddineni",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/3-bharathmaddineni.jpeg",
+   "local": "images/leadership/e74ec43ace01.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Mahesh Pawar",
+   "role": "Chairman",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/27-maheshpawar.jpeg",
+   "local": "images/leadership/bb31b1be537b.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Srinivas Lavu",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/59-srinivaslavu.jpeg",
+   "local": "images/leadership/ce5633e84d6a.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Bharath Maddineni",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/3-bharathmaddineni.jpeg",
+   "local": "images/leadership/e74ec43ace01.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Bharath Maddineni",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/3-bharathmaddineni.jpeg",
+   "local": "images/leadership/e74ec43ace01.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Bharath Maddineni",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/3-bharathmaddineni.jpeg",
+   "local": "images/leadership/e74ec43ace01.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Mahesh Pawar",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/27-maheshpawar.jpeg",
+   "local": "images/leadership/bb31b1be537b.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Srinivas Lavu",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/59-srinivaslavu.jpeg",
+   "local": "images/leadership/ce5633e84d6a.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Mahesh Pawar",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/27-maheshpawar.jpeg",
+   "local": "images/leadership/bb31b1be537b.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Srinivas Lavu",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/59-srinivaslavu.jpeg",
+   "local": "images/leadership/ce5633e84d6a.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Bharath Maddineni",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/3-bharathmaddineni.jpeg",
+   "local": "images/leadership/e74ec43ace01.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Venkat Meesala",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/30-venkatmeesala.jpeg",
+   "local": "images/leadership/f0b1ff051f09.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Mahesh Pawar",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/27-maheshpawar.jpeg",
+   "local": "images/leadership/bb31b1be537b.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Srinivas Lavu",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/59-srinivaslavu.jpeg",
+   "local": "images/leadership/ce5633e84d6a.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Bharath Maddineni",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/3-bharathmaddineni.jpeg",
+   "local": "images/leadership/e74ec43ace01.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Venkat Meesala",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/30-venkatmeesala.jpeg",
+   "local": "images/leadership/f0b1ff051f09.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Devanand Konduru",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/28-devanandkonduru.jpeg",
+   "local": "images/leadership/f307ef0db207.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Ram Maddi",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/43-rammaddi.jpeg",
+   "local": "images/leadership/e6a59206ee86.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Mahesh Pawar",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/27-maheshpawar.jpeg",
+   "local": "images/leadership/bb31b1be537b.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Rajesh Jampala",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/47-rajeshjampala.jpeg",
+   "local": "images/leadership/3fbb9d9a020f.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Viju Chiluveru",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/23-vijuchiluveru.jpeg",
+   "local": "images/leadership/b9e171591a6b.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Rajesh Jampala",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/47-rajeshjampala.jpeg",
+   "local": "images/leadership/3fbb9d9a020f.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Ram Maddi",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/43-rammaddi.jpeg",
+   "local": "images/leadership/e6a59206ee86.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Mahesh Pawar",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/27-maheshpawar.jpeg",
+   "local": "images/leadership/bb31b1be537b.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Venkat Meesala",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/30-venkatmeesala.jpeg",
+   "local": "images/leadership/f0b1ff051f09.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Rajesh Jampala",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/47-rajeshjampala.jpeg",
+   "local": "images/leadership/3fbb9d9a020f.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Srinivas Lavu",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/59-srinivaslavu.jpeg",
+   "local": "images/leadership/ce5633e84d6a.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Mahesh Pawar",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/27-maheshpawar.jpeg",
+   "local": "images/leadership/bb31b1be537b.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Venkat Meesala",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/30-venkatmeesala.jpeg",
+   "local": "images/leadership/f0b1ff051f09.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Bharath Maddineni",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/3-bharathmaddineni.jpeg",
+   "local": "images/leadership/e74ec43ace01.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Nagesh Doddaka",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/17-3BB31DAA14.jpeg",
+   "local": "images/leadership/54be6c01de56.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Mahesh Pawar",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/27-maheshpawar.jpeg",
+   "local": "images/leadership/bb31b1be537b.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Nagesh Doddaka",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/17-3BB31DAA14.jpeg",
+   "local": "images/leadership/54be6c01de56.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Ramu Parupalli",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/37-ramuparupalli.jpeg",
+   "local": "images/leadership/e414f5a3c3d3.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Ramki Chowdarapu",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/36-ramkichowdarapu.jpeg",
+   "local": "images/leadership/139b0f840340.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Nagesh Doddaka",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/17-3BB31DAA14.jpeg",
+   "local": "images/leadership/54be6c01de56.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Ramu Parupalli",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/37-ramuparupalli.jpeg",
+   "local": "images/leadership/e414f5a3c3d3.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Venkatapathi Raju Mandapati",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/29-venkatapathirajumandapati.jpeg",
+   "local": "images/leadership/686bb8582ca3.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Mahesh Pawar",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/27-maheshpawar.jpeg",
+   "local": "images/leadership/bb31b1be537b.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Subbarao Maddali",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/6-5F2D75B4DB.jpeg",
+   "local": "images/leadership/8b99dbd61c62.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Venkateswara Rao Gadde",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/2-venkateswararaogadde.jpeg",
+   "local": "images/leadership/cf73ef963807.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Venkat Meesala",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/30-venkatmeesala.jpeg",
+   "local": "images/leadership/f0b1ff051f09.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Subbarao Maddali",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/6-5F2D75B4DB.jpeg",
+   "local": "images/leadership/8b99dbd61c62.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Krishna Bojja",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/31-krishnabojja.jpeg",
+   "local": "images/leadership/167f1ceb7c0d.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Priya Balusu",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/5-priyabalusu.jpeg",
+   "local": "images/leadership/ba8305851763.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Priya Balusu",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/5-priyabalusu.jpeg",
+   "local": "images/leadership/ba8305851763.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Sri Harsha Yerneni",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/21-sriharshayerneni.jpeg",
+   "local": "images/leadership/39dd060f636f.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Subbarao Maddali",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/6-5F2D75B4DB.jpeg",
+   "local": "images/leadership/8b99dbd61c62.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Krishna Bojja",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/31-krishnabojja.jpeg",
+   "local": "images/leadership/167f1ceb7c0d.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Venkateswara Rao Gadde",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/2-venkateswararaogadde.jpeg",
+   "local": "images/leadership/cf73ef963807.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Ram Bandreddi",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/46-rambandreddi.jpeg",
+   "local": "images/leadership/9ba9f5dc3ddd.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Venkat Meesala",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/30-venkatmeesala.jpeg",
+   "local": "images/leadership/f0b1ff051f09.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Vijay Kothapalli",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/49-D586A9EF2B.jpeg",
+   "local": "images/leadership/8120301eb4d3.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Priya Balusu",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/5-priyabalusu.jpeg",
+   "local": "images/leadership/ba8305851763.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Rajesh Tadikamalla",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/24-rajeshtadikamalla.jpeg",
+   "local": "images/leadership/f653607c5408.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Innaiah Yenumula",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/4-innaiahyenumula.jpeg",
+   "local": "images/leadership/b0855c60aca8.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Rajesh Tadikamalla",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/24-rajeshtadikamalla.jpeg",
+   "local": "images/leadership/f653607c5408.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Rajesh Jampala",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/47-rajeshjampala.jpeg",
+   "local": "images/leadership/3fbb9d9a020f.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Mahesh Pawar",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/27-maheshpawar.jpeg",
+   "local": "images/leadership/bb31b1be537b.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Nagesh Doddaka",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/17-3BB31DAA14.jpeg",
+   "local": "images/leadership/54be6c01de56.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Sri Harsha Yerneni",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/21-sriharshayerneni.jpeg",
+   "local": "images/leadership/39dd060f636f.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Rajesh Yallabandi",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/45-rajeshyallabandi.jpeg",
+   "local": "images/leadership/d262927ac39d.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Devanand Konduru",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/28-devanandkonduru.jpeg",
+   "local": "images/leadership/f307ef0db207.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Vijay Kothapalli",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/49-D586A9EF2B.jpeg",
+   "local": "images/leadership/8120301eb4d3.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Bharath Maddineni",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/3-bharathmaddineni.jpeg",
+   "local": "images/leadership/e74ec43ace01.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Murali Boddu",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/35-muraliboddu.jpeg",
+   "local": "images/leadership/7d34b0a1d5d2.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Bharath Maddineni",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/3-bharathmaddineni.jpeg",
+   "local": "images/leadership/e74ec43ace01.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Murali Boddu",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/35-muraliboddu.jpeg",
+   "local": "images/leadership/7d34b0a1d5d2.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Srinivas Nimmagadda",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/199-srinivasnimmagadda.jpeg",
+   "local": "images/leadership/373a6450473f.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Anil Yalamanchili",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/215-anilyalamanchili.jpeg",
+   "local": "images/leadership/d927e2c96c14.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Vijay Kothapalli",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/49-D586A9EF2B.jpeg",
+   "local": "images/leadership/8120301eb4d3.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Sri Harsha Yerneni",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/21-sriharshayerneni.jpeg",
+   "local": "images/leadership/39dd060f636f.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Mahesh Kolagatla",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/197-maheshkolagatla.jpeg",
+   "local": "images/leadership/26a6fd6a70ee.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Ramu Parupalli",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/37-ramuparupalli.jpeg",
+   "local": "images/leadership/e414f5a3c3d3.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Venkat Adusumilli",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/44-venkatadusumilli.jpeg",
+   "local": "images/leadership/3e521b919b8f.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Manoj tatikonda",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/20-manojtatikonda.jpeg",
+   "local": "images/leadership/c7d9ff878ff1.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Sri Harsha Yerneni",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/21-sriharshayerneni.jpeg",
+   "local": "images/leadership/39dd060f636f.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Ramu Parupalli",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/37-ramuparupalli.jpeg",
+   "local": "images/leadership/e414f5a3c3d3.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Viju Chiluveru",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/23-vijuchiluveru.jpeg",
+   "local": "images/leadership/b9e171591a6b.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Viju Chiluveru",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/23-vijuchiluveru.jpeg",
+   "local": "images/leadership/b9e171591a6b.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Madhukar Nambeti",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/42-madhukarnambeti.jpeg",
+   "local": "images/leadership/6797c5ce51e9.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Viju Chiluveru",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/23-vijuchiluveru.jpeg",
+   "local": "images/leadership/b9e171591a6b.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Murali Boddu",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/35-muraliboddu.jpeg",
+   "local": "images/leadership/7d34b0a1d5d2.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Subbarao Maddali",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/6-5F2D75B4DB.jpeg",
+   "local": "images/leadership/8b99dbd61c62.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Viju Chiluveru",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/23-vijuchiluveru.jpeg",
+   "local": "images/leadership/b9e171591a6b.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Madhukar Nambeti",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/42-madhukarnambeti.jpeg",
+   "local": "images/leadership/6797c5ce51e9.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Hemanth Verma Penmetsa",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/34-hemanthvermapenmetsa.jpeg",
+   "local": "images/leadership/699a86eb3f69.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Venkat Adusumilli",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/44-venkatadusumilli.jpeg",
+   "local": "images/leadership/3e521b919b8f.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Subbarao Maddali",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/6-5F2D75B4DB.jpeg",
+   "local": "images/leadership/8b99dbd61c62.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Sudhakar Vallurupalli",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/48-sudhakarvallurupalli.jpeg",
+   "local": "images/leadership/7509d0dbc440.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Venkateswara Rao Gadde",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/2-venkateswararaogadde.jpeg",
+   "local": "images/leadership/cf73ef963807.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Nagesh Doddaka",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/17-3BB31DAA14.jpeg",
+   "local": "images/leadership/54be6c01de56.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Murali Boddu",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/35-muraliboddu.jpeg",
+   "local": "images/leadership/7d34b0a1d5d2.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Rajesh Tadikamalla",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/24-rajeshtadikamalla.jpeg",
+   "local": "images/leadership/f653607c5408.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Ramki Chowdarapu",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/36-ramkichowdarapu.jpeg",
+   "local": "images/leadership/139b0f840340.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Nagesh Doddaka",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/17-3BB31DAA14.jpeg",
+   "local": "images/leadership/54be6c01de56.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Rajesh Tadikamalla",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/24-rajeshtadikamalla.jpeg",
+   "local": "images/leadership/f653607c5408.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Ramki Chowdarapu",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/36-ramkichowdarapu.jpeg",
+   "local": "images/leadership/139b0f840340.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Priya Balusu",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/5-priyabalusu.jpeg",
+   "local": "images/leadership/ba8305851763.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Venkateswara Rao Gadde",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/2-venkateswararaogadde.jpeg",
+   "local": "images/leadership/cf73ef963807.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Rajesh Yallabandi",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/45-rajeshyallabandi.jpeg",
+   "local": "images/leadership/d262927ac39d.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Rajesh Tadikamalla",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/24-rajeshtadikamalla.jpeg",
+   "local": "images/leadership/f653607c5408.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Murali Boddu",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/35-muraliboddu.jpeg",
+   "local": "images/leadership/7d34b0a1d5d2.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Ram Maddi",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/43-rammaddi.jpeg",
+   "local": "images/leadership/e6a59206ee86.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Vinay Maddineni",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/15-vinaymaddineni.jpeg",
+   "local": "images/leadership/994b0332716b.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Mahesh Pawar",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/27-maheshpawar.jpeg",
+   "local": "images/leadership/bb31b1be537b.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Krishna Bojja",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/31-krishnabojja.jpeg",
+   "local": "images/leadership/167f1ceb7c0d.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Vinay Maddineni",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/15-vinaymaddineni.jpeg",
+   "local": "images/leadership/994b0332716b.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Bharath Maddineni",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/3-bharathmaddineni.jpeg",
+   "local": "images/leadership/e74ec43ace01.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Krishna Bojja",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/31-krishnabojja.jpeg",
+   "local": "images/leadership/167f1ceb7c0d.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Vinay Maddineni",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/15-vinaymaddineni.jpeg",
+   "local": "images/leadership/994b0332716b.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Bharath Maddineni",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/3-bharathmaddineni.jpeg",
+   "local": "images/leadership/e74ec43ace01.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Seetha Vallurupalli",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/69-seethavallurupalli.jpeg",
+   "local": "images/leadership/ec10d457bfa3.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Ram Bandreddi",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/46-rambandreddi.jpeg",
+   "local": "images/leadership/9ba9f5dc3ddd.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Priya Balusu",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/5-priyabalusu.jpeg",
+   "local": "images/leadership/ba8305851763.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Seetha Vallurupalli",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/69-seethavallurupalli.jpeg",
+   "local": "images/leadership/ec10d457bfa3.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Ram Maddi",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/43-rammaddi.jpeg",
+   "local": "images/leadership/e6a59206ee86.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Venkat Adusumilli",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/44-venkatadusumilli.jpeg",
+   "local": "images/leadership/3e521b919b8f.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Seetha Vallurupalli",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/69-seethavallurupalli.jpeg",
+   "local": "images/leadership/ec10d457bfa3.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Nagesh Doddaka",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/17-3BB31DAA14.jpeg",
+   "local": "images/leadership/54be6c01de56.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Rajesh Jampala",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/47-rajeshjampala.jpeg",
+   "local": "images/leadership/3fbb9d9a020f.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Viju Chiluveru",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/23-vijuchiluveru.jpeg",
+   "local": "images/leadership/b9e171591a6b.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Nagesh Doddaka",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/17-3BB31DAA14.jpeg",
+   "local": "images/leadership/54be6c01de56.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Subbarao Maddali",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/6-5F2D75B4DB.jpeg",
+   "local": "images/leadership/8b99dbd61c62.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Venkat Adusumilli",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/44-venkatadusumilli.jpeg",
+   "local": "images/leadership/3e521b919b8f.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Madhukar Nambeti",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/42-madhukarnambeti.jpeg",
+   "local": "images/leadership/6797c5ce51e9.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Subbarao Maddali",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/6-5F2D75B4DB.jpeg",
+   "local": "images/leadership/8b99dbd61c62.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Viju Chiluveru",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/23-vijuchiluveru.jpeg",
+   "local": "images/leadership/b9e171591a6b.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Manoj tatikonda",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/20-manojtatikonda.jpeg",
+   "local": "images/leadership/c7d9ff878ff1.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Sri Harsha Yerneni",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/21-sriharshayerneni.jpeg",
+   "local": "images/leadership/39dd060f636f.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Ramu Parupalli",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/37-ramuparupalli.jpeg",
+   "local": "images/leadership/e414f5a3c3d3.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Karthikeya Voora",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/200-karthikeyavoora.jpeg",
+   "local": "images/leadership/c32d87adc996.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Vijay Pinnapu",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/216-vijaypinnapu.jpeg",
+   "local": "images/leadership/8a411fc028a4.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Srikanth Reddy Mogulla",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/201-srikanthreddymogulla.jpeg",
+   "local": "images/leadership/c370b3ea3854.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Rajesh Tadikamalla",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/24-rajeshtadikamalla.jpeg",
+   "local": "images/leadership/f653607c5408.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Innaiah Yenumula",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/4-innaiahyenumula.jpeg",
+   "local": "images/leadership/b0855c60aca8.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Sri Harsha Yerneni",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/21-sriharshayerneni.jpeg",
+   "local": "images/leadership/39dd060f636f.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Ramu Parupalli",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/37-ramuparupalli.jpeg",
+   "local": "images/leadership/e414f5a3c3d3.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Manoj tatikonda",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/20-manojtatikonda.jpeg",
+   "local": "images/leadership/c7d9ff878ff1.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Surya Challa",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/194-suryachalla.jpeg",
+   "local": "images/leadership/0f5bb21a0b4c.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Aditya Gali",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/8-adityagali.jpeg",
+   "local": "images/leadership/c42ca2e3aaf0.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Sri Harsha Yerneni",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/21-sriharshayerneni.jpeg",
+   "local": "images/leadership/39dd060f636f.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Ramu Parupalli",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/37-ramuparupalli.jpeg",
+   "local": "images/leadership/e414f5a3c3d3.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Manoj tatikonda",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/20-manojtatikonda.jpeg",
+   "local": "images/leadership/c7d9ff878ff1.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Surya Challa",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/194-suryachalla.jpeg",
+   "local": "images/leadership/0f5bb21a0b4c.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Kranthi Kumar Reddy Budidha",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/203-kranthikumarreddybudidha.jpeg",
+   "local": "images/leadership/44cb35cf9eb0.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Mahesh Pawar",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/27-maheshpawar.jpeg",
+   "local": "images/leadership/bb31b1be537b.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Vinay Maddineni",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/15-vinaymaddineni.jpeg",
+   "local": "images/leadership/994b0332716b.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Ram Bandreddi",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/46-rambandreddi.jpeg",
+   "local": "images/leadership/9ba9f5dc3ddd.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Rajesh Tadikamalla",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/24-rajeshtadikamalla.jpeg",
+   "local": "images/leadership/f653607c5408.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Bharath Maddineni",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/3-bharathmaddineni.jpeg",
+   "local": "images/leadership/e74ec43ace01.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Vinay Maddineni",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/15-vinaymaddineni.jpeg",
+   "local": "images/leadership/994b0332716b.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Hemanth Verma Penmetsa",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/34-hemanthvermapenmetsa.jpeg",
+   "local": "images/leadership/699a86eb3f69.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Bharath Maddineni",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/3-bharathmaddineni.jpeg",
+   "local": "images/leadership/e74ec43ace01.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Aditya Thota",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/195-adityathota.jpeg",
+   "local": "images/leadership/7b8ab6275488.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Rupendra Vemulapalli",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/12-E876269890.png",
+   "local": "images/leadership/f6cf5a89fa5f.png"
+  },
+  {
+   "year": 2017,
+   "name": "Kranthi Kumar Reddy Budidha",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/203-kranthikumarreddybudidha.jpeg",
+   "local": "images/leadership/44cb35cf9eb0.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Rajesh Jampala",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/47-rajeshjampala.jpeg",
+   "local": "images/leadership/3fbb9d9a020f.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Mahesh Pawar",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/27-maheshpawar.jpeg",
+   "local": "images/leadership/bb31b1be537b.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Subbarao Maddali",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/6-5F2D75B4DB.jpeg",
+   "local": "images/leadership/8b99dbd61c62.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Sudhakar Vallurupalli",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/48-sudhakarvallurupalli.jpeg",
+   "local": "images/leadership/7509d0dbc440.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Srinivas Lavu",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/59-srinivaslavu.jpeg",
+   "local": "images/leadership/ce5633e84d6a.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Vinay Maddineni",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/15-vinaymaddineni.jpeg",
+   "local": "images/leadership/994b0332716b.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Mahesh Pawar",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/27-maheshpawar.jpeg",
+   "local": "images/leadership/bb31b1be537b.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Ram Maddi",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/43-rammaddi.jpeg",
+   "local": "images/leadership/e6a59206ee86.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Mahesh Pawar",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/27-maheshpawar.jpeg",
+   "local": "images/leadership/bb31b1be537b.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Srinivas Lavu",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/59-srinivaslavu.jpeg",
+   "local": "images/leadership/ce5633e84d6a.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Mahesh Pawar",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/27-maheshpawar.jpeg",
+   "local": "images/leadership/bb31b1be537b.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Vinay Maddineni",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/15-vinaymaddineni.jpeg",
+   "local": "images/leadership/994b0332716b.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Krishna Bojja",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/31-krishnabojja.jpeg",
+   "local": "images/leadership/167f1ceb7c0d.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Priya Balusu",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/5-priyabalusu.jpeg",
+   "local": "images/leadership/ba8305851763.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Hema",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/217-hema.jpeg",
+   "local": "images/leadership/4d46030b2871.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Krishna Bojja",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/31-krishnabojja.jpeg",
+   "local": "images/leadership/167f1ceb7c0d.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Priya Balusu",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/5-priyabalusu.jpeg",
+   "local": "images/leadership/ba8305851763.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Krishna Bojja",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/31-krishnabojja.jpeg",
+   "local": "images/leadership/167f1ceb7c0d.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Priya Balusu",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/5-priyabalusu.jpeg",
+   "local": "images/leadership/ba8305851763.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Ram Maddi",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/43-rammaddi.jpeg",
+   "local": "images/leadership/e6a59206ee86.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Srinivas Lavu",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/59-srinivaslavu.jpeg",
+   "local": "images/leadership/ce5633e84d6a.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Mahesh Pawar",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/27-maheshpawar.jpeg",
+   "local": "images/leadership/bb31b1be537b.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Nagesh Doddaka",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/17-3BB31DAA14.jpeg",
+   "local": "images/leadership/54be6c01de56.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Venkat Meesala",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/30-venkatmeesala.jpeg",
+   "local": "images/leadership/f0b1ff051f09.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Venkat Meesala",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/30-venkatmeesala.jpeg",
+   "local": "images/leadership/f0b1ff051f09.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Balanarayana Madda",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/198-balanarayanamadda.jpeg",
+   "local": "images/leadership/e5862825133a.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Shridhar Pobbala",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/204-shridharpobbala.jpeg",
+   "local": "images/leadership/a3b3655334e1.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Rajesh Alagandhula",
+   "role": "Shridhar Pobbala",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/202-rajeshalagandhula.jpeg",
+   "local": "images/leadership/7cc3f0f0b926.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Shiva Chitkesi",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/205-shivachitkesi.jpeg",
+   "local": "images/leadership/33272745da4d.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Arun Bojja",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/206-arunbojja.jpeg",
+   "local": "images/leadership/07abeae82b4d.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Vinay Katakam",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/207-vinaykatakam.jpeg",
+   "local": "images/leadership/35064a8893c4.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Harsha Pulikonda",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/208-harshapulikonda.jpeg",
+   "local": "images/leadership/f77f65d0ea17.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Kondal Rao",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/210-kondalrao.jpeg",
+   "local": "images/leadership/52a8ad9666af.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Kranthi Kumar Reddy Budidha",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/203-kranthikumarreddybudidha.jpeg",
+   "local": "images/leadership/44cb35cf9eb0.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Sri Harsha Yerneni",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/21-sriharshayerneni.jpeg",
+   "local": "images/leadership/39dd060f636f.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Venkateswara Rao Gadde",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/2-venkateswararaogadde.jpeg",
+   "local": "images/leadership/cf73ef963807.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Rajesh Yallabandi",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/45-rajeshyallabandi.jpeg",
+   "local": "images/leadership/d262927ac39d.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Krishna Bojja",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/31-krishnabojja.jpeg",
+   "local": "images/leadership/167f1ceb7c0d.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Rajesh Tadikamalla",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/24-rajeshtadikamalla.jpeg",
+   "local": "images/leadership/f653607c5408.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Venkat Meesala",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/30-venkatmeesala.jpeg",
+   "local": "images/leadership/f0b1ff051f09.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Mahesh Kolagatla",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/197-maheshkolagatla.jpeg",
+   "local": "images/leadership/26a6fd6a70ee.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Balanarayana Madda",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/198-balanarayanamadda.jpeg",
+   "local": "images/leadership/e5862825133a.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Rajesh Jampala",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/47-rajeshjampala.jpeg",
+   "local": "images/leadership/3fbb9d9a020f.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Nagesh Doddaka",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/17-3BB31DAA14.jpeg",
+   "local": "images/leadership/54be6c01de56.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Ram Maddi",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/43-rammaddi.jpeg",
+   "local": "images/leadership/e6a59206ee86.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Bharath Maddineni",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/3-bharathmaddineni.jpeg",
+   "local": "images/leadership/e74ec43ace01.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Vinay Maddineni",
+   "role": "Coordinator",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/15-vinaymaddineni.jpeg",
+   "local": "images/leadership/994b0332716b.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Venkat Meesala",
+   "role": "Member",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/30-venkatmeesala.jpeg",
+   "local": "images/leadership/f0b1ff051f09.jpg"
+  },
+  {
+   "year": 2019,
+   "name": "Srinivas Madala",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/170-srinivasmadala.jpeg",
+   "local": "images/leadership/068c59b8d4fd.jpg"
+  }
+ ]
+};
+
+function initials(name){return name.split(/\s+/).map(function(w){return w.charAt(0)}).join('').slice(0,2).toUpperCase();}
+function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function photoTag(rec, cls){
+  cls = cls || '';
+  var src = rec.local || rec.photo;
+  if(src){return '<img loading="lazy" class="'+cls+'" src="'+esc(src)+'" alt="'+esc(rec.name||rec.title||'')+'" onerror="this.onerror=null;this.outerHTML=\'<div class=&quot;initials&quot;\'>\'+initials(esc(rec.name||rec.title||\'?\'))+\'</div>\';">';}
+  return '<div class="initials">'+initials(rec.name||rec.title||'?')+'</div>';
+}
+
+var sel = document.getElementById('yearSel'), grid = document.getElementById('grid'),
+    empty = document.getElementById('empty'), count = document.getElementById('count');
+var years = DATA.years.slice().sort(function(a,b){return b-a;});
+years.forEach(function(y){var o=document.createElement('option');o.value=y;o.textContent=y;sel.appendChild(o);});
+function render(){
+  var y = parseInt(sel.value,10);
+  var list = DATA.members.filter(function(m){return m.year===y;});
+  count.textContent = list.length + (list.length===1?' member':' members');
+  empty.style.display = list.length? 'none':'block';
+  grid.innerHTML = list.map(function(m){
+    return '<div class="committee-card">'+photoTag(m)+'<h3>'+esc(m.name)+'</h3>'+(m.role?'<p class="role">'+esc(m.role)+'</p>':'')+'</div>';
+  }).join('');
+}
+sel.addEventListener('change', render);
+render();
+</script>
+    </div>
+  </section>
+</main>
+
+<div class="garland" aria-hidden="true"></div>
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>Telugu Association of Metro Atlanta</strong> &middot; Serving Telugu families in metro Atlanta since 1981.</p>
+    <p class="footer-links"><a href="about.html">About Us</a> &middot; <a href="executive-committee.html">Executive Committee</a> &middot; <a href="board-of-directors.html">Board of Directors</a> &middot; <a href="bylaws.html">Bylaws</a> &middot; <a href="financials.html">Financials</a> &middot; <a href="meeting-minutes.html">Meeting Minutes</a> &middot; <a href="elections.html">Elections</a></p>
+    <p class="footer-links"><a href="activities.html">Activities</a> &middot; <a href="kalasala.html">Kalasala</a> &middot; <a href="scholarship.html">Scholarship</a> &middot; <a href="manabadi.html">Manabadi</a> &middot; <a href="locations-teachers.html">Locations &amp; Teachers</a></p>
+    <p class="footer-links"><a href="events.html">Events</a> &middot; <a href="past-events.html">Past Events</a> &middot; <a href="gallery.html">Photo Gallery</a> &middot; <a href="videos.html">Videos</a> &middot; <a href="magazine.html">Magazine</a> &middot; <a href="digital-library.html">Digital Library</a></p>
+    <p class="footer-links"><a href="directory.html">Directory</a> &middot; <a href="sponsor-a-program.html">Sponsor a Program</a> &middot; <a href="sponsors.html">Sponsors</a> &middot; <a href="volunteers-list.html">Volunteers List</a></p>
+    <p class="footer-links"><a href="membership.html">Membership</a> &middot; <a href="membership-benefits.html">Benefits</a> &middot; <a href="members.html">Members List</a></p>
+    <p class="footer-links"><a href="clinic.html">Free Clinic</a> &middot; <a href="clinic-dates.html">Clinic Dates</a> &middot; <a href="clinic-volunteer.html">Volunteer</a> &middot; <a href="clinic-donations.html">Donate</a></p>
+    <p class="fine">This is a draft preview of a rebuilt tama.org. Content is based on public sources. Details are marked for review by the TAMA committee before going live.</p>
+  </div>
+</footer>
+
+<nav class="mobile-cta" aria-label="Quick actions">
+  <a class="btn btn-gold" href="membership.html#join">Join TAMA</a>
+  <a class="btn btn-outline" href="events.html">Events</a>
+</nav>
+</body>
+</html>
