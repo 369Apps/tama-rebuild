@@ -140,6 +140,12 @@ a{color:var(--orange)}
 .card h3{margin:0 0 10px;color:var(--purple);font-size:20px;font-weight:800}
 .card p{margin:0;color:var(--muted);font-size:16px;line-height:1.65}
 
+/* benefit cards */
+.benefit-card .b-addr{margin:0 0 8px}
+.benefit-card .b-phone{margin:0 0 8px;font-weight:700;color:var(--ink)}
+.benefit-card .b-offer{margin:0 0 10px}
+.benefit-card .b-link{margin:0}
+
 /* news */
 .news{
   background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;
