@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Elections - Telugu Association of Metro Atlanta (TAMA)</title>
-<link rel="stylesheet" href="styles.css?v=4">
+<link rel="stylesheet" href="styles.css?v=5">
 <link rel="icon" href="logo.png">
 <meta name="theme-color" content="#952b71">
 </head>
@@ -21,9 +21,9 @@
       <div class="nav-item"><a href="gallery.html" aria-haspopup="true">Media</a><div class="drop" role="menu"><a href="gallery.html">Photo Gallery</a><a href="videos.html">Videos</a><a href="magazine.html">Magazine</a></div></div>
       <a href="digital-library.html">Digital Library</a>
       <a href="directory.html">Directory</a>
-      <a href="membership.html">Membership</a>
+      <div class="nav-item"><a href="membership.html" aria-haspopup="true">Membership</a><div class="drop" role="menu"><a href="membership.html">Membership</a><a href="register.html">Register</a></div></div>
       <a href="clinic.html">Free Clinic</a>
-      <div class="nav-item"><a href="sponsor-a-program.html" aria-haspopup="true">Support Us</a><div class="drop" role="menu"><a href="sponsor-a-program.html">Sponsor a program</a><a href="sponsors.html">Sponsors</a><a href="volunteers-list.html">Volunteers List</a></div></div>
+      <div class="nav-item"><a href="sponsor-a-program.html" aria-haspopup="true">Support Us</a><div class="drop" role="menu"><a href="sponsor-a-program.html">Sponsor a program</a><a href="sponsors.html">Sponsors</a><a href="volunteers-list.html">Volunteers List</a><a href="donate.html">Donate</a><a href="volunteer.html">Become a Volunteer</a><a href="advertise.html">Advertise in Newsletter</a></div></div>
       <a href="contact.html">Contact</a>
       <a href="login.html">Member Login</a>
     </nav>
@@ -253,8 +253,177 @@
 		</details>
 
 	<a id="tama-nominate-2026"></a>
+	<h2>SUBMIT A NOMINATION ONLINE</h2>
+	<p>Fill the form below, pay the nomination fee, and we will email your proposer and seconder a private link to sign. Your nomination is complete once all three signatures are in.</p>
 
-Online nominations for the 2026 election cycle will open here soon. The nomination form and fee payment are being rebuilt and will be available before nominations open on October 4, 2026.
+      <form class="auth-form" id="nomForm" novalidate>
+        <div class="form-sec">
+          <h2 class="form-sec-h">1 &nbsp;What are you contesting?</h2>
+          <div class="form-sec-b">
+            <div class="type-cards" role="radiogroup" aria-label="Nomination type">
+              <label class="type-card"><input type="radio" name="ntype" value="EC" checked>
+                <span class="tc-t">Executive Committee</span>
+                <span class="tc-d">One of twelve EC positions for the 2027 term.</span>
+                <span class="tc-f">$100 nomination fee</span></label>
+              <label class="type-card"><input type="radio" name="ntype" value="BOARD">
+                <span class="tc-t">Board of Directors</span>
+                <span class="tc-d">One of five Board seats, 2027&ndash;28 (two-year term).</span>
+                <span class="tc-f">$200 nomination fee</span></label>
+            </div>
+            <label for="nPos">Position contesting for <span class="req">*</span></label>
+            <select id="nPos" name="position">
+              <option value="">&mdash; Select a position &mdash;</option>
+                <option value="President-Elect">President-Elect</option>
+                <option value="General Secretary">General Secretary</option>
+                <option value="Treasurer">Treasurer</option>
+                <option value="Cultural Secretary">Cultural Secretary</option>
+                <option value="Education Secretary">Education Secretary</option>
+                <option value="Literary Secretary">Literary Secretary</option>
+                <option value="Media Secretary">Media Secretary</option>
+                <option value="Technology Secretary">Technology Secretary</option>
+                <option value="Event Secretary">Event Secretary</option>
+                <option value="Sports & Youth Secretary">Sports & Youth Secretary</option>
+                <option value="Community Services Secretary">Community Services Secretary</option>
+                <option value="Women's Services Secretary">Women's Services Secretary</option>
+            </select>
+            <p class="field-err" id="err-nPos">Please select the position you are contesting for</p>
+          </div>
+        </div>
+
+        <div class="form-sec">
+          <h2 class="form-sec-h">2 &nbsp;Candidate</h2>
+          <div class="form-sec-b">
+            <label for="nName">Full name <span class="req">*</span></label>
+            <input id="nName" name="name" type="text" autocomplete="name">
+            <p class="field-err" id="err-nName">Full name is required</p>
+            <label for="nEmail">Email <span class="req">*</span></label>
+            <input id="nEmail" name="email" type="email" autocomplete="email" inputmode="email">
+            <p class="field-err" id="err-nEmail">Enter a valid email</p>
+            <label for="nPhone">Phone <span class="req">*</span></label>
+            <input id="nPhone" name="phone" type="tel" autocomplete="tel" inputmode="tel">
+            <p class="field-err" id="err-nPhone">Phone is required</p>
+            <label for="nAddr">Address <span class="req">*</span></label>
+            <input id="nAddr" name="address" type="text" autocomplete="street-address">
+            <p class="field-err" id="err-nAddr">Address is required</p>
+            <label for="nPrev">Previous TAMA positions served, with dates</label>
+            <textarea id="nPrev" name="previous" placeholder="e.g. Cultural Secretary, 2022"></textarea>
+          </div>
+        </div>
+
+        <div class="form-sec">
+          <h2 class="form-sec-h">3 &nbsp;Eligibility &amp; signature</h2>
+          <div class="form-sec-b">
+            <label class="check-line"><input type="checkbox" id="nLife"><span id="nLifeText">I confirm I have been a TAMA Life Member as of June 30, 2025.</span></label>
+            <p class="field-err" id="err-nLife">Please confirm your life membership</p>
+            <label class="check-line"><input type="checkbox" id="nPledge"><span>I pledge to abide by the TAMA Constitution and Bylaws, and I confirm I have not served two consecutive terms in this same position.</span></label>
+            <p class="field-err" id="err-nPledge">Please confirm the pledge</p>
+            <label for="nSign">Type your full name to sign <span class="req">*</span></label>
+            <input id="nSign" name="signature" type="text" autocomplete="name">
+            <p class="field-err" id="err-nSign">Signature must match your full name above exactly</p>
+            <p class="file-note">Must match your full name above exactly. This is your electronic signature.</p>
+          </div>
+        </div>
+
+        <div class="form-sec">
+          <h2 class="form-sec-h">4 &nbsp;Proposer &amp; seconder</h2>
+          <div class="form-sec-b">
+            <p class="file-note" style="margin-top:0">The Election Committee verifies nominations by calling the proposers, so please give numbers they can be reached on.</p>
+            <label for="nPName">Proposer full name <span class="req">*</span></label>
+            <input id="nPName" name="proposerName" type="text">
+            <p class="field-err" id="err-nPName">Proposer full name is required</p>
+            <label for="nPEmail">Proposer email <span class="req">*</span></label>
+            <input id="nPEmail" name="proposerEmail" type="email" inputmode="email">
+            <p class="field-err" id="err-nPEmail">Enter a valid proposer email</p>
+            <label for="nPPhone">Proposer phone</label>
+            <input id="nPPhone" name="proposerPhone" type="tel" inputmode="tel">
+            <label for="nSName">Seconder full name <span class="req">*</span></label>
+            <input id="nSName" name="seconderName" type="text">
+            <p class="field-err" id="err-nSName">Seconder full name is required</p>
+            <label for="nSEmail">Seconder email <span class="req">*</span></label>
+            <input id="nSEmail" name="seconderEmail" type="email" inputmode="email">
+            <p class="field-err" id="err-nSEmail">Enter a valid seconder email</p>
+            <label for="nSPhone">Seconder phone</label>
+            <input id="nSPhone" name="seconderPhone" type="tel" inputmode="tel">
+          </div>
+        </div>
+
+        <div class="form-sec">
+          <h2 class="form-sec-h">Nomination fee</h2>
+          <div class="form-sec-b">
+            <div class="fee-box">Non-refundable nomination fee: <strong id="nFeeAmt">$100.00</strong> <span id="nFeeFor">for Executive Committee</span></div>
+            <div class="pay-soon"><strong>Online payment opens soon.</strong>Online nominations for the 2026 election cycle open October 4, 2026. The nomination fee payment will be available here before then.</div>
+            <div style="margin-top:20px">
+              <button class="btn btn-gold btn-block" type="submit">Submit Nomination</button>
+            </div>
+            <div class="notice info" id="nomNotice" role="status"></div>
+          </div>
+        </div>
+      </form>
+<script>
+(function(){
+  var form = document.getElementById('nomForm');
+  var MEMBER_SINCE = { EC: 'June 30, 2025', BOARD: 'December 31, 2023' };
+  var FEES = { EC: 100, BOARD: 200 };
+  var EC_POS = ['President-Elect', 'General Secretary', 'Treasurer', 'Cultural Secretary', 'Education Secretary', 'Literary Secretary', 'Media Secretary', 'Technology Secretary', 'Event Secretary', 'Sports & Youth Secretary', 'Community Services Secretary', "Women's Services Secretary"];
+  function curType(){ return form.querySelector('input[name="ntype"]:checked').value; }
+  function refresh(){
+    var t = curType();
+    document.querySelectorAll('.type-card').forEach(function(c){ c.classList.remove('sel'); });
+    form.querySelector('input[name="ntype"]:checked').closest('.type-card').classList.add('sel');
+    document.getElementById('nFeeAmt').textContent = '$' + FEES[t] + '.00';
+    document.getElementById('nFeeFor').textContent = t === 'EC' ? 'for Executive Committee' : 'for Board of Directors';
+    document.getElementById('nLifeText').textContent = 'I confirm I have been a TAMA Life Member as of ' + MEMBER_SINCE[t] + '.';
+    var sel = document.getElementById('nPos');
+    var keep = sel.value;
+    sel.innerHTML = '<option value="">\u2014 Select a position \u2014</option>';
+    if (t === 'EC') {
+      EC_POS.forEach(function(pos){
+        var o = document.createElement('option'); o.value = pos; o.textContent = pos; sel.appendChild(o);
+      });
+      if (EC_POS.indexOf(keep) >= 0) sel.value = keep;
+    } else {
+      var o = document.createElement('option'); o.value = 'Board of Directors'; o.textContent = 'Board of Directors'; sel.appendChild(o);
+    }
+  }
+  form.querySelectorAll('input[name="ntype"]').forEach(function(r){ r.addEventListener('change', refresh); });
+  refresh();
+  function showErr(id){ var el = document.getElementById(id); if (el) el.classList.add('show'); }
+  function clearErrs(){ form.querySelectorAll('.field-err.show').forEach(function(el){ el.classList.remove('show'); }); }
+  function need(cond, id){ if (!cond) { showErr(id); return false; } return true; }
+  function validEmail(v){ return /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v); }
+  function val(id){ return document.getElementById(id).value.trim(); }
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    clearErrs();
+    var ok = true;
+    ok = need(val('nPos') !== '', 'err-nPos') && ok;
+    ok = need(val('nName') !== '', 'err-nName') && ok;
+    ok = need(validEmail(val('nEmail')), 'err-nEmail') && ok;
+    ok = need(val('nPhone') !== '', 'err-nPhone') && ok;
+    ok = need(val('nAddr') !== '', 'err-nAddr') && ok;
+    ok = need(document.getElementById('nLife').checked, 'err-nLife') && ok;
+    ok = need(document.getElementById('nPledge').checked, 'err-nPledge') && ok;
+    ok = need(val('nSign') !== '' && val('nSign') === val('nName'), 'err-nSign') && ok;
+    ok = need(val('nPName') !== '', 'err-nPName') && ok;
+    ok = need(validEmail(val('nPEmail')), 'err-nPEmail') && ok;
+    ok = need(val('nSName') !== '', 'err-nSName') && ok;
+    ok = need(validEmail(val('nSEmail')), 'err-nSEmail') && ok;
+    var n = document.getElementById('nomNotice');
+    if (!ok) {
+      n.className = 'notice error show';
+      n.textContent = 'Please fix the highlighted fields above and try again.';
+      n.scrollIntoView({behavior:'smooth', block:'center'});
+      return;
+    }
+    var t = curType();
+    n.className = 'notice info show';
+    n.innerHTML = '<strong>Your nomination details look good.</strong><br>Online nominations open October 4, 2026 and the fee payment is not live yet, so nothing was sent. ' +
+      'When it opens, this nomination would be for: ' + val('nPos') + ' (' + (t === 'EC' ? 'Executive Committee' : 'Board of Directors') +
+      '), candidate ' + val('nName') + ', fee $' + FEES[t] + '.00.';
+    n.scrollIntoView({behavior:'smooth', block:'center'});
+  });
+})();
+</script>
       </div>
       <div class="tab-panel  rich" id="elec-2025" role="tabpanel">
 <h3>
@@ -3274,8 +3443,8 @@ Online nominations for the 2026 election cycle will open here soon. The nominati
         <p class="footer-links"><a href="about.html">About Us</a> &middot; <a href="executive-committee.html">Executive Committee</a> &middot; <a href="board-of-directors.html">Board of Directors</a> &middot; <a href="bylaws.html">Bylaws</a> &middot; <a href="financials.html">Financials</a> &middot; <a href="meeting-minutes.html">Meeting Minutes</a> &middot; <a href="elections.html">Elections</a></p>
     <p class="footer-links"><a href="activities.html">Activities</a> &middot; <a href="kalasala.html">Kalasala</a> &middot; <a href="scholarship.html">Scholarship</a> &middot; <a href="manabadi.html">Manabadi</a> &middot; <a href="locations-teachers.html">Locations &amp; Teachers</a></p>
     <p class="footer-links"><a href="events.html">Events</a> &middot; <a href="past-events.html">Past Events</a> &middot; <a href="gallery.html">Photo Gallery</a> &middot; <a href="videos.html">Videos</a> &middot; <a href="magazine.html">Magazine</a> &middot; <a href="digital-library.html">Digital Library</a></p>
-    <p class="footer-links"><a href="directory.html">Directory</a> &middot; <a href="sponsor-a-program.html">Sponsor a Program</a> &middot; <a href="sponsors.html">Sponsors</a> &middot; <a href="volunteers-list.html">Volunteers List</a></p>
-    <p class="footer-links"><a href="membership.html">Membership</a> &middot; <a href="membership-benefits.html">Benefits</a> &middot; <a href="members.html">Members List</a></p>
+    <p class="footer-links"><a href="directory.html">Directory</a> &middot; <a href="sponsor-a-program.html">Sponsor a Program</a> &middot; <a href="sponsors.html">Sponsors</a> &middot; <a href="volunteers-list.html">Volunteers List</a> &middot; <a href="donate.html">Donate</a> &middot; <a href="volunteer.html">Become a Volunteer</a> &middot; <a href="advertise.html">Advertise in Newsletter</a></p>
+    <p class="footer-links"><a href="membership.html">Membership</a> &middot; <a href="membership-benefits.html">Benefits</a> &middot; <a href="members.html">Members List</a> &middot; <a href="register.html">Register</a></p>
     <p class="footer-links"><a href="clinic.html">Free Clinic</a> &middot; <a href="clinic-dates.html">Clinic Dates</a> &middot; <a href="clinic-volunteer.html">Volunteer</a> &middot; <a href="clinic-donations.html">Donate</a></p>
 <p class="fine">This is a draft preview of a rebuilt tama.org. Content is based on public sources. Details are marked for review by the TAMA committee before going live.</p>
   </div>
