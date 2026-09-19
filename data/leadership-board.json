@@ -1,0 +1,1142 @@
+{
+ "years": [
+  2011,
+  2012,
+  2013,
+  2014,
+  2015,
+  2016,
+  2017,
+  2018,
+  2019,
+  2020,
+  2021,
+  2022,
+  2023,
+  2024,
+  2025,
+  2026
+ ],
+ "members": [
+  {
+   "year": 2011,
+   "name": "Sunil Katepalli",
+   "role": "President",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/72-sunilkatepalli.jpeg",
+   "local": "images/leadership/597f792f3159.jpg"
+  },
+  {
+   "year": 2011,
+   "name": "Suresh Peddi",
+   "role": "Vice-President",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/64-sureshpeddi.jpeg",
+   "local": "images/leadership/652df71e5007.jpg"
+  },
+  {
+   "year": 2011,
+   "name": "Mahesh Pawar",
+   "role": "General Secretary",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/27-maheshpawar.jpeg",
+   "local": "images/leadership/bb31b1be537b.jpg"
+  },
+  {
+   "year": 2011,
+   "name": "Vijay Kothapalli",
+   "role": "Treasurer",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/49-D586A9EF2B.jpeg",
+   "local": "images/leadership/8120301eb4d3.jpg"
+  },
+  {
+   "year": 2011,
+   "name": "Sandhya Yellapragada",
+   "role": "Secretaries-Cultural",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/50-sandhyayellapragada.jpeg",
+   "local": "images/leadership/60a44c690f1d.jpg"
+  },
+  {
+   "year": 2011,
+   "name": "Bhargav Yerrangi",
+   "role": "Secretaries-Education",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/73-bhargavyerrangi.jpeg",
+   "local": "images/leadership/ecfa8f5aa379.jpg"
+  },
+  {
+   "year": 2011,
+   "name": "Murthy Rallapalli",
+   "role": "Secretaries-Literary",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/74-murthyrallapalli.jpeg",
+   "local": "images/leadership/d88776c52b6b.jpg"
+  },
+  {
+   "year": 2011,
+   "name": "Vinay Maddineni",
+   "role": "Secretaries-Media",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/32-vinaymaddineni.jpeg",
+   "local": "images/leadership/7ec3174c2ee6.jpg"
+  },
+  {
+   "year": 2011,
+   "name": "Surya Pandiri",
+   "role": "Secretaries-Technology",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/75-suryapandiri.jpeg",
+   "local": "images/leadership/780706440bc3.jpg"
+  },
+  {
+   "year": 2011,
+   "name": "King Koduru",
+   "role": "Secretaries-Events",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/76-kingkoduru.jpeg",
+   "local": "images/leadership/5223c53bfc58.jpg"
+  },
+  {
+   "year": 2012,
+   "name": "Seetha Vallurupalli",
+   "role": "Chairman",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/69-seethavallurupalli.jpeg",
+   "local": "images/leadership/ec10d457bfa3.jpg"
+  },
+  {
+   "year": 2012,
+   "name": "Meher Lanka",
+   "role": "Secretary",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/60-meherlanka.jpeg",
+   "local": "images/leadership/ce855559a63c.jpg"
+  },
+  {
+   "year": 2012,
+   "name": "Anand Akkineni",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/18-anandakkineni.png",
+   "local": "images/leadership/889596792255.png"
+  },
+  {
+   "year": 2012,
+   "name": "Chand Akkineni",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/70-chandakkineni.jpeg",
+   "local": "images/leadership/e9ea5472fe0c.jpg"
+  },
+  {
+   "year": 2012,
+   "name": "Mallik Rao Medarametla",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/90-mallikraomedarametla.jpeg",
+   "local": "images/leadership/380f9c074f80.jpg"
+  },
+  {
+   "year": 2012,
+   "name": "Sunil Shavele",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/56-sunilshavele.jpeg",
+   "local": "images/leadership/835a53712ce0.jpg"
+  },
+  {
+   "year": 2012,
+   "name": "Sheela Lingam",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/62-sheelalingam.jpeg",
+   "local": "images/leadership/69e6acb95de4.jpg"
+  },
+  {
+   "year": 2012,
+   "name": "Srinivas Lavu",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/59-srinivaslavu.jpeg",
+   "local": "images/leadership/ce5633e84d6a.jpg"
+  },
+  {
+   "year": 2012,
+   "name": "Upendra Narra",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/71-upendranarra.jpeg",
+   "local": "images/leadership/f25b5c8458cf.jpg"
+  },
+  {
+   "year": 2012,
+   "name": "Viju Chiluveru",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/23-vijuchiluveru.jpeg",
+   "local": "images/leadership/b9e171591a6b.jpg"
+  },
+  {
+   "year": 2013,
+   "name": "Srinivas Lavu",
+   "role": "Chairman",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/59-srinivaslavu.jpeg",
+   "local": "images/leadership/ce5633e84d6a.jpg"
+  },
+  {
+   "year": 2013,
+   "name": "Ram Maddi",
+   "role": "Secretary",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/43-rammaddi.jpeg",
+   "local": "images/leadership/e6a59206ee86.jpg"
+  },
+  {
+   "year": 2013,
+   "name": "Anand Akkineni",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/18-anandakkineni.png",
+   "local": "images/leadership/889596792255.png"
+  },
+  {
+   "year": 2013,
+   "name": "Meher Lanka",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/60-meherlanka.jpeg",
+   "local": "images/leadership/ce855559a63c.jpg"
+  },
+  {
+   "year": 2013,
+   "name": "Mallik Rao Medarametla",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/90-mallikraomedarametla.jpeg",
+   "local": "images/leadership/380f9c074f80.jpg"
+  },
+  {
+   "year": 2013,
+   "name": "Sheela Lingam",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/62-sheelalingam.jpeg",
+   "local": "images/leadership/69e6acb95de4.jpg"
+  },
+  {
+   "year": 2013,
+   "name": "Viju Chiluveru",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/23-vijuchiluveru.jpeg",
+   "local": "images/leadership/b9e171591a6b.jpg"
+  },
+  {
+   "year": 2013,
+   "name": "Sunil Shavele",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/56-sunilshavele.jpeg",
+   "local": "images/leadership/835a53712ce0.jpg"
+  },
+  {
+   "year": 2013,
+   "name": "Anand Garlapati",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/63-anandgarlapati.jpeg",
+   "local": "images/leadership/0ad1f45fd2c7.jpg"
+  },
+  {
+   "year": 2013,
+   "name": "Sudhakar Borra",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/212-sudhakarborra.jpeg",
+   "local": "images/leadership/0b143d835ef2.jpg"
+  },
+  {
+   "year": 2014,
+   "name": "Sunil Shavele",
+   "role": "Chairman",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/56-sunilshavele.jpeg",
+   "local": "images/leadership/835a53712ce0.jpg"
+  },
+  {
+   "year": 2014,
+   "name": "Rajesh Jampala",
+   "role": "Secretary",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/47-rajeshjampala.jpeg",
+   "local": "images/leadership/3fbb9d9a020f.jpg"
+  },
+  {
+   "year": 2014,
+   "name": "Ram Maddi",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/43-rammaddi.jpeg",
+   "local": "images/leadership/e6a59206ee86.jpg"
+  },
+  {
+   "year": 2014,
+   "name": "Sudhakar Borra",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/212-sudhakarborra.jpeg",
+   "local": "images/leadership/0b143d835ef2.jpg"
+  },
+  {
+   "year": 2014,
+   "name": "Viju Chiluveru",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/23-vijuchiluveru.jpeg",
+   "local": "images/leadership/b9e171591a6b.jpg"
+  },
+  {
+   "year": 2014,
+   "name": "Devanand Konduru",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/28-devanandkonduru.jpeg",
+   "local": "images/leadership/f307ef0db207.jpg"
+  },
+  {
+   "year": 2014,
+   "name": "Nagesh Doddaka",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/17-3BB31DAA14.jpeg",
+   "local": "images/leadership/54be6c01de56.jpg"
+  },
+  {
+   "year": 2014,
+   "name": "Sudhakar Vallurupalli",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/48-sudhakarvallurupalli.jpeg",
+   "local": "images/leadership/7509d0dbc440.jpg"
+  },
+  {
+   "year": 2014,
+   "name": "Vijay Kothapalli",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/49-D586A9EF2B.jpeg",
+   "local": "images/leadership/8120301eb4d3.jpg"
+  },
+  {
+   "year": 2014,
+   "name": "Sairam Pamulapati",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/57-sairampamulapati.jpeg",
+   "local": "images/leadership/53baf8435463.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Rajesh Jampala",
+   "role": "Chairman",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/47-rajeshjampala.jpeg",
+   "local": "images/leadership/3fbb9d9a020f.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Nagesh Doddaka",
+   "role": "Secretary",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/17-3BB31DAA14.jpeg",
+   "local": "images/leadership/54be6c01de56.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Devanand Konduru",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/28-devanandkonduru.jpeg",
+   "local": "images/leadership/f307ef0db207.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Sudhakar Vallurupalli",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/48-sudhakarvallurupalli.jpeg",
+   "local": "images/leadership/7509d0dbc440.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Vijay Kothapalli",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/49-D586A9EF2B.jpeg",
+   "local": "images/leadership/8120301eb4d3.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Venkat Adusumilli",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/44-venkatadusumilli.jpeg",
+   "local": "images/leadership/3e521b919b8f.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Krishna Bojja",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/31-krishnabojja.jpeg",
+   "local": "images/leadership/167f1ceb7c0d.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Subbarao Maddali",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/6-5F2D75B4DB.jpeg",
+   "local": "images/leadership/8b99dbd61c62.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Ram Maddi",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/43-rammaddi.jpeg",
+   "local": "images/leadership/e6a59206ee86.jpg"
+  },
+  {
+   "year": 2015,
+   "name": "Mahesh Pawar",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/27-maheshpawar.jpeg",
+   "local": "images/leadership/bb31b1be537b.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Ram Maddi",
+   "role": "Chairman",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/43-rammaddi.jpeg",
+   "local": "images/leadership/e6a59206ee86.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Mahesh Pawar",
+   "role": "Secretary",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/27-maheshpawar.jpeg",
+   "local": "images/leadership/bb31b1be537b.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Krishna Bojja",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/31-krishnabojja.jpeg",
+   "local": "images/leadership/167f1ceb7c0d.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Subbarao Maddali",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/6-5F2D75B4DB.jpeg",
+   "local": "images/leadership/8b99dbd61c62.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Venkat Adusumilli",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/44-venkatadusumilli.jpeg",
+   "local": "images/leadership/3e521b919b8f.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Nagesh Doddaka",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/17-3BB31DAA14.jpeg",
+   "local": "images/leadership/54be6c01de56.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Ramki Chowdarapu",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/36-ramkichowdarapu.jpeg",
+   "local": "images/leadership/139b0f840340.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Ramu Parupalli",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/37-ramuparupalli.jpeg",
+   "local": "images/leadership/e414f5a3c3d3.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Apparao Gopu",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/38-apparaogopu.jpeg",
+   "local": "images/leadership/ef6631cf4d90.jpg"
+  },
+  {
+   "year": 2016,
+   "name": "Vinay Maddineni",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/15-vinaymaddineni.jpeg",
+   "local": "images/leadership/994b0332716b.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Nagesh Doddaka",
+   "role": "Chairman",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/17-3BB31DAA14.jpeg",
+   "local": "images/leadership/54be6c01de56.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Subbarao Maddali",
+   "role": "Secretary",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/6-5F2D75B4DB.jpeg",
+   "local": "images/leadership/8b99dbd61c62.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Ramki Chowdarapu",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/36-ramkichowdarapu.jpeg",
+   "local": "images/leadership/139b0f840340.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Ramu Parupalli",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/37-ramuparupalli.jpeg",
+   "local": "images/leadership/e414f5a3c3d3.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Apparao Gopu",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/38-apparaogopu.jpeg",
+   "local": "images/leadership/ef6631cf4d90.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Vinay Maddineni",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/15-vinaymaddineni.jpeg",
+   "local": "images/leadership/994b0332716b.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Krishna Bojja",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/31-krishnabojja.jpeg",
+   "local": "images/leadership/167f1ceb7c0d.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Mahesh Pawar",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/27-maheshpawar.jpeg",
+   "local": "images/leadership/bb31b1be537b.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Venkat Meesala",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/30-venkatmeesala.jpeg",
+   "local": "images/leadership/f0b1ff051f09.jpg"
+  },
+  {
+   "year": 2017,
+   "name": "Venkatapathi Raju Mandapati",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/29-venkatapathirajumandapati.jpeg",
+   "local": "images/leadership/686bb8582ca3.jpg"
+  },
+  {
+   "year": 2018,
+   "name": "Mahesh Pawar",
+   "role": "Chairman",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/27-maheshpawar.jpeg",
+   "local": "images/leadership/bb31b1be537b.jpg"
+  },
+  {
+   "year": 2018,
+   "name": "Devanand Konduru",
+   "role": "Secretary",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/28-devanandkonduru.jpeg",
+   "local": "images/leadership/f307ef0db207.jpg"
+  },
+  {
+   "year": 2018,
+   "name": "Venkatapathi Raju Mandapati",
+   "role": "Treasurer",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/29-venkatapathirajumandapati.jpeg",
+   "local": "images/leadership/686bb8582ca3.jpg"
+  },
+  {
+   "year": 2018,
+   "name": "Subbarao Maddali",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/6-5F2D75B4DB.jpeg",
+   "local": "images/leadership/8b99dbd61c62.jpg"
+  },
+  {
+   "year": 2018,
+   "name": "Venkat Meesala",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/30-venkatmeesala.jpeg",
+   "local": "images/leadership/f0b1ff051f09.jpg"
+  },
+  {
+   "year": 2018,
+   "name": "Krishna Bojja",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/31-krishnabojja.jpeg",
+   "local": "images/leadership/167f1ceb7c0d.jpg"
+  },
+  {
+   "year": 2018,
+   "name": "Vinay Maddineni",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/15-vinaymaddineni.jpeg",
+   "local": "images/leadership/994b0332716b.jpg"
+  },
+  {
+   "year": 2018,
+   "name": "Viju Chiluveru",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/23-vijuchiluveru.jpeg",
+   "local": "images/leadership/b9e171591a6b.jpg"
+  },
+  {
+   "year": 2018,
+   "name": "Rajasekhar Chunduri",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/16-rajasekharchunduri.jpeg",
+   "local": "images/leadership/82bbe96a15ce.jpg"
+  },
+  {
+   "year": 2018,
+   "name": "Sri Harsha Yerneni",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/21-sriharshayerneni.jpeg",
+   "local": "images/leadership/39dd060f636f.jpg"
+  },
+  {
+   "year": 2019,
+   "name": "Vinay Maddineni",
+   "role": "Chairman",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/15-vinaymaddineni.jpeg",
+   "local": "images/leadership/994b0332716b.jpg"
+  },
+  {
+   "year": 2019,
+   "name": "Rajasekhar Chunduri",
+   "role": "Board Secretary",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/16-rajasekharchunduri.jpeg",
+   "local": "images/leadership/82bbe96a15ce.jpg"
+  },
+  {
+   "year": 2019,
+   "name": "Nagesh Doddaka",
+   "role": "Board Treasurer",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/17-3BB31DAA14.jpeg",
+   "local": "images/leadership/54be6c01de56.jpg"
+  },
+  {
+   "year": 2019,
+   "name": "Anand Akkineni",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/18-anandakkineni.png",
+   "local": "images/leadership/889596792255.png"
+  },
+  {
+   "year": 2019,
+   "name": "Kamal Satuluru",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/19-kamalsatuluru.jpeg",
+   "local": "images/leadership/079379111cb4.jpg"
+  },
+  {
+   "year": 2019,
+   "name": "Manoj tatikonda",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/20-manojtatikonda.jpeg",
+   "local": "images/leadership/c7d9ff878ff1.jpg"
+  },
+  {
+   "year": 2019,
+   "name": "Sri Harsha Yerneni",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/21-sriharshayerneni.jpeg",
+   "local": "images/leadership/39dd060f636f.jpg"
+  },
+  {
+   "year": 2019,
+   "name": "Srinivas Uppu",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/22-srinivasuppu.jpeg",
+   "local": "images/leadership/b6e74a05d09a.jpg"
+  },
+  {
+   "year": 2019,
+   "name": "Viju Chiluveru",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/23-vijuchiluveru.jpeg",
+   "local": "images/leadership/b9e171591a6b.jpg"
+  },
+  {
+   "year": 2020,
+   "name": "Rajasekhar Chunduri",
+   "role": "Chairman",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/16-rajasekharchunduri.jpeg",
+   "local": "images/leadership/82bbe96a15ce.jpg"
+  },
+  {
+   "year": 2020,
+   "name": "Kamal Satuluru",
+   "role": "Board Secretary",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/19-kamalsatuluru.jpeg",
+   "local": "images/leadership/079379111cb4.jpg"
+  },
+  {
+   "year": 2020,
+   "name": "Srinivas Uppu",
+   "role": "Board Treasurer",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/22-srinivasuppu.jpeg",
+   "local": "images/leadership/b6e74a05d09a.jpg"
+  },
+  {
+   "year": 2020,
+   "name": "Anand Akkineni",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/18-anandakkineni.png",
+   "local": "images/leadership/889596792255.png"
+  },
+  {
+   "year": 2020,
+   "name": "Aditya Gali",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/8-adityagali.jpeg",
+   "local": "images/leadership/c42ca2e3aaf0.jpg"
+  },
+  {
+   "year": 2020,
+   "name": "Manoj tatikonda",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/20-manojtatikonda.jpeg",
+   "local": "images/leadership/c7d9ff878ff1.jpg"
+  },
+  {
+   "year": 2020,
+   "name": "Nagesh Doddaka",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/17-3BB31DAA14.jpeg",
+   "local": "images/leadership/54be6c01de56.jpg"
+  },
+  {
+   "year": 2020,
+   "name": "Siva Rama Krishna Devabhaktuni",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/245-sivaramakrishnadevabhaktuni.jpeg",
+   "local": "images/leadership/85213c14beb6.jpg"
+  },
+  {
+   "year": 2020,
+   "name": "Sreeram Royyala",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/246-sreeramroyyala.jpeg",
+   "local": "images/leadership/2344c6304eae.jpg"
+  },
+  {
+   "year": 2020,
+   "name": "Vijay Kothapalli",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/49-D586A9EF2B.jpeg",
+   "local": "images/leadership/8120301eb4d3.jpg"
+  },
+  {
+   "year": 2021,
+   "name": "Kamal Satuluru",
+   "role": "Chairman",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/19-kamalsatuluru.jpeg",
+   "local": "images/leadership/079379111cb4.jpg"
+  },
+  {
+   "year": 2021,
+   "name": "Sreeram Royyala",
+   "role": "Secretary",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/246-sreeramroyyala.jpeg",
+   "local": "images/leadership/2344c6304eae.jpg"
+  },
+  {
+   "year": 2021,
+   "name": "Siva Rama Krishna Devabhaktuni",
+   "role": "Treasurer",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/245-sivaramakrishnadevabhaktuni.jpeg",
+   "local": "images/leadership/85213c14beb6.jpg"
+  },
+  {
+   "year": 2021,
+   "name": "Praveen Boppana",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/251-1D9FC3C9EE.jpeg",
+   "local": "images/leadership/f754b7ffb39b.jpg"
+  },
+  {
+   "year": 2021,
+   "name": "Srinivas Uppu",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/22-srinivasuppu.jpeg",
+   "local": "images/leadership/b6e74a05d09a.jpg"
+  },
+  {
+   "year": 2021,
+   "name": "Rajasekhar Chunduri",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/16-rajasekharchunduri.jpeg",
+   "local": "images/leadership/82bbe96a15ce.jpg"
+  },
+  {
+   "year": 2021,
+   "name": "Madhukar Yarlagadda",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/252-CB71DF49CB.jpeg",
+   "local": "images/leadership/d046213eef85.jpg"
+  },
+  {
+   "year": 2021,
+   "name": "Nagesh Doddaka",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/17-3BB31DAA14.jpeg",
+   "local": "images/leadership/54be6c01de56.jpg"
+  },
+  {
+   "year": 2021,
+   "name": "Vijay Kothapalli",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/49-D586A9EF2B.jpeg",
+   "local": "images/leadership/8120301eb4d3.jpg"
+  },
+  {
+   "year": 2021,
+   "name": "Aditya Gali",
+   "role": "Board - Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/8-adityagali.jpeg",
+   "local": "images/leadership/c42ca2e3aaf0.jpg"
+  },
+  {
+   "year": 2022,
+   "name": "Sreeram Royyala",
+   "role": "Chairman",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/246-sreeramroyyala.jpeg",
+   "local": "images/leadership/2344c6304eae.jpg"
+  },
+  {
+   "year": 2022,
+   "name": "Subbarao Maddali",
+   "role": "Board Secretary",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/6-5F2D75B4DB.jpeg",
+   "local": "images/leadership/8b99dbd61c62.jpg"
+  },
+  {
+   "year": 2022,
+   "name": "Madhukar Yarlagadda",
+   "role": "Board Treasurer",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/252-CB71DF49CB.jpeg",
+   "local": "images/leadership/d046213eef85.jpg"
+  },
+  {
+   "year": 2022,
+   "name": "Kamal Satuluru",
+   "role": "Board Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/19-kamalsatuluru.jpeg",
+   "local": "images/leadership/079379111cb4.jpg"
+  },
+  {
+   "year": 2022,
+   "name": "Praveen Boppana",
+   "role": "Board Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/251-1D9FC3C9EE.jpeg",
+   "local": "images/leadership/f754b7ffb39b.jpg"
+  },
+  {
+   "year": 2022,
+   "name": "Innaiah Yenumula",
+   "role": "Board Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/4-innaiahyenumula.jpeg",
+   "local": "images/leadership/b0855c60aca8.jpg"
+  },
+  {
+   "year": 2022,
+   "name": "Nagesh Doddaka",
+   "role": "Board Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/17-3BB31DAA14.jpeg",
+   "local": "images/leadership/54be6c01de56.jpg"
+  },
+  {
+   "year": 2022,
+   "name": "Vijay Kothapalli",
+   "role": "Board Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/49-D586A9EF2B.jpeg",
+   "local": "images/leadership/8120301eb4d3.jpg"
+  },
+  {
+   "year": 2022,
+   "name": "Bharath Avirneni",
+   "role": "Board Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/13-bharathavirneni.jpeg",
+   "local": "images/leadership/f7bf6d2a64e4.jpg"
+  },
+  {
+   "year": 2022,
+   "name": "Anand Akkineni",
+   "role": "Board Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/18-anandakkineni.png",
+   "local": "images/leadership/889596792255.png"
+  },
+  {
+   "year": 2023,
+   "name": "Subbarao Maddali",
+   "role": "Board - Chairman",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/6-5F2D75B4DB.jpeg",
+   "local": "images/leadership/8b99dbd61c62.jpg"
+  },
+  {
+   "year": 2023,
+   "name": "Madhukar Yarlagadda",
+   "role": "Board - Secretary",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/252-CB71DF49CB.jpeg",
+   "local": "images/leadership/d046213eef85.jpg"
+  },
+  {
+   "year": 2023,
+   "name": "Srinivas Rao Uppu",
+   "role": "Board - Treasurer",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/262-8C9F26E268.jpeg",
+   "local": "images/leadership/c1bda8bd6f51.jpg"
+  },
+  {
+   "year": 2023,
+   "name": "Bharath Avirneni",
+   "role": "Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/13-bharathavirneni.jpeg",
+   "local": "images/leadership/f7bf6d2a64e4.jpg"
+  },
+  {
+   "year": 2023,
+   "name": "Innaiah Yenumula",
+   "role": "Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/4-innaiahyenumula.jpeg",
+   "local": "images/leadership/b0855c60aca8.jpg"
+  },
+  {
+   "year": 2023,
+   "name": "Praveen Boppana",
+   "role": "Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/251-1D9FC3C9EE.jpeg",
+   "local": "images/leadership/f754b7ffb39b.jpg"
+  },
+  {
+   "year": 2023,
+   "name": "Anand Akkineni",
+   "role": "Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/18-anandakkineni.png",
+   "local": "images/leadership/889596792255.png"
+  },
+  {
+   "year": 2023,
+   "name": "Vijay Kothapalli",
+   "role": "Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/49-D586A9EF2B.jpeg",
+   "local": "images/leadership/8120301eb4d3.jpg"
+  },
+  {
+   "year": 2023,
+   "name": "Raghava Tadavarthi",
+   "role": "Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/260-636CA7BB4B.jpeg",
+   "local": "images/leadership/b0b98c7fb3e3.jpg"
+  },
+  {
+   "year": 2023,
+   "name": "Pavan Devalapally",
+   "role": "Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/259-EFCA781173.jpeg",
+   "local": "images/leadership/ec7056d9bf1f.jpg"
+  },
+  {
+   "year": 2023,
+   "name": "Sai Ram Karumanchi",
+   "role": "Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/7-0C5BEBEED8.jpeg",
+   "local": "images/leadership/2acd061bdf06.jpg"
+  },
+  {
+   "year": 2024,
+   "name": "Srinivas Rao Uppu",
+   "role": "Board - Chairman",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/262-8C9F26E268.jpeg",
+   "local": "images/leadership/c1bda8bd6f51.jpg"
+  },
+  {
+   "year": 2024,
+   "name": "Raghava Tadavarthi",
+   "role": "Board - Treasurer",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/260-636CA7BB4B.jpeg",
+   "local": "images/leadership/b0b98c7fb3e3.jpg"
+  },
+  {
+   "year": 2024,
+   "name": "Inniah Yenumula",
+   "role": "Board - Secretary",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/191-BCBB9A403D.png",
+   "local": "images/leadership/53d8c0a897e4.png"
+  },
+  {
+   "year": 2024,
+   "name": "Sai Ram Karumanchi",
+   "role": "Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/7-0C5BEBEED8.jpeg",
+   "local": "images/leadership/2acd061bdf06.jpg"
+  },
+  {
+   "year": 2024,
+   "name": "Ravi Kalli",
+   "role": "Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/9-ravikalli.png",
+   "local": "images/leadership/7a6476fc5ab8.png"
+  },
+  {
+   "year": 2024,
+   "name": "Nagesh Doddaka",
+   "role": "Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/17-3BB31DAA14.jpeg",
+   "local": "images/leadership/54be6c01de56.jpg"
+  },
+  {
+   "year": 2024,
+   "name": "Madhukar Yarlagadda",
+   "role": "Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/252-CB71DF49CB.jpeg",
+   "local": "images/leadership/d046213eef85.jpg"
+  },
+  {
+   "year": 2024,
+   "name": "Yaswanth Jonnalagadda",
+   "role": "Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/247-8DB054E913.jpeg",
+   "local": "images/leadership/0d13494047ca.jpg"
+  },
+  {
+   "year": 2024,
+   "name": "Pavan Devalapally",
+   "role": "Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/259-EFCA781173.jpeg",
+   "local": "images/leadership/ec7056d9bf1f.jpg"
+  },
+  {
+   "year": 2024,
+   "name": "Praveen Boppana",
+   "role": "Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/251-1D9FC3C9EE.jpeg",
+   "local": "images/leadership/f754b7ffb39b.jpg"
+  },
+  {
+   "year": 2025,
+   "name": "Raghava Tadavarthi",
+   "role": "Chairman",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/260-636CA7BB4B.jpeg",
+   "local": "images/leadership/b0b98c7fb3e3.jpg"
+  },
+  {
+   "year": 2025,
+   "name": "Yaswanth Jonnalagadda",
+   "role": "Board Secretary",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/247-8DB054E913.jpeg",
+   "local": "images/leadership/0d13494047ca.jpg"
+  },
+  {
+   "year": 2025,
+   "name": "Ravi Kalli",
+   "role": "Board Treasurer",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/9-ravikalli.png",
+   "local": "images/leadership/7a6476fc5ab8.png"
+  },
+  {
+   "year": 2025,
+   "name": "Priya Balusu",
+   "role": "Board of Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/5-priyabalusu.jpeg",
+   "local": "images/leadership/ba8305851763.jpg"
+  },
+  {
+   "year": 2025,
+   "name": "Pavan Devalapally",
+   "role": "Board of Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/259-EFCA781173.jpeg",
+   "local": "images/leadership/ec7056d9bf1f.jpg"
+  },
+  {
+   "year": 2025,
+   "name": "Venkat Meesala",
+   "role": "Board of Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/272-42C45A1463.jpeg",
+   "local": "images/leadership/d2c8ef2d9eb3.jpg"
+  },
+  {
+   "year": 2025,
+   "name": "Ramki Chowdarapu",
+   "role": "Board of Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/273-554CDBCAC7.jpeg",
+   "local": "images/leadership/344b605476c7.jpg"
+  },
+  {
+   "year": 2025,
+   "name": "Sai Ram Karumanchi",
+   "role": "Board of Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/7-0C5BEBEED8.jpeg",
+   "local": "images/leadership/2acd061bdf06.jpg"
+  },
+  {
+   "year": 2025,
+   "name": "Nagesh Doddaka",
+   "role": "Board of Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/17-3BB31DAA14.jpeg",
+   "local": "images/leadership/54be6c01de56.jpg"
+  },
+  {
+   "year": 2025,
+   "name": "Venkat Terala",
+   "role": "Board of Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/274-B762B4E890.jpeg",
+   "local": "images/leadership/6b0061861595.jpg"
+  },
+  {
+   "year": 2026,
+   "name": "Madhukar Yarlagadda",
+   "role": "Chairman",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/252-CB71DF49CB.jpeg",
+   "local": "images/leadership/d046213eef85.jpg"
+  },
+  {
+   "year": 2026,
+   "name": "Priya Balusu",
+   "role": "Board Secretary",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/5-priyabalusu.jpeg",
+   "local": "images/leadership/ba8305851763.jpg"
+  },
+  {
+   "year": 2026,
+   "name": "Venkat Terala",
+   "role": "Board Treasurer",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/274-B762B4E890.jpeg",
+   "local": "images/leadership/6b0061861595.jpg"
+  },
+  {
+   "year": 2026,
+   "name": "Nagesh Doddaka",
+   "role": "Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/17-3BB31DAA14.jpeg",
+   "local": "images/leadership/54be6c01de56.jpg"
+  },
+  {
+   "year": 2026,
+   "name": "Raghava Tadavarthi",
+   "role": "Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/260-636CA7BB4B.jpeg",
+   "local": "images/leadership/b0b98c7fb3e3.jpg"
+  },
+  {
+   "year": 2026,
+   "name": "Ramki Chowdarapu",
+   "role": "Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/273-554CDBCAC7.jpeg",
+   "local": "images/leadership/344b605476c7.jpg"
+  },
+  {
+   "year": 2026,
+   "name": "Sai Ram Karumanchi",
+   "role": "Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/7-0C5BEBEED8.jpeg",
+   "local": "images/leadership/2acd061bdf06.jpg"
+  },
+  {
+   "year": 2026,
+   "name": "Suresh Yadagiri",
+   "role": "Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/269-061D73C295.jpeg",
+   "local": "images/leadership/c37385238d84.jpg"
+  },
+  {
+   "year": 2026,
+   "name": "Venkat Meesala",
+   "role": "Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/272-42C45A1463.jpeg",
+   "local": "images/leadership/d2c8ef2d9eb3.jpg"
+  },
+  {
+   "year": 2026,
+   "name": "Yaswanth Jonnalagadda",
+   "role": "Director",
+   "photo": "https://www.tama.org/Content/committees/thumbphoto/247-8DB054E913.jpeg",
+   "local": "images/leadership/0d13494047ca.jpg"
+  }
+ ]
+}
