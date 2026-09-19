@@ -1,0 +1,169 @@
+{
+ "tiers": [
+  {
+   "tier": "Platinum Sponsors",
+   "sponsors": [
+    {
+     "name": "",
+     "logo": "https://www.tama.org/Content/Sponsors/148-jan320261054am.jpeg",
+     "local": "images/sponsors/b2b14ba86c12.jpg"
+    }
+   ]
+  },
+  {
+   "tier": "Gold Sponsors",
+   "sponsors": [
+    {
+     "name": "",
+     "logo": "https://www.tama.org/Content/Sponsors/149-jan32026417pm.jpeg",
+     "local": "images/sponsors/ede253732d5d.jpg"
+    },
+    {
+     "name": "",
+     "logo": "https://www.tama.org/Content/Sponsors/158-jan32026452pm.jpeg",
+     "local": "images/sponsors/03d3b6ae8873.jpg"
+    },
+    {
+     "name": "",
+     "logo": "https://www.tama.org/Content/Sponsors/168-feb202026520pm.png",
+     "local": "images/sponsors/c4de5437af86.png"
+    },
+    {
+     "name": "",
+     "logo": "https://www.tama.org/Content/Sponsors/162-mar62026614pm.png",
+     "local": "images/sponsors/674caf6ab11f.png"
+    },
+    {
+     "name": "",
+     "logo": "https://www.tama.org/Content/Sponsors/163-mar62026616pm.png",
+     "local": "images/sponsors/23ca76b82db8.png"
+    },
+    {
+     "name": "",
+     "logo": "https://www.tama.org/Content/Sponsors/174-mar272026834pm.jpeg",
+     "local": "images/sponsors/1267bd613359.jpg"
+    }
+   ]
+  },
+  {
+   "tier": "Silver Sponsors",
+   "sponsors": [
+    {
+     "name": "",
+     "logo": "https://www.tama.org/Content/Sponsors/164-feb72026754pm.jpeg",
+     "local": "images/sponsors/be82592f9092.jpg"
+    },
+    {
+     "name": "",
+     "logo": "https://www.tama.org/Content/Sponsors/166-mar102026638pm.jpeg",
+     "local": "images/sponsors/d94f9f37b46f.jpg"
+    },
+    {
+     "name": "",
+     "logo": "https://www.tama.org/Content/Sponsors/175-apr102026533pm.jpeg",
+     "local": "images/sponsors/3d76fb7709fc.jpg"
+    }
+   ]
+  },
+  {
+   "tier": "Bronze Sponsors",
+   "sponsors": [
+    {
+     "name": "",
+     "logo": "https://www.tama.org/Content/Sponsors/151-jan32026438pm.jpeg",
+     "local": "images/sponsors/fbf01f50bc8e.jpg"
+    },
+    {
+     "name": "",
+     "logo": "https://www.tama.org/Content/Sponsors/152-jan32026438pm.jpeg",
+     "local": "images/sponsors/0b7fb4abd17a.jpg"
+    },
+    {
+     "name": "",
+     "logo": "https://www.tama.org/Content/Sponsors/153-jan32026439pm.jpeg",
+     "local": "images/sponsors/ddc0f2339fe0.jpg"
+    },
+    {
+     "name": "",
+     "logo": "https://www.tama.org/Content/Sponsors/155-jan32026451pm.jpeg",
+     "local": "images/sponsors/6d7e7d2a0929.jpg"
+    },
+    {
+     "name": "",
+     "logo": "https://www.tama.org/Content/Sponsors/156-jan32026451pm.jpeg",
+     "local": "images/sponsors/a85bd2db02c0.jpg"
+    },
+    {
+     "name": "",
+     "logo": "https://www.tama.org/Content/Sponsors/157-jan32026451pm.jpeg",
+     "local": "images/sponsors/2807bde0780d.jpg"
+    },
+    {
+     "name": "",
+     "logo": "https://www.tama.org/Content/Sponsors/159-jan262026734am.jpeg",
+     "local": "images/sponsors/982ba7162f30.jpg"
+    },
+    {
+     "name": "",
+     "logo": "https://www.tama.org/Content/Sponsors/160-jan262026737am.jpeg",
+     "local": "images/sponsors/f9264680165e.jpg"
+    },
+    {
+     "name": "",
+     "logo": "https://www.tama.org/Content/Sponsors/167-feb132026517pm.jpeg",
+     "local": "images/sponsors/0ac2e7cf4351.jpg"
+    },
+    {
+     "name": "",
+     "logo": "https://www.tama.org/Content/Sponsors/169-feb212026744am.jpeg",
+     "local": "images/sponsors/fe0c2dca5f68.jpg"
+    },
+    {
+     "name": "",
+     "logo": "https://www.tama.org/Content/Sponsors/170-feb212026744am.jpeg",
+     "local": "images/sponsors/34385d785a09.jpg"
+    },
+    {
+     "name": "",
+     "logo": "https://www.tama.org/Content/Sponsors/172-mar132026715pm.jpeg",
+     "local": "images/sponsors/a77ff12c158e.jpg"
+    },
+    {
+     "name": "",
+     "logo": "https://www.tama.org/Content/Sponsors/173-mar132026716pm.jpeg",
+     "local": "images/sponsors/ef544f9d66d4.jpg"
+    }
+   ]
+  },
+  {
+   "tier": "Media Sponsors",
+   "sponsors": [
+    {
+     "name": "",
+     "logo": "https://www.tama.org/Content/Sponsors/47-aug1220211133am.jpeg",
+     "local": "images/sponsors/63a21411ac4c.jpg"
+    }
+   ]
+  },
+  {
+   "tier": "CMS Sponsor",
+   "sponsors": [
+    {
+     "name": "",
+     "logo": "https://www.tama.org/Content/Sponsors/161-jan262026741am.png",
+     "local": "images/sponsors/9f4cd9902aed.png"
+    }
+   ]
+  },
+  {
+   "tier": "Guiding Partner",
+   "sponsors": [
+    {
+     "name": "",
+     "logo": "https://www.tama.org/Content/Sponsors/171-feb232026426pm.jpeg",
+     "local": "images/sponsors/3c78ef0ce38c.jpg"
+    }
+   ]
+  }
+ ]
+}
