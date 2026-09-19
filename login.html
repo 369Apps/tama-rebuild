@@ -153,7 +153,10 @@
     })
       .then(function (r) { return r.json(); })
       .then(function (data) {
-        if (data.ok) {
+        if (data.ok && data.emailed === false) {
+          errBox2.textContent = "Email is not set up yet, so the link cannot be sent. Please contact the TAMA committee.";
+          errBox2.classList.add("show");
+        } else if (data.ok) {
           okBox.textContent = "If that email is a TAMA member, a set-password link is on its way. Check your inbox.";
           okBox.classList.add("show");
         } else {
