@@ -34,6 +34,10 @@ a{color:var(--orange)}
   font-size:13px;font-weight:600;padding:9px 16px;
 }
 
+/* org banner: big TAMA header with Telugu name */
+.org-banner{background:#fff;border-bottom:3px solid var(--gold);padding:10px 16px 8px}
+.org-banner img{display:block;width:100%;max-width:940px;height:auto;margin:0 auto}
+
 /* sticky header */
 .site-header{
   position:sticky;top:0;z-index:50;
