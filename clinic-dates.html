@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clinic Dates - Telugu Association of Metro Atlanta (TAMA)</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="logo.png">
+<meta name="theme-color" content="#952b71">
+<meta name="description" content="TAMA Free Clinic upcoming dates. All clinics run 7:00 PM - 9:00 PM every Wednesday. Walk-ins welcome but registration is preferred.">
+</head>
+<body>
+<div class="preview-note">Draft rebuild preview. Not the live tama.org.</div>
+<header class="site-header">
+  <div class="wrap head-row">
+    <a class="brand" href="index.html">
+      <img class="brand-logo" src="logo.png" alt="TAMA logo">
+      <span class="brand-text">Telugu Association<br>of Metro Atlanta</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="events.html">Events</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="membership.html">Membership</a>
+      <a href="clinic.html" class="active">Free Clinic</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Member Login</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow on-dark">Free Community Health Services</p>
+      <h1>TAMA Free Clinic</h1>
+      <p>Medical, dental, and tele-dental services for the Telugu community in Metro Atlanta &mdash; provided at no cost.</p>
+    </div>
+  </div>
+  <div class="garland" aria-hidden="true"></div>
+
+  <section class="band">
+    <div class="wrap">
+      <p class="eyebrow">Upcoming clinic dates</p>
+      <h2>Pick a date and register below</h2>
+      <p class="body-copy">Walk-ins welcome but registration is preferred.</p>
+      <div class="date-grid" id="dateGrid" role="list"></div>
+      <p class="body-copy">All clinics run 7:00 PM &ndash; 9:00 PM every Wednesday</p>
+      <div class="scroll-cta" id="scrollCta" style="display:none">
+        <a class="btn btn-gold" href="#registrationForm" id="registerBtn">Register for <span id="selectedDateText">&mdash;</span> &darr;</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="band tint" id="register">
+    <div class="wrap">
+      <p class="eyebrow">Patient registration</p>
+      <h2>Register for the free clinic</h2>
+      <p class="body-copy">Fill out the form below. A clinic coordinator will contact you to confirm your appointment.</p>
+
+      <form class="auth-form" id="registrationForm" novalidate>
+        <div class="form-sec">
+          <h2 class="form-sec-h">Select Your Service(s)</h2>
+          <div class="form-sec-b">
+            <p class="field-label">What service(s) do you need? <span class="req">*</span></p>
+            <div class="svc-grid" role="group" aria-label="Services">
+              <label class="svc-card">
+                <input type="checkbox" name="service" value="Medical Clinic">
+                <span><span class="svc-t">&#129657; Medical Clinic</span><br><span class="svc-s">In-person visit</span></span>
+              </label>
+              <label class="svc-card">
+                <input type="checkbox" name="service" value="Dental">
+                <span><span class="svc-t">&#129463; Dental</span><br><span class="svc-s">In-person visit</span></span>
+              </label>
+              <label class="svc-card">
+                <input type="checkbox" name="service" value="Tele-Dental">
+                <span><span class="svc-t">&#128241; Tele-Dental</span><br><span class="svc-s">Virtual consultation</span></span>
+              </label>
+            </div>
+            <p class="svc-hint">You can select more than one service</p>
+            <p class="field-err" id="err-service">Please select at least one service</p>
+          </div>
+        </div>
+
+        <div class="form-sec">
+          <h2 class="form-sec-h">Patient Information</h2>
+          <div class="form-sec-b">
+            <label for="firstName">First Name <span class="req">*</span></label>
+            <input id="firstName" name="firstName" type="text" placeholder="Patient first name" autocomplete="given-name">
+            <p class="field-err" id="err-firstName">Please enter first name</p>
+            <label for="lastName">Last Name <span class="req">*</span></label>
+            <input id="lastName" name="lastName" type="text" placeholder="Patient last name" autocomplete="family-name">
+            <p class="field-err" id="err-lastName">Please enter last name</p>
+          </div>
+        </div>
+
+        <div class="form-sec">
+          <h2 class="form-sec-h">Representative / Emergency Contact</h2>
+          <div class="form-sec-b">
+            <label for="repFirst">Rep. First Name <span class="req">*</span></label>
+            <input id="repFirst" name="repFirst" type="text" placeholder="Representative first name" autocomplete="given-name">
+            <p class="field-err" id="err-repFirst">Please enter representative first name</p>
+            <label for="repLast">Rep. Last Name <span class="req">*</span></label>
+            <input id="repLast" name="repLast" type="text" placeholder="Representative last name" autocomplete="family-name">
+            <p class="field-err" id="err-repLast">Please enter representative last name</p>
+          </div>
+        </div>
+
+        <div class="form-sec">
+          <h2 class="form-sec-h">Contact Details</h2>
+          <div class="form-sec-b">
+            <label for="phone">Contact Number <span class="req">*</span></label>
+            <input id="phone" name="phone" type="tel" placeholder="(555) 123-4567" autocomplete="tel" inputmode="tel">
+            <p class="field-err" id="err-phone">Please enter a phone number</p>
+            <label for="email">Contact Email <span class="req">*</span></label>
+            <input id="email" name="email" type="email" placeholder="you@email.com" autocomplete="email" inputmode="email">
+            <p class="field-err" id="err-email">Please enter a valid email</p>
+          </div>
+        </div>
+
+        <div class="form-sec">
+          <h2 class="form-sec-h">Medical Information</h2>
+          <div class="form-sec-b">
+            <p class="field-label">Are you currently on any medication? <span class="req">*</span></p>
+            <div class="radio-row" role="radiogroup" aria-label="Currently on any medication">
+              <label class="radio-pill"><input type="radio" name="meds" value="Yes"> Yes</label>
+              <label class="radio-pill"><input type="radio" name="meds" value="No"> No</label>
+            </div>
+            <p class="field-err" id="err-meds">Please select Yes or No</p>
+            <label for="issues">Issue Details / Current Medications</label>
+            <textarea id="issues" name="issues" placeholder="Describe your health concern and list any current medications..."></textarea>
+          </div>
+        </div>
+
+        <div class="form-sec">
+          <h2 class="form-sec-h">Select Visit Date</h2>
+          <div class="form-sec-b">
+            <label for="visitDate">Which Wednesday? <span class="req">*</span></label>
+            <select id="visitDate" name="visitDate">
+              <option value="">Select a Wednesday</option>
+            </select>
+            <p class="field-err" id="err-visitDate">Please select a clinic date</p>
+            <p class="svc-hint"><strong>Please note:</strong> Report between 7:00 PM &ndash; 7:30 PM. Please bring current medications and any medical reports to your visit.</p>
+          </div>
+        </div>
+
+        <div class="form-sec">
+          <h2 class="form-sec-h">Consent</h2>
+          <div class="form-sec-b">
+            <div class="consent-box">
+              <p><strong>TAMA Free Clinic &mdash; Patient Consent</strong></p>
+              <p>I understand that the TAMA Free Clinic provides free community health services staffed by volunteer healthcare professionals. I consent to receive the selected medical or dental services. I understand that this clinic does not replace regular primary care and is intended for community health support. I agree to provide accurate health information to ensure safe and effective care. My personal and health information will be kept confidential and used only for the purpose of providing clinic services and follow-up communication.</p>
+            </div>
+            <label class="consent-check">
+              <input type="checkbox" id="consent" name="consent">
+              <span>I have read and agree to the patient consent above. <span class="req">*</span></span>
+            </label>
+            <p class="field-err" id="err-consent">Please agree to the patient consent to continue</p>
+          </div>
+        </div>
+
+        <button class="btn btn-gold btn-block" type="submit" id="regSubmit">Register for Clinic</button>
+        <p class="lock-note">&#128274; Your information is confidential and used only for clinic scheduling purposes.</p>
+        <div class="notice info" id="regNotice" role="status"></div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<div class="garland" aria-hidden="true"></div>
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>Telugu Association of Metro Atlanta</strong> &middot; Serving Telugu families in metro Atlanta since 1981.</p>
+    <p class="footer-links"><a href="clinic.html">Free Clinic</a> &middot; <a href="clinic-dates.html">Clinic Dates</a> &middot; <a href="clinic-volunteer.html">Volunteer</a> &middot; <a href="clinic-donations.html">Donate</a></p>
+    <p class="fine">This is a draft preview of a rebuilt tama.org. Content is based on public sources. Details are marked for review by the TAMA committee before going live.</p>
+  </div>
+</footer>
+
+<nav class="mobile-cta" aria-label="Quick actions">
+  <a class="btn btn-gold" href="https://www.tama.org/member-registration">Join TAMA</a>
+  <a class="btn btn-outline" href="events.html">Events</a>
+</nav>
+
+<script>
+(function(){
+  // Next 8 Wednesdays (same rule as the current site: never today, always the coming Wednesday).
+  var grid = document.getElementById('dateGrid');
+  var sel = document.getElementById('visitDate');
+  var d = new Date();
+  var daysUntilWed = (3 - d.getDay() + 7) % 7;
+  if (daysUntilWed === 0) daysUntilWed = 7;
+  d.setDate(d.getDate() + daysUntilWed);
+  var wednesdays = [];
+  for (var i = 0; i < 8; i++) {
+    wednesdays.push(new Date(d));
+    d.setDate(d.getDate() + 7);
+  }
+
+  wednesdays.forEach(function(wed){
+    var iso = wed.toISOString().split('T')[0];
+    var monthShort = wed.toLocaleDateString('en-US', {month:'short'});
+    var monthLong = wed.toLocaleDateString('en-US', {month:'long'});
+    var dayNum = wed.getDate();
+    var year = wed.getFullYear();
+    var label = 'Wednesday, ' + monthLong + ' ' + dayNum + ', ' + year;
+
+    var opt = document.createElement('option');
+    opt.value = iso;
+    opt.textContent = label;
+    sel.appendChild(opt);
+
+    var card = document.createElement('div');
+    card.className = 'date-card';
+    card.setAttribute('role', 'listitem');
+    card.setAttribute('tabindex', '0');
+    card.setAttribute('aria-label', label + ', 7:00 to 9:00 PM');
+    card.innerHTML =
+      '<div class="dc-m">' + monthShort.toUpperCase() + ' ' + year + '</div>' +
+      '<div class="dc-d">' + dayNum + '</div>' +
+      '<div class="dc-w">Wednesday</div>' +
+      '<div class="dc-t">7:00 &ndash; 9:00 PM</div>';
+    function pick(){
+      grid.querySelectorAll('.date-card').forEach(function(c){ c.classList.remove('sel'); });
+      card.classList.add('sel');
+      sel.value = iso;
+      document.getElementById('scrollCta').style.display = 'block';
+      document.getElementById('selectedDateText').textContent = label;
+    }
+    card.addEventListener('click', pick);
+    card.addEventListener('keydown', function(e){ if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pick(); } });
+    grid.appendChild(card);
+  });
+
+  // Highlight selected service / radio cards.
+  document.querySelectorAll('.svc-card input, .radio-pill input').forEach(function(inp){
+    inp.addEventListener('change', function(){
+      var card = inp.closest('.svc-card, .radio-pill');
+      if (inp.type === 'radio') {
+        card.parentElement.querySelectorAll('.radio-pill').forEach(function(p){ p.classList.remove('on'); });
+      }
+      card.classList.toggle('on', inp.checked);
+    });
+  });
+
+  function showErr(id){ var el = document.getElementById(id); if (el) el.classList.add('show'); }
+  function clearErrs(){ document.querySelectorAll('.field-err.show').forEach(function(e){ e.classList.remove('show'); }); }
+
+  document.getElementById('registrationForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    clearErrs();
+    var ok = true;
+    function need(cond, id){ if (!cond) { showErr(id); ok = false; } }
+
+    need(document.querySelectorAll('input[name="service"]:checked').length > 0, 'err-service');
+    need(document.getElementById('firstName').value.trim() !== '', 'err-firstName');
+    need(document.getElementById('lastName').value.trim() !== '', 'err-lastName');
+    need(document.getElementById('repFirst').value.trim() !== '', 'err-repFirst');
+    need(document.getElementById('repLast').value.trim() !== '', 'err-repLast');
+    need(document.getElementById('phone').value.trim() !== '', 'err-phone');
+    var email = document.getElementById('email').value.trim();
+    need(email !== '' && /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email), 'err-email');
+    need(document.querySelector('input[name="meds"]:checked') !== null, 'err-meds');
+    need(document.getElementById('visitDate').value !== '', 'err-visitDate');
+    need(document.getElementById('consent').checked, 'err-consent');
+
+    var notice = document.getElementById('regNotice');
+    if (!ok) {
+      notice.className = 'notice error show';
+      notice.textContent = 'Please fix the highlighted fields above and try again.';
+      notice.scrollIntoView({behavior:'smooth', block:'center'});
+      return;
+    }
+    // Backend (Cloudflare Worker) is not deployed yet: no data is sent anywhere.
+    notice.className = 'notice info show';
+    notice.innerHTML = 'Online registration on the new system is coming soon. The clinic runs every Wednesday, 7:00 PM &ndash; 9:00 PM. Questions? Visit <a href="https://www.tama.org">tama.org</a>.';
+    notice.scrollIntoView({behavior:'smooth', block:'center'});
+  });
+})();
+</script>
+</body>
+</html>
