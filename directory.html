@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Business Directory - Telugu Association of Metro Atlanta (TAMA)</title>
+<link rel="stylesheet" href="styles.css?v=4">
+<link rel="icon" href="logo.png">
+<meta name="theme-color" content="#952b71">
+</head>
+<body>
+<div class="preview-note">Draft rebuild preview. Not the live tama.org.</div>
+<div class="org-banner"><a class="org-brand" href="index.html"><img class="org-emblem" src="logo.png" alt="TAMA emblem" fetchpriority="high"><img class="org-name" src="logo-right.png" alt="Telugu Association of Metro Atlanta — అట్లాంటా తెలుగు సంఘం" fetchpriority="high"></a></div>
+<header class="site-header">
+  <div class="wrap head-row">
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <div class="nav-item"><a href="about.html" aria-haspopup="true">About Us</a><div class="drop" role="menu"><a href="about.html">Who we are</a><a href="executive-committee.html">Executive Committee</a><a href="board-of-directors.html">Board of Directors</a><a href="adhoc-committees.html">Ad Hoc Committees</a><a href="bylaws.html">Bylaws</a><a href="financials.html">Financials</a><a href="meeting-minutes.html">Meeting Minutes</a><a href="elections.html">Elections</a></div></div>
+      <div class="nav-item"><a href="activities.html" aria-haspopup="true">Activities</a><div class="drop" role="menu"><a href="activities.html">Activities home</a><a href="kalasala.html">Kalasala</a><a href="scholarship.html">Scholarship</a><a href="manabadi.html">Manabadi</a><a href="about-manabadi.html">About Manabadi</a><a href="locations-teachers.html">Locations & Teachers</a></div></div>
+      <a href="events.html">Events</a>
+      <div class="nav-item"><a href="gallery.html" aria-haspopup="true">Media</a><div class="drop" role="menu"><a href="gallery.html">Photo Gallery</a><a href="videos.html">Videos</a><a href="magazine.html">Magazine</a></div></div>
+      <a href="digital-library.html">Digital Library</a>
+      <a href="directory.html" class="active">Directory</a>
+      <a href="membership.html">Membership</a>
+      <a href="clinic.html">Free Clinic</a>
+      <div class="nav-item"><a href="sponsor-a-program.html" aria-haspopup="true">Support Us</a><div class="drop" role="menu"><a href="sponsor-a-program.html">Sponsor a program</a><a href="sponsors.html">Sponsors</a><a href="volunteers-list.html">Volunteers List</a></div></div>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Member Login</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow on-dark">Community</p>
+      <h1>Business Directory</h1>
+      <p>Telugu and community businesses in metro Atlanta, as listed on tama.org.</p>
+    </div>
+  </div>
+  <div class="garland" aria-hidden="true"></div>
+
+  <section class="band">
+    <div class="wrap">
+
+      <div class="filter-bar">
+        <label for="catSel">Category</label>
+        <select id="catSel"><option value="all">All categories</option></select>
+        <label for="q">Search</label>
+        <input type="search" id="q" placeholder="Business name" autocomplete="off">
+        <span class="filter-count" id="count"></span>
+      </div>
+      <div class="dir-grid" id="grid"></div>
+      <div class="empty-state" id="empty" style="display:none">No businesses found. Try a different category or search.</div>
+<script>
+var DATA = {
+ "categories": [
+  "Accounting",
+  "Airports/Parking",
+  "Clothing/Jewelers",
+  "Daycare",
+  "Education",
+  "Event Decorators",
+  "Event Halls",
+  "Grocery Store",
+  "IT Companies",
+  "Insurance",
+  "Physicians",
+  "Realtors",
+  "Restaurants",
+  "Sound & DJ's",
+  "Sports Clubs"
+ ],
+ "businesses": [
+  {
+   "category": "Grocery Store",
+   "name": "Sai Market LLC",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/6-saimarketllc.gif",
+   "details": [
+    "3030 Old Atlanta Rd #100",
+    "(770) 888-6379"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/b965d9aae7e1.jpg"
+  },
+  {
+   "category": "Grocery Store",
+   "name": "Cherians International Groceries",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/7-cheriansinternationalgroceries.gif",
+   "details": [
+    "751 Dekalb Industrial Way Building #4, Decatur, GA 30033",
+    "(404) 299-0842"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/e57bdc88b43e.jpg"
+  },
+  {
+   "category": "Grocery Store",
+   "name": "Patel Brothers",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/2-patelbrothers.gif",
+   "details": [
+    "3230 Caliber St Suite B 100, Suwanee, GA 30024",
+    "(770) 781-6557"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/e806934ccb33.jpg"
+  },
+  {
+   "category": "Grocery Store",
+   "name": "Spices Hut Indian Groceries",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/5-spiceshutindiangroceries.gif",
+   "details": [
+    "4150 Old Milton Pkwy #124, Alpharetta, GA 30005",
+    "(770) 410-9477"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/e169dcd1f222.jpg"
+  },
+  {
+   "category": "Grocery Store",
+   "name": "Suvidha Indo-Pak Groceries",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/4-4150oldmiltonpkwy124alpharettaga30005.gif",
+   "details": [
+    "3495 Peachtree Pkwy #105, Suwanee, GA 30024",
+    "(770) 292-1992"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/92ecc2221524.jpg"
+  },
+  {
+   "category": "Grocery Store",
+   "name": "India Plaza",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/14-indiaplaza.gif",
+   "details": [
+    "2905 Jordan Ct, Alpharetta, GA 30004",
+    "(678) 867-0388"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/5345d30fe7f3.jpg"
+  },
+  {
+   "category": "Grocery Store",
+   "name": "Cherians International Fresh Market",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/8-cheriansinternationalfreshmarket.gif",
+   "details": [
+    "2255 Callaway Ct, Cumming, GA 30041",
+    "(770) 888-4141"
+   ],
+   "website": "http://cherians.com",
+   "email": "",
+   "local": "images/directory/ee90d12d183e.jpg"
+  },
+  {
+   "category": "Restaurants",
+   "name": "Persis Biryani Indian Grill",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/1-persisbiryaniindiangrill.gif",
+   "details": [
+    "631 N Main St, Alpharetta, GA 30009",
+    "(678) 395-5457"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/be99e52742a0.jpg"
+  },
+  {
+   "category": "Restaurants",
+   "name": "Sankranti FineDining Restaurant & Banquets",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/3-sankrantiindianandintercontinentalfinediningrestaurantbanquets.gif",
+   "details": [
+    "2000 Ray Moss Connector, Johns Creek, GA 30022",
+    "(770) 242-6899"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/aca27bfa6eb1.jpg"
+  },
+  {
+   "category": "Restaurants",
+   "name": "Bawarchi Biryani Point - Alpharetta",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/9-bawarchibiryanipointalpharetta.gif",
+   "details": [
+    "2500 North Point Ct, Alpharetta, GA 30022",
+    "(770) 558-1567"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/e87593d2da28.jpg"
+  },
+  {
+   "category": "Restaurants",
+   "name": "Kumari kitchen",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/10-kumarikitchen.gif",
+   "details": [
+    "13020 Morris Rd ste j,Alpharetta, GA- 30004",
+    "(770) 921-5727"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/4280d51007c6.jpg"
+  },
+  {
+   "category": "Restaurants",
+   "name": "Hot Breads",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/11-hotbreads.gif",
+   "details": [
+    "5530 Windward Pkwy W #1070, Alpharetta, GA 30004",
+    "(770) 442-9066"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/7541506222cf.jpg"
+  },
+  {
+   "category": "Restaurants",
+   "name": "Godavari Atlanta",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/12-godavariatlanta.gif",
+   "details": [
+    "865 N Main St #108, Alpharetta, GA 30004",
+    "(678) 579-5985"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/9e86e5fcb4b0.jpg"
+  },
+  {
+   "category": "Restaurants",
+   "name": "Kakatiya Indian Kitchen",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/13-kakatiyaindiankitchen.gif",
+   "details": [
+    "2905 Jordan Ct A, Alpharetta, GA 30004",
+    "(470) 336-7050"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/4e727d185ce9.jpg"
+  },
+  {
+   "category": "Restaurants",
+   "name": "Cafe Bahar Biryani and Grill",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/15-cafebaharbiryaniandgrill.gif",
+   "details": [
+    "4090 Johns Creek Pkwy, Suwanee, GA 30024",
+    "(470) 422-7227"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/c8f4f5147dba.jpg"
+  },
+  {
+   "category": "Restaurants",
+   "name": "Mayuri Indian Grill",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/16-mayuriindiangrill.gif",
+   "details": [
+    "5354 McGinnis Ferry Rd # 226 A, Alpharetta, GA 30005",
+    "(470) 709-5026"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/27a11574caff.jpg"
+  },
+  {
+   "category": "Restaurants",
+   "name": "Aachi's Indian Restaurant and Bakery",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/17-aachisindianrestaurantandbakery.gif",
+   "details": [
+    "11550 Jones Bridge Rd, Johns Creek, GA 30022",
+    "(770) 687-2879"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/5a5d7086b98f.jpg"
+  },
+  {
+   "category": "Restaurants",
+   "name": "Nilgiri's Bakery & Cafe",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/18-nilgirisbakerycafe.gif",
+   "details": [
+    "2569 Peachtree Pkwy Suite# 260, Cumming, GA 30041",
+    "(470) 253-7678"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/1a2f971f4340.jpg"
+  },
+  {
+   "category": "Restaurants",
+   "name": "Cake World",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/19-cakeworld.gif",
+   "details": [
+    "12890 GA-9 #110, Alpharetta, GA 30004",
+    "(770) 751-9990"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/14b9d37ad7ad.jpg"
+  },
+  {
+   "category": "Restaurants",
+   "name": "Sri Krishna Vilas",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/38-srikrishnavilas.png",
+   "details": [
+    "2255 Callaway Ct, Cumming, GA 30041",
+    "(470) 239-8804"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/f1c16c08e79c.png"
+  },
+  {
+   "category": "Physicians",
+   "name": "Roswell Dental",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/24-roswelldental.png",
+   "details": [
+    "910 Woodstock Rd STE 110 Roswell, GA 30075",
+    "(770) 238-1209"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/f09eaf4347d1.png"
+  },
+  {
+   "category": "Physicians",
+   "name": "Parsons Pointe Dental Care",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/27-parsonspointedentalcare.png",
+   "details": [
+    "11255 Parsons Rd Suite 100 Johns Creek, GA 30097",
+    "(770) 569-1350"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/a9fb16d95eb3.png"
+  },
+  {
+   "category": "Realtors",
+   "name": "Sekhars Realty",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/20-sekharsrealty.gif",
+   "details": [
+    "3860 Windermere Pkwy #205, Cumming, GA 30041",
+    "(404) 808-9978"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/0bc586625402.jpg"
+  },
+  {
+   "category": "Realtors",
+   "name": "GVR Realty",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/21-gvrrealty.png",
+   "details": [
+    "5470 McGinnis Village Pl, Alpharetta, GA 30005",
+    "(678) 528-1806"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/f742a5fea27f.png"
+  },
+  {
+   "category": "Realtors",
+   "name": "Dream Realty Group, LLC.",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/profile.jpg",
+   "details": [
+    "6420 Westfallen Overlook",
+    "8563438431",
+    "satyasgadde@yahoo.com"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/bcec0edfcbb3.jpg"
+  },
+  {
+   "category": "Accounting",
+   "name": "reddycpa",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/26-reddycpa.png",
+   "details": [
+    "255 Peachtree Pkwy, Cumming, GA 30041",
+    "(770) 599-5111"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/f7d555c3eb17.png"
+  },
+  {
+   "category": "Accounting",
+   "name": "MyTaxFiler",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/30-mytaxfiler.png",
+   "details": [
+    "480 N Main St Suite 216, Alpharetta, GA 30009",
+    "(770) 748-8019"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/dade5ec6249c.png"
+  },
+  {
+   "category": "Sound & DJ's",
+   "name": "Trendy Events - DJ Tillu",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/22-trendyeventsdjtillu.jpeg",
+   "details": [
+    "Cumming",
+    "(678) 763-0587",
+    "atltrendyevents@gmail.com"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/09ac5085c118.jpg"
+  },
+  {
+   "category": "Sound & DJ's",
+   "name": "Crystal Clear Productions",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/23-crystalclearproductions.jpeg",
+   "details": [
+    "11210 Avery, Alpharetta, Georgia 30022",
+    "(678) 467-0102"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/9b47106dc117.jpg"
+  },
+  {
+   "category": "Sound & DJ's",
+   "name": "Vakiti Creations",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/25-vakiticreations.jpeg",
+   "details": [
+    "Alpharetta",
+    "(770) 468-2921"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/a71789eab576.jpg"
+  },
+  {
+   "category": "Sound & DJ's",
+   "name": "bytegraph",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/60-bytegraph.png",
+   "details": [
+    "700 pinnacle ct",
+    "678-360-6795",
+    "Click@ByteGraph.Com"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/765f96cdf9cc.png"
+  },
+  {
+   "category": "IT Companies",
+   "name": "Delta Information Systems Inc.",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/39-deltainformationsystemsinc.png",
+   "details": [
+    "220 Prospect Pl",
+    "(770) 740-7101",
+    "info@deltainfosys.com"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/c15e9777c4d3.png"
+  },
+  {
+   "category": "IT Companies",
+   "name": "Hcl Global Systems Inc",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/40-hclglobalsystemsinc.png",
+   "details": [
+    "6455 E Johns Crossing #115",
+    "(248) 473-0720",
+    "hr@hclglobal.com"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/40f87cdc0197.png"
+  },
+  {
+   "category": "Daycare",
+   "name": "Legacy Academy",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/28-legacyacademy.jpeg",
+   "details": [
+    "5390 Flynn Crossing Drive Alpharetta, Georgia 30005",
+    "(770)-475-1011"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/ea07cc2ce0bf.jpg"
+  },
+  {
+   "category": "Education",
+   "name": "Curie Learning",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/35-curielearning.jpeg",
+   "details": [
+    "1205 Peachtree Pkwy #1101, Cumming, Georgia 30041",
+    "(678) 807-9456"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/a490f40fdf87.jpg"
+  },
+  {
+   "category": "Event Decorators",
+   "name": "Maarigold Event Decorator",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/29-maarigoldeventdecorator.gif",
+   "details": [
+    "Alpharetta",
+    "(508) 963-3509"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/031e7b051897.jpg"
+  },
+  {
+   "category": "Event Halls",
+   "name": "Sankranti Indian and Intercontinental FineDining Restaurant & Banquets",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/31-sankrantiindianandintercontinentalfinediningrestaurantbanquets.gif",
+   "details": [
+    "2000 Ray Moss Connector, Johns Creek, GA 30022",
+    "(770) 242-6899"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/b11fd09c5083.jpg"
+  },
+  {
+   "category": "Event Halls",
+   "name": "ABC Party Hall",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/32-abcpartyhall.gif",
+   "details": [
+    "3975 Lakefield Ct #102, Suwanee, GA 30024",
+    "(678) 557-7468"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/b75f44ccf224.jpg"
+  },
+  {
+   "category": "Event Halls",
+   "name": "Gleaming Events Hall",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/47-gleamingeventshall.png",
+   "details": [
+    "2569 Peachtree Pkwy Suite 210,",
+    "2172081905",
+    "info@gleamingeventsatlanta.net"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/f018ca1adf48.png"
+  },
+  {
+   "category": "Event Halls",
+   "name": "Forsyth Conference Center at Lanier Technical College",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/48-forsythconferencecenteratlaniertechnicalcollege.jpeg",
+   "details": [
+    "3410 Ronald Reagan Blvd",
+    "678-341-6633",
+    "ForsythConferenceCenter@laniertech.edu"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/c3f9291e4d2d.jpg"
+  },
+  {
+   "category": "Event Halls",
+   "name": "The Metropolitan Club",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/49-themetropolitanclub.png",
+   "details": [
+    "5895 Windward Pkwy,",
+    "(678) 527-2000"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/8a6a754af94a.png"
+  },
+  {
+   "category": "Event Halls",
+   "name": "Casablanca Banquet",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/50-casablancabanquet.png",
+   "details": [
+    "631 N Main St #113,",
+    "(678) 760-7049",
+    "info@casablancabanquet.com"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/ea50f31322cd.png"
+  },
+  {
+   "category": "Event Halls",
+   "name": "Ameris Bank Amphitheatre (Formerly Verizon Amphitheatre)",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/51-amerisbankamphitheatreformerlyverizonamphitheatre.png",
+   "details": [
+    "2200 Encore Pkwy",
+    "(404) 733-5010"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/ef61ea6a4815.png"
+  },
+  {
+   "category": "Event Halls",
+   "name": "Atlanta Banquets",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/52-atlantabanquets.png",
+   "details": [
+    "1300 Peachtree Industrial Blvd suite #1110",
+    "(225) 323-6066"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/d330ccabdd7b.png"
+  },
+  {
+   "category": "Event Halls",
+   "name": "Signature Ballroom",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/53-signatureballroom.png",
+   "details": [
+    "80 Horizon Dr #402,",
+    "(678) 765-7961"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/dd82754ed5e8.png"
+  },
+  {
+   "category": "Event Halls",
+   "name": "The Opal Event Hall",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/54-theopaleventhall.png",
+   "details": [
+    "1848 Old Norcross Rd a100",
+    "(706) 218-5556"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/6193eadd4938.png"
+  },
+  {
+   "category": "Event Halls",
+   "name": "Grand Palais Banquet Hall",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/55-grandpalaisbanquethall.png",
+   "details": [
+    "3540 Club Dr,",
+    "(678) 802-8626",
+    "grandpalaisbanquet@gmail.com"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/4a51837d026e.png"
+  },
+  {
+   "category": "Event Halls",
+   "name": "Breckinridge Banquet Hall",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/56-breckinridgebanquethall.png",
+   "details": [
+    "3064 Old Norcross Rd",
+    "678-896-7717",
+    "Breckinridgebanquethall@gmail.com"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/d0b8cffe763e.png"
+  },
+  {
+   "category": "Event Halls",
+   "name": "Pleasant Hill Event Hall",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/57-pleasanthilleventhall.png",
+   "details": [
+    "550 Pleasant Hill Rd – Suite B-106",
+    "678-802-8626",
+    "info@pleasanthilleventhall.com"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/401097917930.png"
+  },
+  {
+   "category": "Event Halls",
+   "name": "Ashiana Banquet Hall & Restaurant",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/58-ashianabanquethallrestaurant.png",
+   "details": [
+    "5675 Jimmy Carter Blvd #101",
+    "(770) 446-8081"
+   ],
+   "website": "http://www.theashiana.com/",
+   "email": "",
+   "local": "images/directory/a3874cc98778.png"
+  },
+  {
+   "category": "Clothing/Jewelers",
+   "name": "Jewel Blooms",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/33-jewelblooms.jpeg",
+   "details": [
+    "Alpharetta",
+    "(508) 963-3509",
+    "deepasjewelblooms@gmail.com"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/104d7419f931.jpg"
+  },
+  {
+   "category": "Sports Clubs",
+   "name": "Atlanta Recreation Club",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/34-atlantarecreationclub.png",
+   "details": [
+    "2711 Pine Grove RD Cumming, GA 30041",
+    "678-456-8037"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/4a0a22151c95.png"
+  },
+  {
+   "category": "Sports Clubs",
+   "name": "Atlanta Badminton Club",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/42-atlantabadmintonclub.png",
+   "details": [
+    "3975 Lakefield Ct #102",
+    "(404) 981-4678"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/0f1453d35ba9.png"
+  },
+  {
+   "category": "Sports Clubs",
+   "name": "Endurance Center",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/profile.jpg",
+   "details": [
+    "7340 McGinnis Ferry Rd #200",
+    "(678) 203-5520"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/bcec0edfcbb3.jpg"
+  },
+  {
+   "category": "Sports Clubs",
+   "name": "Southern Volleyball Center",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/44-southernvolleyballcenter.jpeg",
+   "details": [
+    "11415 Old Roswell Road, Suite #200",
+    "770-346-8878",
+    "info@southernvolleyball.com"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/c455b088cd92.jpg"
+  },
+  {
+   "category": "Sports Clubs",
+   "name": "Suwanee Sports Academy",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/45-suwaneesportsacademy.png",
+   "details": [
+    "3640 Burnette Rd",
+    "(770) 614-6686"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/c6ece7272de1.png"
+  },
+  {
+   "category": "Sports Clubs",
+   "name": "Atlanta Extreme Volleyball Club",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/46-atlantaextremevolleyballclub.png",
+   "details": [
+    "811 Brogdon Rd #108",
+    "(404) 775-5005"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/91a02d5dea5d.png"
+  },
+  {
+   "category": "Airports/Parking",
+   "name": "Park ‘N Fly-Plus Parking",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/36-parknflyplusparking.jpeg",
+   "details": [
+    "2525 Camp Creek Pkwy College Park, GA 30337",
+    "(404) 761-0364"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/2a3188dd2ed3.jpg"
+  },
+  {
+   "category": "Airports/Parking",
+   "name": "Hartsfield-Jackson Atlanta International Airport",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/41-hartsfieldjacksonatlantainternationalairport.png",
+   "details": [
+    "6000 N Terminal Pkwy",
+    "(800) 897-1910"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/3e8226791493.png"
+  },
+  {
+   "category": "Insurance",
+   "name": "Ephraim Group Insurance",
+   "logo": "https://www.tama.org/Content/Directories/NormalImages/37-ephraimgroupinsurance.jpeg",
+   "details": [
+    "1674 Lawrenceville Suwanee Rd. Lawrenceville, GA 30043",
+    "​770-865-3200",
+    "mortandins@gmail.com"
+   ],
+   "website": "",
+   "email": "",
+   "local": "images/directory/0282b03a292b.jpg"
+  }
+ ]
+};
+
+function initials(name){return name.split(/\s+/).map(function(w){return w.charAt(0)}).join('').slice(0,2).toUpperCase();}
+function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function photoTag(rec, cls){
+  cls = cls || '';
+  var src = rec.local || rec.photo;
+  if(src){return '<img loading="lazy" class="'+cls+'" src="'+esc(src)+'" alt="'+esc(rec.name||rec.title||'')+'" onerror="this.onerror=null;this.outerHTML=\'<div class=&quot;initials&quot;\'>\'+initials(esc(rec.name||rec.title||\'?\'))+\'</div>\';">';}
+  return '<div class="initials">'+initials(rec.name||rec.title||'?')+'</div>';
+}
+
+var catSel = document.getElementById('catSel'), q = document.getElementById('q'),
+    grid = document.getElementById('grid'), empty = document.getElementById('empty'),
+    count = document.getElementById('count');
+DATA.categories.forEach(function(c){var o=document.createElement('option');o.value=c;o.textContent=c;catSel.appendChild(o);});
+function render(){
+  var c = catSel.value, s = q.value.trim().toLowerCase();
+  var list = DATA.businesses.filter(function(b){
+    return (c==='all'||b.category===c) && (!s || b.name.toLowerCase().indexOf(s)>-1);
+  });
+  count.textContent = list.length + (list.length===1?' business':' businesses');
+  empty.style.display = list.length? 'none':'block';
+  grid.innerHTML = list.map(function(b){
+    var logo = b.local || b.logo;
+    var imgtag = logo ? '<img loading="lazy" src="'+esc(logo)+'" alt="'+esc(b.name)+' logo" style="max-width:120px;max-height:70px;object-fit:contain;margin-bottom:8px" onerror="this.style.display=\'none\'"><br>' : '';
+    var det = (b.details||[]).map(function(d){return '<p>'+esc(d)+'</p>';}).join('');
+    var web = b.website? '<p><a href="'+esc(b.website)+'" target="_blank" rel="noopener">Website</a></p>':'';
+    var em = b.email? '<p><a href="mailto:'+esc(b.email)+'">'+esc(b.email)+'</a></p>':'';
+    return '<div class="dir-card">'+imgtag+'<span class="cat">'+esc(b.category)+'</span><h3>'+esc(b.name)+'</h3>'+det+web+em+'</div>';
+  }).join('');
+}
+catSel.addEventListener('change', render);
+q.addEventListener('input', render);
+render();
+</script>
+    </div>
+  </section>
+</main>
+
+<div class="garland" aria-hidden="true"></div>
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>Telugu Association of Metro Atlanta</strong> &middot; Serving Telugu families in metro Atlanta since 1981.</p>
+    <p class="footer-links"><a href="about.html">About Us</a> &middot; <a href="executive-committee.html">Executive Committee</a> &middot; <a href="board-of-directors.html">Board of Directors</a> &middot; <a href="bylaws.html">Bylaws</a> &middot; <a href="financials.html">Financials</a> &middot; <a href="meeting-minutes.html">Meeting Minutes</a> &middot; <a href="elections.html">Elections</a></p>
+    <p class="footer-links"><a href="activities.html">Activities</a> &middot; <a href="kalasala.html">Kalasala</a> &middot; <a href="scholarship.html">Scholarship</a> &middot; <a href="manabadi.html">Manabadi</a> &middot; <a href="locations-teachers.html">Locations &amp; Teachers</a></p>
+    <p class="footer-links"><a href="events.html">Events</a> &middot; <a href="past-events.html">Past Events</a> &middot; <a href="gallery.html">Photo Gallery</a> &middot; <a href="videos.html">Videos</a> &middot; <a href="magazine.html">Magazine</a> &middot; <a href="digital-library.html">Digital Library</a></p>
+    <p class="footer-links"><a href="directory.html">Directory</a> &middot; <a href="sponsor-a-program.html">Sponsor a Program</a> &middot; <a href="sponsors.html">Sponsors</a> &middot; <a href="volunteers-list.html">Volunteers List</a></p>
+    <p class="footer-links"><a href="membership.html">Membership</a> &middot; <a href="membership-benefits.html">Benefits</a> &middot; <a href="members.html">Members List</a></p>
+    <p class="footer-links"><a href="clinic.html">Free Clinic</a> &middot; <a href="clinic-dates.html">Clinic Dates</a> &middot; <a href="clinic-volunteer.html">Volunteer</a> &middot; <a href="clinic-donations.html">Donate</a></p>
+    <p class="fine">This is a draft preview of a rebuilt tama.org. Content is based on public sources. Details are marked for review by the TAMA committee before going live.</p>
+  </div>
+</footer>
+
+<nav class="mobile-cta" aria-label="Quick actions">
+  <a class="btn btn-gold" href="membership.html#join">Join TAMA</a>
+  <a class="btn btn-outline" href="events.html">Events</a>
+</nav>
+</body>
+</html>
