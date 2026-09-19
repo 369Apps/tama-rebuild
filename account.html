@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Account | Telugu Association of Metro Atlanta</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="logo.png">
+<meta name="theme-color" content="#952b71">
+</head>
+<body>
+<div class="preview-note">Draft rebuild preview. Not the live tama.org.</div>
+<header class="site-header">
+  <div class="wrap head-row">
+    <a class="brand" href="index.html">
+      <img class="brand-logo" src="logo.png" alt="TAMA logo">
+      <span class="brand-text">Telugu Association<br>of Metro Atlanta</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="events.html">Events</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="membership.html">Membership</a>
+      <a href="contact.html">Contact</a>
+      <a href="account.html" class="active">My Account</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="auth-wrap">
+    <div id="loading" class="auth-card" style="text-align:center">
+      <p class="sub">Loading your membership...</p>
+    </div>
+    <div id="card" class="member-card" style="display:none">
+      <p class="m-name" id="m-name"></p>
+      <div class="m-row"><span>Email</span><span id="m-email"></span></div>
+      <div class="m-row"><span>Membership</span><span id="m-type"></span></div>
+      <div class="m-row"><span>Status</span><span id="m-status"></span></div>
+      <p class="sub" id="m-note" style="margin-top:14px"></p>
+      <div style="margin-top:18px">
+        <button class="btn btn-block" id="logout-btn" style="border:none;cursor:pointer;font-family:inherit">Log out</button>
+      </div>
+    </div>
+    <div class="notice error" id="load-error" role="alert"></div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Mailing address<br>5490 McGinnis Village Place, Suite 117, Alpharetta GA 30005<br><span class="ph">As shown on tama.org. Committee to confirm.</span></p>
+        <p>Email: <a href="mailto:info@tama.org">info@tama.org</a> <span class="ph-note">(unverified)</span></p>
+        <p>Phone: <span class="ph">to be confirmed</span></p>
+      </div>
+      <div class="footer-col">
+        <h4>Follow TAMA</h4>
+        <p><a href="https://www.facebook.com/pg/tama1981/" target="_blank" rel="noopener">Facebook</a></p>
+        <p><a href="https://twitter.com/tama_atlanta" target="_blank" rel="noopener">Twitter</a></p>
+        <p><a href="https://www.youtube.com/user/tamaevents/videos" target="_blank" rel="noopener">YouTube</a></p>
+        <p><a href="https://www.instagram.com/teluguassociationmetroatlanta/" target="_blank" rel="noopener">Instagram</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>Nonprofit</h4>
+        <p>Telugu Association of Metro Atlanta is a nonprofit community organization.</p>
+        <p>Tax ID (EIN): <span class="ph">to be confirmed</span></p>
+      </div>
+    </div>
+    <p class="fine">This is a draft preview of a rebuilt tama.org. Content is based on public sources. Details are marked for review by the TAMA committee before going live.</p>
+  </div>
+</footer>
+
+<nav class="mobile-cta" aria-label="Quick actions">
+  <a class="btn btn-gold" href="https://www.tama.org/member-registration">Join TAMA</a>
+  <a class="btn btn-outline" href="index.html#upcoming-events">Events</a>
+</nav>
+<script src="assets/js/tickets.js"></script>
+<script>
+(function () {
+  var WORKER = window.TAMA_WORKER_URL;
+  var loadBox = document.getElementById("load-error");
+
+  fetch(WORKER + "/api/me", { credentials: "include" })
+    .then(function (r) {
+      if (r.status === 401) { window.location.href = "login.html"; return null; }
+      return r.json();
+    })
+    .then(function (me) {
+      if (!me) return;
+      if (!me.ok) { window.location.href = "login.html"; return; }
+      document.getElementById("loading").style.display = "none";
+      document.getElementById("m-name").textContent = me.name || "TAMA Member";
+      document.getElementById("m-email").textContent = me.email;
+      document.getElementById("m-type").textContent = me.type || "Member";
+      var st = document.getElementById("m-status");
+      if (me.active) {
+        st.innerHTML = '<span class="pill on">Active</span>';
+        document.getElementById("m-note").textContent = "Your member prices apply automatically when you buy event tickets.";
+      } else {
+        st.innerHTML = '<span class="pill off">Expired</span>';
+        document.getElementById("m-note").textContent = "Your membership looks expired. Please renew to get member ticket prices.";
+      }
+      document.getElementById("card").style.display = "block";
+    })
+    .catch(function () {
+      document.getElementById("loading").style.display = "none";
+      loadBox.textContent = "Could not reach the server. Check your connection and try again.";
+      loadBox.classList.add("show");
+    });
+
+  document.getElementById("logout-btn").addEventListener("click", function () {
+    var btn = this;
+    btn.disabled = true;
+    btn.innerHTML = '<span class="spin"></span>Logging out...';
+    fetch(WORKER + "/api/auth/logout", { method: "POST", credentials: "include" })
+      .finally(function () { window.location.href = "index.html"; });
+  });
+})();
+</script>
+</body>
+</html>
