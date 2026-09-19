@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Team Admin - Telugu Association of Metro Atlanta (TAMA)</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="logo.png">
+<meta name="theme-color" content="#952b71">
+</head>
+<body>
+<div class="preview-note">Draft rebuild preview. Team admin page, not linked from the public site.</div>
+<header class="site-header">
+  <div class="wrap head-row">
+    <a class="brand" href="index.html">
+      <img class="brand-logo" src="logo.png" alt="TAMA logo">
+      <span class="brand-text">Telugu Association<br>of Metro Atlanta</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="events.html">Events</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="membership.html">Membership</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow on-dark">For TAMA team members</p>
+      <h1>Updating the website</h1>
+      <p>No code needed. Event, news, and clinic updates are made in a shared Google Sheet, and the site picks them up automatically.</p>
+    </div>
+  </div>
+  <div class="garland" aria-hidden="true"></div>
+
+  <section class="band">
+    <div class="wrap">
+      <p class="eyebrow">How it works</p>
+      <h2>Edit the sheet, the site updates itself</h2>
+      <p class="body-copy">The homepage reads its events, news, and clinic sections from a Google Sheet. When you edit the sheet, the changes appear on the website within a few minutes. You never touch the website code. You only need a Google account.</p>
+      <div class="flag">If the sheet is ever unavailable or has a problem, the website simply keeps showing its built-in content. The site never looks broken.</div>
+    </div>
+  </section>
+
+  <section class="band tint">
+    <div class="wrap">
+      <p class="eyebrow">One-time setup</p>
+      <h2>Setting up the sheet</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>1. Create the sheet</h3>
+          <p>Create a new Google Sheet. Make three tabs named exactly <strong>Events</strong>, <strong>News</strong>, and <strong>Clinic</strong>.</p>
+        </div>
+        <div class="card">
+          <h3>2. Add the template</h3>
+          <p><a href="admin/event-template.csv" download>Download the template CSV</a>. For each tab, copy the header row and the example row under that tab's label into the matching tab, then delete the label rows.</p>
+        </div>
+        <div class="card">
+          <h3>3. Publish it</h3>
+          <p>In the sheet, go to File &gt; Share &gt; Publish to web. Publish the entire document. This is what lets the website read it.</p>
+        </div>
+        <div class="card">
+          <h3>4. Send the sheet ID</h3>
+          <p>Copy the long ID from the sheet's URL (the part between /d/ and /edit). Send it to the site maintainer. They paste it into one line of the site config, and the live updates switch on.</p>
+        </div>
+        <div class="card">
+          <h3>5. Share with the team</h3>
+          <p>Share the sheet with every team member who may edit it. Editors need a Google account. Viewers of the website need nothing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <p class="eyebrow">Column guide</p>
+      <h2>What goes in each column</h2>
+      <div class="news">
+        <div class="news-head"><h2>Events tab</h2></div>
+        <div class="news-body">
+          <ul class="plain">
+            <li><strong>name:</strong> the event name, exactly as it should appear.</li>
+            <li><strong>date:</strong> plain text, like "Saturday, October 10, 2026". Leave blank if not known.</li>
+            <li><strong>time:</strong> plain text, like "10 AM - 6 PM". Leave blank if not known.</li>
+            <li><strong>venue:</strong> plain text address or hall name. Leave blank if not known.</li>
+            <li><strong>description:</strong> one or two short sentences about the event.</li>
+            <li><strong>register_url:</strong> the full registration link, starting with https://. Leave blank if there is none yet.</li>
+            <li><strong>banner_url:</strong> optional. A direct link to an event banner image. Leave blank to show the standard date box instead.</li>
+            <li><strong>status:</strong> write "upcoming" for events to show. Write "hidden" to hide a row without deleting it.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="news" style="margin-top:24px">
+        <div class="news-head"><h2>News tab</h2></div>
+        <div class="news-body">
+          <ul class="plain">
+            <li><strong>text:</strong> the news item, one short line.</li>
+            <li><strong>date:</strong> optional short label, like "Oct 2026". Leave blank if not needed.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="news" style="margin-top:24px">
+        <div class="news-head"><h2>Clinic tab</h2></div>
+        <div class="news-body">
+          <ul class="plain">
+            <li><strong>title:</strong> the clinic heading, usually "Free Medical Clinic".</li>
+            <li><strong>schedule:</strong> plain text clinic days and hours.</li>
+            <li><strong>description:</strong> one or two short sentences about the clinic.</li>
+            <li><strong>register_url:</strong> the full clinic registration link, starting with https://. Leave blank if there is none yet.</li>
+          </ul>
+          <p class="news-note">Only the first row of the Clinic tab is used.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band tint">
+    <div class="wrap">
+      <p class="eyebrow">Rules</p>
+      <h2>Please do not</h2>
+      <ul class="plain">
+        <li>Never rename the tabs or the columns.</li>
+        <li>Never reorder or delete columns.</li>
+        <li>Type dates and times as plain text, not as Sheet date formats.</li>
+        <li>To remove an event from the site, set its status to "hidden" instead of deleting the row.</li>
+        <li>Keep banner images under 300 KB so the site stays fast on phones.</li>
+      </ul>
+      <div class="flag">The membership signup still uses the existing tama.org registration system. That part is unchanged and is not edited through the sheet.</div>
+    </div>
+  </section>
+</main>
+
+<div class="garland" aria-hidden="true"></div>
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>Telugu Association of Metro Atlanta</strong> &middot; Serving Telugu families in metro Atlanta since 1981.</p>
+    <p class="fine">This is a draft preview of a rebuilt tama.org. Content is based on public sources. Details are marked for review by the TAMA committee before going live.</p>
+  </div>
+</footer>
+
+<nav class="mobile-cta" aria-label="Quick actions">
+  <a class="btn btn-gold" href="https://www.tama.org/member-registration">Join TAMA</a>
+  <a class="btn btn-outline" href="events.html">Events</a>
+</nav>
+</body>
+</html>
