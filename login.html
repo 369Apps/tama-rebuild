@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Member Login | Telugu Association of Metro Atlanta</title>
-<link rel="stylesheet" href="styles.css?v=2">
+<link rel="stylesheet" href="styles.css?v=3">
 <link rel="icon" href="logo.png">
 <meta name="theme-color" content="#952b71">
 </head>
@@ -13,13 +13,15 @@
 <div class="org-banner"><a class="org-brand" href="index.html"><img class="org-emblem" src="logo.png" alt="TAMA emblem" fetchpriority="high"><img class="org-name" src="logo-right.png" alt="Telugu Association of Metro Atlanta — అట్లాంటా తెలుగు సంఘం" fetchpriority="high"></a></div>
 <header class="site-header">
   <div class="wrap head-row">
-    <nav class="nav">
+    <nav class="nav" aria-label="Main">
       <a href="index.html">Home</a>
-      <a href="about.html">About</a>
+      <div class="nav-item"><a href="about.html" aria-haspopup="true">About Us</a><div class="drop" role="menu"><a href="about.html">Who we are</a><a href="bylaws.html">Bylaws</a><a href="financials.html">Financials</a><a href="meeting-minutes.html">Meeting Minutes</a><a href="elections.html">Elections</a></div></div>
+      <div class="nav-item"><a href="activities.html" aria-haspopup="true">Activities</a><div class="drop" role="menu"><a href="activities.html">Activities home</a><a href="kalasala.html">Kalasala</a><a href="scholarship.html">Scholarship</a><a href="manabadi.html">Manabadi</a><a href="about-manabadi.html">About Manabadi</a><a href="locations-teachers.html">Locations & Teachers</a></div></div>
       <a href="events.html">Events</a>
-      <a href="gallery.html">Gallery</a>
+      <div class="nav-item"><a href="gallery.html" aria-haspopup="true">Media</a><div class="drop" role="menu"><a href="gallery.html">Photo Gallery</a><a href="magazine.html">Magazine</a></div></div>
       <a href="membership.html">Membership</a>
       <a href="clinic.html">Free Clinic</a>
+      <div class="nav-item"><a href="sponsor-a-program.html" aria-haspopup="true">Support Us</a><div class="drop" role="menu"><a href="sponsor-a-program.html">Sponsor a program</a></div></div>
       <a href="contact.html">Contact</a>
       <a href="login.html" class="active">Member Login</a>
     </nav>
@@ -57,30 +59,12 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <div class="footer-grid">
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <p>Mailing address<br>5490 McGinnis Village Place, Suite 117, Alpharetta GA 30005<br><span class="ph">As shown on tama.org. Committee to confirm.</span></p>
-        <p>Email: <a href="mailto:info@tama.org">info@tama.org</a> <span class="ph-note">(unverified)</span></p>
-        <p>Phone: <span class="ph">to be confirmed</span></p>
-      </div>
-      <div class="footer-col">
-        <h4>Follow TAMA</h4>
-        <p><a href="https://www.facebook.com/pg/tama1981/" target="_blank" rel="noopener">Facebook</a></p>
-        <p><a href="https://twitter.com/tama_atlanta" target="_blank" rel="noopener">Twitter</a></p>
-        <p><a href="https://www.youtube.com/user/tamaevents/videos" target="_blank" rel="noopener">YouTube</a></p>
-        <p><a href="https://www.instagram.com/teluguassociationmetroatlanta/" target="_blank" rel="noopener">Instagram</a></p>
-      </div>
-      <div class="footer-col">
-        <h4>About</h4>
-        <p><a href="about.html">About TAMA</a></p>
-      </div>
-      <div class="footer-col">
-        <h4>Nonprofit</h4>
-        <p>Telugu Association of Metro Atlanta is a nonprofit community organization.</p>
-        <p>Tax ID (EIN): <span class="ph">to be confirmed</span></p>
-      </div>
-    </div>
+    <p><strong>Telugu Association of Metro Atlanta</strong> &middot; Serving Telugu families in metro Atlanta since 1981.</p>
+    <p class="footer-links"><a href="about.html">About Us</a> &middot; <a href="bylaws.html">Bylaws</a> &middot; <a href="financials.html">Financials</a> &middot; <a href="meeting-minutes.html">Meeting Minutes</a> &middot; <a href="elections.html">Elections</a></p>
+    <p class="footer-links"><a href="activities.html">Activities</a> &middot; <a href="kalasala.html">Kalasala</a> &middot; <a href="scholarship.html">Scholarship</a> &middot; <a href="manabadi.html">Manabadi</a> &middot; <a href="locations-teachers.html">Locations &amp; Teachers</a></p>
+    <p class="footer-links"><a href="gallery.html">Photo Gallery</a> &middot; <a href="magazine.html">Magazine</a> &middot; <a href="sponsor-a-program.html">Sponsor a Program</a></p>
+    <p class="footer-links"><a href="membership.html">Membership</a> &middot; <a href="membership-benefits.html">Benefits</a> &middot; <a href="members.html">Members List</a></p>
+    <p class="footer-links"><a href="clinic.html">Free Clinic</a> &middot; <a href="clinic-dates.html">Clinic Dates</a> &middot; <a href="clinic-volunteer.html">Volunteer</a> &middot; <a href="clinic-donations.html">Donate</a></p>
     <p class="fine">This is a draft preview of a rebuilt tama.org. Content is based on public sources. Details are marked for review by the TAMA committee before going live.</p>
   </div>
 </footer>
