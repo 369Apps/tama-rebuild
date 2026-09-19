@@ -562,3 +562,88 @@ a{-webkit-tap-highlight-color:rgba(149,43,113,.18)}
 .auth-form .svc-card input,.auth-form .radio-pill input,.auth-form .consent-check input{
   width:26px;height:26px;flex:none;padding:0;border:none;background:none}
 .auth-form .svc-card input[type="checkbox"]{width:26px;height:26px}
+
+/* ============================================================
+   Premium experience layer — motion, festive motifs, polish
+   (CSS only. Content and structure unchanged.)
+   ============================================================ */
+
+/* base rendering polish */
+body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2{text-wrap:balance}
+img{max-width:100%}
+::selection{background:var(--gold);color:#3A2E00}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:6px}
+
+/* festive toran garland: glowing marigold dots, gold borders */
+.garland{
+  height:22px;background-color:var(--purple-dark);
+  background-image:radial-gradient(circle,var(--gold) 4px,rgba(255,213,36,.35) 5.5px,transparent 7px);
+  background-size:32px 22px;background-position:center;background-repeat:repeat-x;
+  border-top:2px solid var(--gold);border-bottom:2px solid var(--gold);
+}
+
+/* hero entrance + breathing gold glow */
+@keyframes riseIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes breathe{0%,100%{opacity:.55;transform:scale(1)}50%{opacity:1;transform:scale(1.08)}}
+.hero .wrap>*,.page-hero .wrap>*{animation:riseIn .7s cubic-bezier(.2,.7,.2,1) both}
+.hero .wrap>*:nth-child(2),.page-hero .wrap>*:nth-child(2){animation-delay:.08s}
+.hero .wrap>*:nth-child(3),.page-hero .wrap>*:nth-child(3){animation-delay:.16s}
+.hero .wrap>*:nth-child(4),.page-hero .wrap>*:nth-child(4){animation-delay:.24s}
+.hero::after,.page-hero::after{
+  content:"";position:absolute;width:560px;height:560px;right:-170px;top:-170px;
+  pointer-events:none;background:radial-gradient(circle,rgba(255,213,36,.22),transparent 65%);
+  animation:breathe 7s ease-in-out infinite;
+}
+
+/* org banner: gentle settle-in on load */
+.org-banner img{animation:bannerIn .8s cubic-bezier(.2,.7,.2,1) both}
+@keyframes bannerIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+
+/* buttons: sheen sweep + satisfying press */
+.btn{transition:transform .16s ease,box-shadow .16s ease,filter .16s ease,background-color .16s ease}
+.btn:hover{filter:brightness(1.05)}
+.btn:active{transform:translateY(1px) scale(.985);filter:brightness(.97)}
+.btn-gold{position:relative;overflow:hidden}
+.btn-gold::after{
+  content:"";position:absolute;top:0;left:-70%;width:45%;height:100%;pointer-events:none;
+  background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);
+  transform:skewX(-20deg);transition:left .55s ease;
+}
+.btn-gold:hover::after{left:140%}
+
+/* cards: deeper, smoother hover */
+.card{transition:transform .22s cubic-bezier(.2,.7,.2,1),box-shadow .22s ease,border-color .22s ease}
+.card:hover{border-color:var(--gold-dark)}
+
+/* clinic link rows: arrow nudge on hover */
+.clinic-link{transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+.clinic-link:hover{transform:translateX(4px);border-color:var(--gold-dark);
+  box-shadow:0 14px 32px rgba(149,43,113,.16)}
+.clinic-link:hover .cl-a{transform:translateX(4px)}
+.clinic-link .cl-a{transition:transform .18s ease}
+
+/* footer: gold crown border */
+.site-footer{border-top:4px solid var(--gold)}
+
+/* skeleton shimmer for dynamic content (replaced by JS when data lands) */
+.skel{background:#fff;border:1px solid var(--line);border-radius:20px;
+  padding:20px 22px;margin-bottom:16px}
+.skel .bar{height:18px;border-radius:9px;margin-bottom:12px;
+  background:linear-gradient(90deg,#F0E9DF 25%,#FAF6EF 50%,#F0E9DF 75%);
+  background-size:200% 100%;animation:shimmer 1.5s linear infinite}
+.skel .bar.short{height:14px;margin-bottom:0}
+@keyframes shimmer{to{background-position:-200% 0}}
+
+/* sticky mobile bar: slides up on load */
+@media(max-width:640px){
+  .mobile-cta{animation:ctaUp .5s .35s cubic-bezier(.2,.7,.2,1) both}
+  @keyframes ctaUp{from{transform:translateY(110%)}to{transform:none}}
+}
+
+/* respect reduced motion */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;
+    transition-duration:.01ms!important}
+  html{scroll-behavior:auto}
+}
