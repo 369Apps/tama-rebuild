@@ -1,8 +1,9 @@
 /* TAMA site content loader.
-   Reads the Events, News, and Clinic tabs from a published Google Sheet and
-   renders them into the homepage. The sheet ID is set once during setup.
-   If anything fails (no sheet configured, network error, bad data), the
-   built-in HTML is left exactly as is. The site never looks broken. */
+   Reads the News and Clinic tabs from a published Google Sheet and
+   renders them into the homepage. Events now come from the member
+   backend (assets/js/tickets.js), not the sheet. The sheet ID is set
+   once during setup. If anything fails (no sheet configured, network
+   error, bad data), the built-in HTML is left exactly as is. */
 
 const SHEET_ID = "";
 
@@ -121,12 +122,10 @@ const SHEET_ID = "";
   }
 
   Promise.all([
-    loadTab("Events").catch(function () { return null; }),
     loadTab("News").catch(function () { return null; }),
     loadTab("Clinic").catch(function () { return null; })
   ]).then(function (results) {
-    if (results[0]) renderEvents(results[0]);
-    if (results[1]) renderNews(results[1]);
-    if (results[2]) renderClinic(results[2]);
+    if (results[0]) renderNews(results[0]);
+    if (results[1]) renderClinic(results[1]);
   }).catch(function () { /* leave built-in HTML */ });
 })();
