@@ -1,0 +1,644 @@
+{
+ "years": [
+  "2024",
+  "2020",
+  "2019",
+  "2018",
+  "2017",
+  "2013"
+ ],
+ "minutes": {
+  "2024": [
+   {
+    "label": "28th Aug 2024",
+    "file": "Content/documents/2024/28th Aug 2024.pdf"
+   },
+   {
+    "label": "21st Aug 2024",
+    "file": "Content/documents/2024/21st Aug 2024.pdf"
+   },
+   {
+    "label": "14th Aug 2024",
+    "file": "Content/documents/2024/14th Aug 2024.pdf"
+   },
+   {
+    "label": "7th Aug 2024",
+    "file": "Content/documents/2024/7th Aug 2024.pdf"
+   },
+   {
+    "label": "30th Oct 2024",
+    "file": "Content/documents/2024/30th Oct 2024.pdf"
+   },
+   {
+    "label": "23rd Oct 2024",
+    "file": "Content/documents/2024/23rd Oct 2024.pdf"
+   },
+   {
+    "label": "16th Oct 2024",
+    "file": "Content/documents/2024/16th Oct 2024.pdf"
+   },
+   {
+    "label": "9th Oct 2024",
+    "file": "Content/documents/2024/9th Oct 2024.pdf"
+   },
+   {
+    "label": "2nd Oct 2024",
+    "file": "Content/documents/2024/2nd Oct 2024.pdf"
+   },
+   {
+    "label": "25th Sep 2024",
+    "file": "Content/documents/2024/25th Sep 2024.pdf"
+   },
+   {
+    "label": "18th Sep 2024",
+    "file": "Content/documents/2024/18th Sep 2024.pdf"
+   },
+   {
+    "label": "11th Sep 2024",
+    "file": "Content/documents/2024/11th Sep 2024.pdf"
+   },
+   {
+    "label": "4th Sep 2024",
+    "file": "Content/documents/2024/4th Sep 2024.pdf"
+   },
+   {
+    "label": "31st Jul 2024",
+    "file": "Content/documents/2024/31st Jul 2024.pdf"
+   },
+   {
+    "label": "24th Jul 2024",
+    "file": "Content/documents/2024/24th Jul 2024.pdf"
+   },
+   {
+    "label": "17th Jul 2024",
+    "file": "Content/documents/2024/17th Jul 2024.pdf"
+   },
+   {
+    "label": "10th Jul 2024",
+    "file": "Content/documents/2024/10th Jul 2024.pdf"
+   },
+   {
+    "label": "3rd Jul 2024",
+    "file": "Content/documents/2024/3rd Jul 2024.pdf"
+   },
+   {
+    "label": "26th June 2024",
+    "file": "Content/documents/2024/26th June 2024.pdf"
+   },
+   {
+    "label": "19th June 2024",
+    "file": "Content/documents/2024/19th June 2024.pdf"
+   },
+   {
+    "label": "12th June 2024",
+    "file": "Content/documents/2024/12th June 2024.pdf"
+   },
+   {
+    "label": "5th June 2024",
+    "file": "Content/documents/2024/5th June 2024.pdf"
+   },
+   {
+    "label": "29th May 2024",
+    "file": "Content/documents/2024/29th May 2024.pdf"
+   },
+   {
+    "label": "22nd May 2024",
+    "file": "Content/documents/2024/22nd May 2024.pdf"
+   },
+   {
+    "label": "15th May 2024",
+    "file": "Content/documents/2024/15th May 2024.pdf"
+   },
+   {
+    "label": "8th May 2024",
+    "file": "Content/documents/2024/8th May 2024.pdf"
+   },
+   {
+    "label": "1st May 2024",
+    "file": "Content/documents/2024/1st May 2024.pdf"
+   },
+   {
+    "label": "24th Apr 2024",
+    "file": "Content/documents/2024/24th Apr 2024.pdf"
+   },
+   {
+    "label": "17th Apr 2024",
+    "file": "Content/documents/2024/17th Apr 2024.pdf"
+   },
+   {
+    "label": "10th Apr 2024",
+    "file": "Content/documents/2024/10th Apr 2024.pdf"
+   },
+   {
+    "label": "3rd Apr 2024",
+    "file": "Content/documents/2024/3rd Apr 2024.pdf"
+   },
+   {
+    "label": "27th Mar 2024",
+    "file": "Content/documents/2024/27th Mar 2024.pdf"
+   },
+   {
+    "label": "20th Mar 2024",
+    "file": "Content/documents/2024/20th Mar 2024.pdf"
+   },
+   {
+    "label": "13th Mar 2024",
+    "file": "Content/documents/2024/13th Mar 2024.pdf"
+   },
+   {
+    "label": "6th Mar 2024",
+    "file": "Content/documents/2024/6th Mar 2024.pdf"
+   },
+   {
+    "label": "28th Feb 2024",
+    "file": "Content/documents/2024/28th Feb 2024.pdf"
+   },
+   {
+    "label": "21st Feb 2024",
+    "file": "Content/documents/2024/21st Feb 2024.pdf"
+   },
+   {
+    "label": "14th Feb 2024",
+    "file": "Content/documents/2024/14th Feb 2024.pdf"
+   },
+   {
+    "label": "7th Feb 2024",
+    "file": "Content/documents/2024/7th Feb 2024.pdf"
+   },
+   {
+    "label": "31st Jan 2024",
+    "file": "Content/documents/2024/31st Jan 2024.pdf"
+   },
+   {
+    "label": "24th Jan 2024",
+    "file": "Content/documents/2024/24th Jan 2024.pdf"
+   },
+   {
+    "label": "10th Jan 2024",
+    "file": "Content/documents/2024/10th Jan 2024.pdf"
+   },
+   {
+    "label": "3rd Jan 2024",
+    "file": "Content/documents/2024/3rd Jan 2024.pdf"
+   },
+   {
+    "label": "TAMA Board meeting_MOM_12.10.2024",
+    "file": "Content/documents/2024/TAMA Board meeting_MOM_12.10.2024.pdf"
+   },
+   {
+    "label": "TAMA Board meeting_MOM_9.10.2024",
+    "file": "Content/documents/2024/TAMA Board meeting_MOM_9.10.2024.pdf"
+   },
+   {
+    "label": "TAMA Board Meeting Minutes_08.13",
+    "file": "Content/documents/2024/TAMA Board Meeting Minutes_08.13.pdf"
+   },
+   {
+    "label": "TAMA Board Meeting Minutes_07.09",
+    "file": "Content/documents/2024/TAMA Board Meeting Minutes_07.09.pdf"
+   },
+   {
+    "label": "TAMA Board Meeting Minutes_06.11",
+    "file": "Content/documents/2024/TAMA Board Meeting Minutes_06.11.pdf"
+   },
+   {
+    "label": "TAMA Board Meeting Minutes_05.14",
+    "file": "Content/documents/2024/TAMA Board Meeting Minutes_05.14.pdf"
+   },
+   {
+    "label": "TAMA Board Meeting Minutes_04.16",
+    "file": "Content/documents/2024/TAMA Board Meeting Minutes_04.16.pdf"
+   },
+   {
+    "label": "TAMA Board Meeting Minutes_03.14",
+    "file": "Content/documents/2024/TAMA Board Meeting Minutes_03.14.pdf"
+   },
+   {
+    "label": "TAMA Board Meeting Minutes_02.13",
+    "file": "Content/documents/2024/TAMA Board Meeting Minutes_02.13.pdf"
+   },
+   {
+    "label": "TAMA Board meeting_MOM_01.09.2024",
+    "file": "Content/documents/2024/TAMA Board meeting_MOM_01.09.2024.pdf"
+   }
+  ],
+  "2020": [
+   {
+    "label": "TAMA EC Meeting Minutes_04082020",
+    "file": "Content/documents/2020/TAMA EC Meeting Minutes_04082020.pdf"
+   },
+   {
+    "label": "TAMA EC Meeting Minutes_04152020",
+    "file": "Content/documents/2020/TAMA EC Meeting Minutes_04152020.pdf"
+   },
+   {
+    "label": "TAMA EC Meeting Minutes_04222020",
+    "file": "Content/documents/2020/TAMA EC Meeting Minutes_04222020.pdf"
+   },
+   {
+    "label": "TAMA EC Meeting Minutes_04292020",
+    "file": "Content/documents/2020/TAMA EC Meeting Minutes_04292020.pdf"
+   },
+   {
+    "label": "TAMA EC Meeting Minutes_05062020",
+    "file": "Content/documents/2020/TAMA EC Meeting Minutes_05062020.pdf"
+   },
+   {
+    "label": "TAMA EC Meeting Minutes_05132020",
+    "file": "Content/documents/2020/TAMA EC Meeting Minutes_05132020.pdf"
+   },
+   {
+    "label": "TAMA EC Meeting Minutes_05202020",
+    "file": "Content/documents/2020/TAMA EC Meeting Minutes_05202020.pdf"
+   },
+   {
+    "label": "TAMA EC Meeting Minutes_06102020",
+    "file": "Content/documents/2020/TAMA EC Meeting Minutes_06102020.pdf"
+   },
+   {
+    "label": "TAMA EC Meeting Minutes_10072020",
+    "file": "Content/documents/2020/TAMA EC Meeting Minutes_10072020.pdf"
+   },
+   {
+    "label": "TAMA EC Meeting Minutes_10142020",
+    "file": "Content/documents/2020/TAMA EC Meeting Minutes_10142020.pdf"
+   },
+   {
+    "label": "TAMA EC Meeting Minutes_10212020",
+    "file": "Content/documents/2020/TAMA EC Meeting Minutes_10212020.pdf"
+   },
+   {
+    "label": "TAMA EC Meeting Minutes_10282020",
+    "file": "Content/documents/2020/TAMA EC Meeting Minutes_10282020.pdf"
+   },
+   {
+    "label": "TAMA EC Meeting Minutes_11042020",
+    "file": "Content/documents/2020/TAMA EC Meeting Minutes_11042020.pdf"
+   },
+   {
+    "label": "TAMA EC Meeting Minutes_11112020",
+    "file": "Content/documents/2020/TAMA EC Meeting Minutes_11112020.pdf"
+   },
+   {
+    "label": "TAMA EC Meeting Minutes_11182020",
+    "file": "Content/documents/2020/TAMA EC Meeting Minutes_11182020.pdf"
+   },
+   {
+    "label": "TAMA Board Meeting Minutes_03172020",
+    "file": "Content/documents/2020/TAMA Board Meeting Minutes_03172020.pdf"
+   },
+   {
+    "label": "TAMA Board Meeting Minutes_04062020",
+    "file": "Content/documents/2020/TAMA Board Meeting Minutes_04062020.pdf"
+   },
+   {
+    "label": "TAMA Board Meeting Minutes_05052020",
+    "file": "Content/documents/2020/TAMA Board Meeting Minutes_05052020.pdf"
+   },
+   {
+    "label": "TAMA Board Meeting Minutes_05072020",
+    "file": "Content/documents/2020/TAMA Board Meeting Minutes_05072020.pdf"
+   },
+   {
+    "label": "TAMA Board Meeting Minutes_05192020",
+    "file": "Content/documents/2020/TAMA Board Meeting Minutes_05192020.pdf"
+   },
+   {
+    "label": "TAMA Board Meeting Minutes_06022020",
+    "file": "Content/documents/2020/TAMA Board Meeting Minutes_06022020.pdf"
+   }
+  ],
+  "2019": [
+   {
+    "label": "TAMA EC  Meeting Minutes_02202019",
+    "file": "Content/documents/2019/TAMA EC  Meeting Minutes_02202019.pdf"
+   },
+   {
+    "label": "TAMA EC BOARD Meeting Minutes_09_22_2019",
+    "file": "Content/documents/2019/TAMA EC BOARD Meeting Minutes_09_22_2019.pdf"
+   },
+   {
+    "label": "TAMA EC Board Meeting Minutes_11042019",
+    "file": "Content/documents/2019/TAMA EC Board Meeting Minutes_11042019.pdf"
+   },
+   {
+    "label": "TAMA-Board-Meeting-Minutes_01_12_2019",
+    "file": "Content/documents/2019/TAMA-Board-Meeting-Minutes_01_12_2019.pdf"
+   },
+   {
+    "label": "TAMA-Board-Meeting-Minutes_02_19_2019",
+    "file": "Content/documents/2019/TAMA-Board-Meeting-Minutes_02_19_2019.pdf"
+   }
+  ],
+  "2018": [
+   {
+    "label": "TAMA-EC-Meeting-Minutes_01_03_2018",
+    "file": "Content/documents/2018/TAMA-EC-Meeting-Minutes_01_03_2018.pdf"
+   },
+   {
+    "label": "TAMA-EC-Board-Meeting-Minutes_01_08_2018",
+    "file": "Content/documents/2018/TAMA-EC-Board-Meeting-Minutes_01_08_2018.pdf"
+   },
+   {
+    "label": "TAMA-EC-Board-Meeting-Minutes_01_24_2018",
+    "file": "Content/documents/2018/TAMA-EC-Board-Meeting-Minutes_01_24_2018.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_01_31_2018",
+    "file": "Content/documents/2018/TAMA-EC-Meeting-Minutes_01_31_2018.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_02_07_2018",
+    "file": "Content/documents/2018/TAMA-EC-Meeting-Minutes_02_07_2018.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_02_14_2018",
+    "file": "Content/documents/2018/TAMA-EC-Meeting-Minutes_02_14_2018.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_02_21_2018",
+    "file": "Content/documents/2018/TAMA-EC-Meeting-Minutes_02_21_2018.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_02_28_2018",
+    "file": "Content/documents/2018/TAMA-EC-Meeting-Minutes_02_28_2018.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_03_07_2018",
+    "file": "Content/documents/2018/TAMA-EC-Meeting-Minutes_03_07_2018.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_03_14_2018",
+    "file": "Content/documents/2018/TAMA-EC-Meeting-Minutes_03_14_2018.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_04_25_2018",
+    "file": "Content/documents/2018/TAMA-EC-Meeting-Minutes_04_25_2018.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_06_13_2018",
+    "file": "Content/documents/2018/TAMA-EC-Meeting-Minutes_06_13_2018.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_06_20_2018",
+    "file": "Content/documents/2018/TAMA-EC-Meeting-Minutes_06_20_2018.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_06_27_2018",
+    "file": "Content/documents/2018/TAMA-EC-Meeting-Minutes_06_27_2018.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_07_11_2018",
+    "file": "Content/documents/2018/TAMA-EC-Meeting-Minutes_07_11_2018.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_07_18_2018",
+    "file": "Content/documents/2018/TAMA-EC-Meeting-Minutes_07_18_2018.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_07_25_2018",
+    "file": "Content/documents/2018/TAMA-EC-Meeting-Minutes_07_25_2018.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_08_01_2018",
+    "file": "Content/documents/2018/TAMA-EC-Meeting-Minutes_08_01_2018.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_08_08_2018",
+    "file": "Content/documents/2018/TAMA-EC-Meeting-Minutes_08_08_2018.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_08_22_2018",
+    "file": "Content/documents/2018/TAMA-EC-Meeting-Minutes_08_22_2018.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_09_19_2018",
+    "file": "Content/documents/2018/TAMA-EC-Meeting-Minutes_09_19_2018.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_10_17_2018",
+    "file": "Content/documents/2018/TAMA-EC-Meeting-Minutes_10_17_2018.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_10_24_2018",
+    "file": "Content/documents/2018/TAMA-EC-Meeting-Minutes_10_24_2018.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_10_31_2018",
+    "file": "Content/documents/2018/TAMA-EC-Meeting-Minutes_10_31_2018.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_11_05_2018",
+    "file": "Content/documents/2018/TAMA-EC-Meeting-Minutes_11_05_2018.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_11_07_2018",
+    "file": "Content/documents/2018/TAMA-EC-Meeting-Minutes_11_07_2018.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_11_09_2018",
+    "file": "Content/documents/2018/TAMA-EC-Meeting-Minutes_11_09_2018.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_11_14_2018",
+    "file": "Content/documents/2018/TAMA-EC-Meeting-Minutes_11_14_2018.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_11_28_2018",
+    "file": "Content/documents/2018/TAMA-EC-Meeting-Minutes_11_28_2018.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_12_05_2018",
+    "file": "Content/documents/2018/TAMA-EC-Meeting-Minutes_12_05_2018.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_12_12_2018",
+    "file": "Content/documents/2018/TAMA-EC-Meeting-Minutes_12_12_2018.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_12_19_2018",
+    "file": "Content/documents/2018/TAMA-EC-Meeting-Minutes_12_19_2018.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_12_26_2018",
+    "file": "Content/documents/2018/TAMA-EC-Meeting-Minutes_12_26_2018.pdf"
+   },
+   {
+    "label": "TAMA-EC-Board-Meeting-Minutes_03_26_2018",
+    "file": "Content/documents/2018/TAMA-EC-Board-Meeting-Minutes_03_26_2018.pdf"
+   },
+   {
+    "label": "TAMA-EC-Board-Meeting-Minutes_01_10_2018",
+    "file": "Content/documents/2018/TAMA-EC-Board-Meeting-Minutes_01_10_2018.pdf"
+   },
+   {
+    "label": "TAMA-EC-Board-Meeting-Minutes_03_27_2018",
+    "file": "Content/documents/2018/TAMA-EC-Board-Meeting-Minutes_03_27_2018.pdf"
+   },
+   {
+    "label": "TAMA-EC-Board-Meeting-Minutes_04_11_2018",
+    "file": "Content/documents/2018/TAMA-EC-Board-Meeting-Minutes_04_11_2018.pdf"
+   },
+   {
+    "label": "TAMA-EC-Board-Meeting-Minutes_04_18_2018",
+    "file": "Content/documents/2018/TAMA-EC-Board-Meeting-Minutes_04_18_2018.pdf"
+   },
+   {
+    "label": "2018-results",
+    "file": "Content/documents/2018/2018-results.pdf"
+   }
+  ],
+  "2017": [
+   {
+    "label": "TAMA-Meeting-Minutes_01_02_2017",
+    "file": "Content/documents/2017/TAMA-Meeting-Minutes_01_02_2017.pdf"
+   },
+   {
+    "label": "TAMA-Meeting-Minutes_01_17_2017",
+    "file": "Content/documents/2017/TAMA-Meeting-Minutes_01_17_2017.pdf"
+   },
+   {
+    "label": "TAMA-Meeting-Minutes_01_19_2017",
+    "file": "Content/documents/2017/TAMA-Meeting-Minutes_01_19_2017.pdf"
+   },
+   {
+    "label": "TAMA-Meeting-Minutes_01_22_2017",
+    "file": "Content/documents/2017/TAMA-Meeting-Minutes_01_22_2017.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_02_01_2017",
+    "file": "Content/documents/2017/TAMA-EC-Meeting-Minutes_02_01_2017.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_02_08_2017",
+    "file": "Content/documents/2017/TAMA-EC-Meeting-Minutes_02_08_2017.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_02_15_2017",
+    "file": "Content/documents/2017/TAMA-EC-Meeting-Minutes_02_15_2017.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_02_22_2017",
+    "file": "Content/documents/2017/TAMA-EC-Meeting-Minutes_02_22_2017.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_03_01_2017",
+    "file": "Content/documents/2017/TAMA-EC-Meeting-Minutes_03_01_2017.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_03_08_2017",
+    "file": "Content/documents/2017/TAMA-EC-Meeting-Minutes_03_08_2017.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_03_22_2017",
+    "file": "Content/documents/2017/TAMA-EC-Meeting-Minutes_03_22_2017.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_03_29_2017",
+    "file": "Content/documents/2017/TAMA-EC-Meeting-Minutes_03_29_2017.pdf"
+   },
+   {
+    "label": "TAMA-EC-Board-Inperson-Meeting-Minutes_04_02_2017",
+    "file": "Content/documents/2017/TAMA-EC-Board-Inperson-Meeting-Minutes_04_02_2017.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_04_05_2017",
+    "file": "Content/documents/2017/TAMA-EC-Meeting-Minutes_04_05_2017.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_04_10_2017",
+    "file": "Content/documents/2017/TAMA-EC-Meeting-Minutes_04_10_2017.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_04_11_2017",
+    "file": "Content/documents/2017/TAMA-EC-Meeting-Minutes_04_11_2017.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_04_19_2017",
+    "file": "Content/documents/2017/TAMA-EC-Meeting-Minutes_04_19_2017.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_04_26_2017",
+    "file": "Content/documents/2017/TAMA-EC-Meeting-Minutes_04_26_2017.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_05_10_2017",
+    "file": "Content/documents/2017/TAMA-EC-Meeting-Minutes_05_10_2017.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_05_17_2017",
+    "file": "Content/documents/2017/TAMA-EC-Meeting-Minutes_05_17_2017.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_05_31_2017",
+    "file": "Content/documents/2017/TAMA-EC-Meeting-Minutes_05_31_2017.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_06_07_2017",
+    "file": "Content/documents/2017/TAMA-EC-Meeting-Minutes_06_07_2017.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_07_19_2017",
+    "file": "Content/documents/2017/TAMA-EC-Meeting-Minutes_07_19_2017.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_08_30_2017",
+    "file": "Content/documents/2017/TAMA-EC-Meeting-Minutes_08_30_2017.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_10_04_2017",
+    "file": "Content/documents/2017/TAMA-EC-Meeting-Minutes_10_04_2017.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_10_18_2017",
+    "file": "Content/documents/2017/TAMA-EC-Meeting-Minutes_10_18_2017.pdf"
+   },
+   {
+    "label": "TAMA-EC-Meeting-Minutes_10_25_2017",
+    "file": "Content/documents/2017/TAMA-EC-Meeting-Minutes_10_25_2017.pdf"
+   },
+   {
+    "label": "TAMA-Board-Meeting-Minutes_02_04_2017",
+    "file": "Content/documents/2017/TAMA-Board-Meeting-Minutes_02_04_2017.pdf"
+   },
+   {
+    "label": "TAMA-Board-Meeting-Minutes_02_07_2017",
+    "file": "Content/documents/2017/TAMA-Board-Meeting-Minutes_02_07_2017.pdf"
+   },
+   {
+    "label": "TAMA-Board-Inperson-Meeting-Minutes_04_02_2017",
+    "file": "Content/documents/2017/TAMA-Board-Inperson-Meeting-Minutes_04_02_2017.pdf"
+   },
+   {
+    "label": "TAMA-Board-Meeting-Minutes_05_09_2017",
+    "file": "Content/documents/2017/TAMA-Board-Meeting-Minutes_05_09_2017.pdf"
+   },
+   {
+    "label": "TAMA-Board-Meeting-Minutes_06_06_2017",
+    "file": "Content/documents/2017/TAMA-Board-Meeting-Minutes_06_06_2017.pdf"
+   },
+   {
+    "label": "TAMA-EC-Board-Meeting-Minutes_06_17_2017",
+    "file": "Content/documents/2017/TAMA-EC-Board-Meeting-Minutes_06_17_2017.pdf"
+   },
+   {
+    "label": "TAMA-Board-Meeting-Minutes_07_18_2017",
+    "file": "Content/documents/2017/TAMA-Board-Meeting-Minutes_07_18_2017.pdf"
+   },
+   {
+    "label": "TAMA-Board-Meeting-Minutes_08_08_2017",
+    "file": "Content/documents/2017/TAMA-Board-Meeting-Minutes_08_08_2017.pdf"
+   },
+   {
+    "label": "TAMA-Board-Meeting-Minutes_10_08_2017",
+    "file": "Content/documents/2017/TAMA-Board-Meeting-Minutes_10_08_2017.pdf"
+   }
+  ],
+  "2013": [
+   {
+    "label": "tama-2013-board-meeting-minutes",
+    "file": "Content/documents/2013/tama-2013-board-meeting-minutes.pdf"
+   }
+  ]
+ }
+}
