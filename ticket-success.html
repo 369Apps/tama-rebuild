@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tickets Confirmed | Telugu Association of Metro Atlanta</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="logo.png">
+<meta name="theme-color" content="#952b71">
+</head>
+<body>
+<div class="preview-note">Draft rebuild preview. Not the live tama.org.</div>
+<header class="site-header">
+  <div class="wrap head-row">
+    <a class="brand" href="index.html">
+      <img class="brand-logo" src="logo.png" alt="TAMA logo">
+      <span class="brand-text">Telugu Association<br>of Metro Atlanta</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="events.html">Events</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="membership.html">Membership</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Member Login</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="auth-wrap">
+    <div class="auth-card" id="loading" style="text-align:center">
+      <p class="sub">Confirming your tickets...</p>
+    </div>
+    <div class="auth-card" id="done" style="display:none">
+      <h1>You are going.</h1>
+      <p class="sub" id="event-line"></p>
+      <div class="m-row" style="display:flex;justify-content:space-between;padding:12px 0;border-top:1px solid var(--line);font-size:16px">
+        <span style="color:var(--muted)">Tickets</span><strong id="qty-line"></strong>
+      </div>
+      <div class="m-row" style="display:flex;justify-content:space-between;padding:12px 0;border-top:1px solid var(--line);font-size:16px">
+        <span style="color:var(--muted)">Paid</span><strong id="paid-line"></strong>
+      </div>
+      <div class="notice ok show" id="codes-box" style="margin-top:16px"></div>
+      <p class="sub" style="margin-top:14px">A confirmation email with your ticket codes is on its way. Show a code at the door.</p>
+      <div style="margin-top:18px"><a class="btn btn-gold btn-block" href="index.html#upcoming-events" style="text-decoration:none">Back to events</a></div>
+    </div>
+    <div class="notice error" id="load-error" role="alert"></div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Mailing address<br>5490 McGinnis Village Place, Suite 117, Alpharetta GA 30005<br><span class="ph">As shown on tama.org. Committee to confirm.</span></p>
+        <p>Email: <a href="mailto:info@tama.org">info@tama.org</a> <span class="ph-note">(unverified)</span></p>
+        <p>Phone: <span class="ph">to be confirmed</span></p>
+      </div>
+      <div class="footer-col">
+        <h4>Follow TAMA</h4>
+        <p><a href="https://www.facebook.com/pg/tama1981/" target="_blank" rel="noopener">Facebook</a></p>
+        <p><a href="https://twitter.com/tama_atlanta" target="_blank" rel="noopener">Twitter</a></p>
+        <p><a href="https://www.youtube.com/user/tamaevents/videos" target="_blank" rel="noopener">YouTube</a></p>
+        <p><a href="https://www.instagram.com/teluguassociationmetroatlanta/" target="_blank" rel="noopener">Instagram</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>Nonprofit</h4>
+        <p>Telugu Association of Metro Atlanta is a nonprofit community organization.</p>
+        <p>Tax ID (EIN): <span class="ph">to be confirmed</span></p>
+      </div>
+    </div>
+    <p class="fine">This is a draft preview of a rebuilt tama.org. Content is based on public sources. Details are marked for review by the TAMA committee before going live.</p>
+  </div>
+</footer>
+
+<nav class="mobile-cta" aria-label="Quick actions">
+  <a class="btn btn-gold" href="https://www.tama.org/member-registration">Join TAMA</a>
+  <a class="btn btn-outline" href="index.html#upcoming-events">Events</a>
+</nav>
+<script src="assets/js/tickets.js"></script>
+<script>
+(function () {
+  var WORKER = window.TAMA_WORKER_URL;
+  var sid = new URLSearchParams(window.location.search).get("session_id") || "";
+  var errBox = document.getElementById("load-error");
+  if (!sid) {
+    document.getElementById("loading").style.display = "none";
+    errBox.textContent = "No order to show. If you just paid, your confirmation email is on its way.";
+    errBox.classList.add("show");
+    return;
+  }
+  fetch(WORKER + "/api/tickets/order?session_id=" + encodeURIComponent(sid))
+    .then(function (r) { return r.json(); })
+    .then(function (o) {
+      document.getElementById("loading").style.display = "none";
+      if (!o.ok) {
+        errBox.textContent = "We could not find that order. Your confirmation email has the details.";
+        errBox.classList.add("show");
+        return;
+      }
+      var line = o.event_name || "TAMA event";
+      if (o.event_date) line += " - " + o.event_date;
+      if (o.event_venue) line += ", " + o.event_venue;
+      document.getElementById("event-line").textContent = line;
+      document.getElementById("qty-line").textContent = o.qty + (o.qty === 1 ? " ticket" : " tickets");
+      document.getElementById("paid-line").textContent = "$" + (o.amount_cents / 100).toFixed(2);
+      var codes = o.codes || [];
+      document.getElementById("codes-box").innerHTML =
+        "<strong>Your ticket codes:</strong><br>" + codes.map(function (c) {
+          return '<span style="font-size:20px;font-weight:800;letter-spacing:2px">' + c + "</span>";
+        }).join("<br>");
+      document.getElementById("done").style.display = "block";
+    })
+    .catch(function () {
+      document.getElementById("loading").style.display = "none";
+      errBox.textContent = "Could not reach the server. Your confirmation email has the details.";
+      errBox.classList.add("show");
+    });
+})();
+</script>
+</body>
+</html>
