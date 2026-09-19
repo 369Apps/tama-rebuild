@@ -52,9 +52,13 @@ async function paintTicketedEvents() {
   try {
     data = await api("/api/events");
   } catch {
+    mount.innerHTML = "";
     return;
   }
-  if (!data.ok || !data.events.length) return;
+  if (!data.ok || !data.events.length) {
+    mount.innerHTML = "";
+    return;
+  }
   const isMember = !!data.member;
   mount.innerHTML = "";
   for (const ev of data.events) {
