@@ -1,0 +1,16 @@
+# TAMA site content template
+# How to use: in Google Sheets, create three tabs named exactly Events, News, and Clinic.
+# Then copy the header row and the example row under each "TAB" label below into the matching tab.
+# Delete these label rows after copying. Do not change the column order or names.
+
+=== TAB: Events ===
+name,date,time,venue,description,register_url,banner_url,status
+"TAMA Pickleball Tournament","Saturday, October 10, 2026","10 AM - 6 PM","4780 Webb Bridge Road, Alpharetta, GA 30005","Men's, women's, and mixed doubles. $25 first event, $10 second.","https://www.tama.org/pickleball","","upcoming"
+
+=== TAB: News ===
+text,date
+"Ugadi: Cultural registrations are closed.",""
+
+=== TAB: Clinic ===
+title,schedule,description,register_url
+"Free Medical Clinic","Schedule to be confirmed by the committee.","TAMA runs a Free Medical Clinic for people with no health insurance. Walk in if you need care.",""
