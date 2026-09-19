@@ -6,6 +6,7 @@
 <title>Telugu Association of Metro Atlanta (TAMA)</title>
 <link rel="stylesheet" href="styles.css">
 <link rel="icon" href="logo.png">
+<meta name="theme-color" content="#952b71">
 </head>
 <body>
 <div class="preview-note">Draft rebuild preview. Not the live tama.org.</div>
@@ -47,7 +48,7 @@
       <p class="body-copy">TAMA's major events through the year. Tap Register on any event to sign up.</p>
       <div class="event-list">
         <article class="event-row">
-          <img class="event-thumb" src="events/steps-challenge.png" alt="TAMA October Steps Challenge 2026 banner">
+          <img class="event-thumb" loading="lazy" src="events/steps-challenge.png" alt="TAMA October Steps Challenge 2026 banner">
           <div class="event-info">
             <h3>TAMA October Steps Challenge 2026</h3>
             <p class="event-meta">October 1 to 31, 2026. Walk 10,000 steps a day, anywhere. Track your steps with the StepUp app.</p>
@@ -55,7 +56,7 @@
           <a class="btn btn-gold btn-sm" href="https://join.thestepupapp.com/uEu4U4E" target="_blank" rel="noopener">Register</a>
         </article>
         <article class="event-row">
-          <img class="event-thumb" src="events/pickleball.png" alt="TAMA Pickleball Tournament banner">
+          <img class="event-thumb" loading="lazy" src="events/pickleball.png" alt="TAMA Pickleball Tournament banner">
           <div class="event-info">
             <h3>TAMA Pickleball Tournament</h3>
             <p class="event-meta">Saturday, October 10, 2026, 10 AM to 6 PM. 4780 Webb Bridge Road, Alpharetta, GA 30005. Men's, women's, and mixed doubles. $25 first event, $10 second.</p>
@@ -153,8 +154,8 @@
       <h2>TAMA newsletter</h2>
       <p class="body-copy">Get event announcements and community news in your inbox.</p>
       <form class="news-form" action="#" onsubmit="return false">
-        <input type="text" name="name" placeholder="Your name" aria-label="Your name">
-        <input type="email" name="email" placeholder="Email address" aria-label="Email address" required>
+        <input type="text" name="name" placeholder="Your name" aria-label="Your name" autocomplete="name">
+        <input type="email" name="email" placeholder="Email address" aria-label="Email address" inputmode="email" autocomplete="email" required>
         <button class="btn btn-gold" type="submit">Sign up</button>
       </form>
       <div class="flag">Draft only. This form is not connected to a mailing list yet. The committee will pick a newsletter provider, and signups will go there.</div>
@@ -169,7 +170,7 @@
       <div class="footer-col">
         <h4>Contact</h4>
         <p>Mailing address<br><span class="ph">To be confirmed: public listings show two different suite numbers.</span></p>
-        <p>Email: <span class="ph">info@tama.org</span> <span class="ph-note">(unverified)</span></p>
+        <p>Email: <a href="mailto:info@tama.org">info@tama.org</a> <span class="ph-note">(unverified)</span></p>
         <p>Phone: <span class="ph">to be confirmed</span></p>
       </div>
       <div class="footer-col">
@@ -188,5 +189,10 @@
     <p class="fine">This is a draft preview of a rebuilt tama.org. Content is based on public sources. Details are marked for review by the TAMA committee before going live.</p>
   </div>
 </footer>
+
+<nav class="mobile-cta" aria-label="Quick actions">
+  <a class="btn btn-gold" href="https://www.tama.org/member-registration">Join TAMA</a>
+  <a class="btn btn-outline" href="#upcoming-events">Events</a>
+</nav>
 </body>
 </html>
