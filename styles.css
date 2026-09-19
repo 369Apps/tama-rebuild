@@ -282,7 +282,7 @@ ul.plain li::before{
 }
 @media(min-width:700px){
   .news-form{grid-template-columns:1fr 1fr auto;align-items:start}
-  .news-form .btn{white-space:nowrap}
+  .news-form .btn{white-space:nowrap;width:max-content;min-width:0}
 }
 .news-form input{
   font:inherit;font-size:16px;color:var(--ink);
