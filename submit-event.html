@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Submit an Event | TAMA Team</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="logo.png">
+<meta name="theme-color" content="#952b71">
+</head>
+<body>
+<div class="preview-note">Draft rebuild preview. Team page, not public.</div>
+<header class="site-header">
+  <div class="wrap head-row">
+    <a class="brand" href="index.html">
+      <img class="brand-logo" src="logo.png" alt="TAMA logo">
+      <span class="brand-text">Telugu Association<br>of Metro Atlanta</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="events.html">Events</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="membership.html">Membership</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Member Login</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="auth-wrap">
+    <div class="auth-card">
+      <h1>Submit an event</h1>
+      <p class="sub">Fill this in on your phone. The president reviews it before it goes live with ticket sales.</p>
+      <form class="auth-form" id="event-form" novalidate>
+        <label for="name">Event name</label>
+        <input id="name" placeholder="Deepavali Celebrations" required>
+        <label for="date">Date</label>
+        <input id="date" placeholder="Saturday, November 7, 2026" required>
+        <label for="time">Time</label>
+        <input id="time" placeholder="5 PM to 9 PM">
+        <label for="venue">Venue</label>
+        <input id="venue" placeholder="Gas South Convention Center, Duluth">
+        <label for="description">Short description</label>
+        <textarea id="description" placeholder="Cultural programs, dinner, and shopping stalls."></textarea>
+        <label for="member-price">Member ticket price (dollars)</label>
+        <input id="member-price" inputmode="decimal" placeholder="10">
+        <label for="public-price">Public ticket price (dollars)</label>
+        <input id="public-price" inputmode="decimal" placeholder="25">
+        <label for="banner">Banner image URL (optional)</label>
+        <input id="banner" inputmode="url" placeholder="https://...">
+        <div class="notice error" id="form-error" role="alert"></div>
+        <div class="notice ok" id="form-ok" role="status"></div>
+        <div style="margin-top:22px">
+          <button type="submit" class="btn btn-gold btn-block" id="submit-btn">Submit for review</button>
+        </div>
+      </form>
+      <div class="auth-links">
+        <p><a href="admin.html">Back to the team admin page</a></p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="fine">Team page for the TAMA website rebuild preview.</p>
+  </div>
+</footer>
+
+<script src="assets/js/tickets.js"></script>
+<script>
+(function () {
+  var WORKER = window.TAMA_WORKER_URL;
+  var form = document.getElementById("event-form");
+  var errBox = document.getElementById("form-error");
+  var okBox = document.getElementById("form-ok");
+  var btn = document.getElementById("submit-btn");
+
+  function dollarsToCents(v) {
+    var n = parseFloat(String(v).replace(/[^0-9.]/g, ""));
+    if (isNaN(n) || n < 0) return 0;
+    return Math.round(n * 100);
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    errBox.classList.remove("show"); okBox.classList.remove("show");
+    var name = document.getElementById("name").value.trim();
+    var date = document.getElementById("date").value.trim();
+    if (!name) { errBox.textContent = "Please give the event a name."; errBox.classList.add("show"); return; }
+    if (!date) { errBox.textContent = "Please add the event date."; errBox.classList.add("show"); return; }
+    btn.disabled = true;
+    btn.innerHTML = '<span class="spin"></span>Submitting...';
+    fetch(WORKER + "/api/events/submit", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: name,
+        date: date,
+        time: document.getElementById("time").value.trim(),
+        venue: document.getElementById("venue").value.trim(),
+        description: document.getElementById("description").value.trim(),
+        member_price_cents: dollarsToCents(document.getElementById("member-price").value),
+        public_price_cents: dollarsToCents(document.getElementById("public-price").value),
+        banner_url: document.getElementById("banner").value.trim()
+      })
+    })
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        btn.disabled = false;
+        btn.textContent = "Submit for review";
+        if (data.ok) {
+          form.reset();
+          okBox.textContent = "Submitted. The president will review it before it goes live.";
+          okBox.classList.add("show");
+          window.scrollTo(0, 0);
+        } else {
+          errBox.textContent = data.error || "Something went wrong. Please try again.";
+          errBox.classList.add("show");
+        }
+      })
+      .catch(function () {
+        btn.disabled = false;
+        btn.textContent = "Submit for review";
+        errBox.textContent = "Could not reach the server. Check your connection and try again.";
+        errBox.classList.add("show");
+      });
+  });
+})();
+</script>
+</body>
+</html>
