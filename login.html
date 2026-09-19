@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Member Login | Telugu Association of Metro Atlanta</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="logo.png">
+<meta name="theme-color" content="#952b71">
+</head>
+<body>
+<div class="preview-note">Draft rebuild preview. Not the live tama.org.</div>
+<header class="site-header">
+  <div class="wrap head-row">
+    <a class="brand" href="index.html">
+      <img class="brand-logo" src="logo.png" alt="TAMA logo">
+      <span class="brand-text">Telugu Association<br>of Metro Atlanta</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="events.html">Events</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="membership.html">Membership</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html" class="active">Member Login</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="auth-wrap">
+    <div class="auth-card">
+      <h1>Member login</h1>
+      <p class="sub">Members log in to get member prices on event tickets.</p>
+      <form class="auth-form" id="login-form" novalidate>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" inputmode="email" autocomplete="email" placeholder="you@example.com" required>
+        <label for="password">Password</label>
+        <div class="pw-wrap">
+          <input type="password" id="password" name="password" autocomplete="current-password" placeholder="Your password" required>
+          <button type="button" class="pw-toggle" id="pw-toggle" aria-label="Show password">Show</button>
+        </div>
+        <div class="notice error" id="form-error" role="alert"></div>
+        <div style="margin-top:22px">
+          <button type="submit" class="btn btn-gold btn-block" id="login-btn">Log in</button>
+        </div>
+      </form>
+      <div class="auth-links">
+        <p><strong>Never set a password?</strong><br>
+        <a href="#" id="magic-link">Email me a link to set my password</a></p>
+        <div class="notice ok" id="magic-ok" role="status"></div>
+        <div class="notice error" id="magic-err" role="alert"></div>
+        <p style="margin-top:14px">Not a member yet? <a href="membership.html">See membership options</a>.</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Mailing address<br>5490 McGinnis Village Place, Suite 117, Alpharetta GA 30005<br><span class="ph">As shown on tama.org. Committee to confirm.</span></p>
+        <p>Email: <a href="mailto:info@tama.org">info@tama.org</a> <span class="ph-note">(unverified)</span></p>
+        <p>Phone: <span class="ph">to be confirmed</span></p>
+      </div>
+      <div class="footer-col">
+        <h4>Follow TAMA</h4>
+        <p><a href="https://www.facebook.com/pg/tama1981/" target="_blank" rel="noopener">Facebook</a></p>
+        <p><a href="https://twitter.com/tama_atlanta" target="_blank" rel="noopener">Twitter</a></p>
+        <p><a href="https://www.youtube.com/user/tamaevents/videos" target="_blank" rel="noopener">YouTube</a></p>
+        <p><a href="https://www.instagram.com/teluguassociationmetroatlanta/" target="_blank" rel="noopener">Instagram</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>Nonprofit</h4>
+        <p>Telugu Association of Metro Atlanta is a nonprofit community organization.</p>
+        <p>Tax ID (EIN): <span class="ph">to be confirmed</span></p>
+      </div>
+    </div>
+    <p class="fine">This is a draft preview of a rebuilt tama.org. Content is based on public sources. Details are marked for review by the TAMA committee before going live.</p>
+  </div>
+</footer>
+
+<nav class="mobile-cta" aria-label="Quick actions">
+  <a class="btn btn-gold" href="https://www.tama.org/member-registration">Join TAMA</a>
+  <a class="btn btn-outline" href="index.html#upcoming-events">Events</a>
+</nav>
+<script src="assets/js/tickets.js"></script>
+<script>
+(function () {
+  var WORKER = window.TAMA_WORKER_URL;
+  var form = document.getElementById("login-form");
+  var errBox = document.getElementById("form-error");
+  var btn = document.getElementById("login-btn");
+  var pw = document.getElementById("password");
+  var toggle = document.getElementById("pw-toggle");
+
+  toggle.addEventListener("click", function () {
+    var show = pw.type === "password";
+    pw.type = show ? "text" : "password";
+    toggle.textContent = show ? "Hide" : "Show";
+  });
+
+  function showError(msg) {
+    errBox.textContent = msg;
+    errBox.classList.add("show");
+  }
+  function setBusy(busy) {
+    btn.disabled = busy;
+    btn.innerHTML = busy ? '<span class="spin"></span>Logging in...' : "Log in";
+  }
+
+  if (!window.TAMA_WORKER_READY) {
+    showError("Member login is not set up yet. Please check back soon.");
+    btn.disabled = true;
+    return;
+  }
+
+  // If already logged in, go straight to the account page.
+  fetch(WORKER + "/api/me", { credentials: "include" })
+    .then(function (r) { return r.json(); })
+    .then(function (me) { if (me.ok) window.location.href = "account.html"; })
+    .catch(function () {});
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    errBox.classList.remove("show");
+    var email = document.getElementById("email").value.trim();
+    if (!email || email.indexOf("@") < 0) { showError("Please enter your email address."); return; }
+    if (!pw.value) { showError("Please enter your password."); return; }
+    setBusy(true);
+    fetch(WORKER + "/api/auth/login", {
+      method: "POST",
+      credentials: "include",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email: email, password: pw.value })
+    })
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        if (data.ok) { window.location.href = "account.html"; return; }
+        setBusy(false);
+        showError(data.error || "Something went wrong. Please try again.");
+      })
+      .catch(function () {
+        setBusy(false);
+        showError("Could not reach the server. Check your connection and try again.");
+      });
+  });
+
+  document.getElementById("magic-link").addEventListener("click", function (e) {
+    e.preventDefault();
+    var email = document.getElementById("email").value.trim();
+    var okBox = document.getElementById("magic-ok");
+    var errBox2 = document.getElementById("magic-err");
+    okBox.classList.remove("show"); errBox2.classList.remove("show");
+    if (!email || email.indexOf("@") < 0) {
+      errBox2.textContent = "Type your email above first, then tap the link.";
+      errBox2.classList.add("show");
+      return;
+    }
+    fetch(WORKER + "/api/auth/request-set-password", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email: email })
+    })
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        if (data.ok) {
+          okBox.textContent = "If that email is a TAMA member, a set-password link is on its way. Check your inbox.";
+          okBox.classList.add("show");
+        } else {
+          errBox2.textContent = "Something went wrong. Please try again.";
+          errBox2.classList.add("show");
+        }
+      })
+      .catch(function () {
+        errBox2.textContent = "Could not reach the server. Check your connection and try again.";
+        errBox2.classList.add("show");
+      });
+  });
+})();
+</script>
+</body>
+</html>
