@@ -1,0 +1,56 @@
+[
+ {
+  "location": "Cumming",
+  "address": "20 Tribble Gap Rd, Cumming, GA 30040, USA.",
+  "timing": "Saturday 03:00PM - 05:00PM",
+  "guru": "Gowridhar Madu",
+  "phone": "402-305-7349",
+  "courses": "BalaBadi, Pravesam",
+  "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3299.6224607216654!2d-84.14269058529194!3d34.20712148056411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f58526dbce07f3%3A0x52a038aa38f68118!2s20%20Tribble%20Gap%20Rd%2C%20Cumming%2C%20GA%2030040%2C%20USA!5e0!3m2!1sen!2sin!4v1570175400043!5m2!1sen!2sin"
+ },
+ {
+  "location": "Alpharetta",
+  "address": "651 James Rd, Alpharetta, GA 30004, USA.",
+  "timing": "Saturday 03:00PM - 05:00PM",
+  "guru": "Nagesh Doddaka",
+  "phone": "678-358-3625",
+  "courses": "BalaBadi, Pravesam",
+  "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.7131753931135!2d-84.23892458478296!3d34.1280919805854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f59dc838b0cc9d%3A0xfa70d65b2fd65a46!2s651%20James%20Rd%2C%20Alpharetta%2C%20GA%2030004%2C%20USA!5e0!3m2!1sen!2sin!4v1570170957770!5m2!1sen!2sin"
+ },
+ {
+  "location": "Norcross",
+  "address": "5511 Williams Rd, Norcross, GA 30093, USA.",
+  "timing": "Sunday 11:00AM - 01:00PM",
+  "guru": "Pradeepa Duddilla",
+  "phone": "678-232-9261",
+  "courses": "BalaBadi, Pravesam",
+  "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.5787247098715!2d-84.17589068530185!3d33.90050198064754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5a43cea2c1d83%3A0xd317bade2dac4312!2s5511%20Williams%20Rd%2C%20Norcross%2C%20GA%2030093%2C%20USA!5e0!3m2!1sen!2sin!4v1570175917748!5m2!1sen!2sin"
+ },
+ {
+  "location": "Dunwoody",
+  "address": "4276 Chamblee Dunwoody Rd, Chamblee, GA 30341, USA",
+  "timing": "Sunday 11:00AM - 01:00PM",
+  "guru": "Kalyan Gopisetty",
+  "phone": "912-441-0866",
+  "courses": "BalaBadi, Pravesam",
+  "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.0227876343174!2d-84.3179400853014!3d33.91481308064358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5097445d76d23%3A0x3df3a30180af4fc7!2s4276%20Chamblee%20Dunwoody%20Rd%2C%20Chamblee%2C%20GA%2030341%2C%20USA!5e0!3m2!1sen!2sin!4v1570179690140!5m2!1sen!2sin"
+ },
+ {
+  "location": "Riverdale",
+  "address": "Venkateshwara temple Atlanta, 5851 GA-85, Riverdale, GA 30274, USA",
+  "timing": "Sunday 03:00PM - 05:00PM",
+  "guru": "Jyothi Chintalapudi",
+  "phone": "678-654-8686",
+  "courses": "Pravesam, BalaBadi",
+  "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.381201956674!2d-84.41083748531165!3d33.59541238073277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f4fc91c4e33b5d%3A0x388c8a6470b8e33b!2sThe%20Hindu%20Temple%20of%20Atlanta!5e0!3m2!1sen!2sin!4v1570179978119!5m2!1sen!2sin"
+ },
+ {
+  "location": "Macon",
+  "address": "132 Madison N Dr, Macon, GA 31220, USA.",
+  "timing": "Sunday 11:00AM - 01:00PM",
+  "guru": "Veera Pavuluri",
+  "phone": "973-204-9230",
+  "courses": "BalaBadi, Pravesam",
+  "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.752979569355!2d-83.79233898533441!3d32.8782545809415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f3f70995da0755%3A0x71c5c342ca98853e!2s132%20Madison%20N%20Dr%2C%20Macon%2C%20GA%2031220%2C%20USA!5e0!3m2!1sen!2sin!4v1570180208574!5m2!1sen!2sin"
+ }
+]
