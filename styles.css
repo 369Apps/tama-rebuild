@@ -390,3 +390,76 @@ a{-webkit-tap-highlight-color:rgba(149,43,113,.18)}
   .page-hero p{font-size:16.5px}
   .band{padding:40px 0}
 }
+
+/* member auth, tickets, check-in */
+.auth-wrap{max-width:540px;margin:0 auto;padding:44px 18px 70px}
+.auth-card{background:#fff;border-radius:20px;padding:30px 24px;box-shadow:0 14px 40px rgba(149,43,113,.12);border:1px solid var(--line)}
+.auth-card h1{font-size:clamp(26px,6vw,32px);color:var(--purple);margin:0 0 6px;font-weight:800}
+.auth-card .sub{color:var(--muted);font-size:16px;margin:0 0 8px;line-height:1.6}
+.auth-form label{display:block;font-weight:700;margin:18px 0 8px;font-size:16px}
+.auth-form input,.auth-form textarea,.auth-form select{
+  width:100%;font:inherit;font-size:17px;color:var(--ink);
+  padding:15px 18px;border-radius:14px;border:2px solid var(--line);background:#fff;
+  box-sizing:border-box;
+}
+.auth-form textarea{min-height:96px;resize:vertical}
+.auth-form input:focus,.auth-form textarea:focus{outline:none;border-color:var(--purple)}
+.pw-wrap{position:relative}
+.pw-wrap input{padding-right:76px}
+.pw-toggle{
+  position:absolute;right:8px;top:50%;transform:translateY(-50%);
+  min-width:60px;min-height:44px;border:none;background:none;
+  color:var(--purple);font-weight:800;font-size:15px;cursor:pointer;
+}
+.notice{border-radius:14px;padding:14px 18px;margin:16px 0 0;font-size:16px;line-height:1.55;display:none}
+.notice.show{display:block}
+.notice.error{background:#FDECEA;color:#9B1C1C;border:1px solid #F5C6C2}
+.notice.ok{background:#E7F6EE;color:#0E6B3C;border:1px solid #BFE6CF}
+.notice.info{background:#FFF8E1;color:#7A5B00;border:1px solid #F0D878}
+.btn-block{width:100%;text-align:center;box-sizing:border-box;border:none;cursor:pointer;font-family:inherit}
+.btn[disabled]{opacity:.65;cursor:wait;transform:none}
+.spin{display:inline-block;width:18px;height:18px;margin-right:10px;vertical-align:-3px;
+  border:3px solid rgba(255,255,255,.45);border-top-color:#fff;border-radius:50%;
+  animation:spin .7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.auth-links{margin-top:20px;font-size:16px;line-height:1.7}
+.auth-links a{color:var(--purple);font-weight:700}
+.member-card{background:#fff;border-radius:20px;padding:28px 24px;box-shadow:0 14px 40px rgba(149,43,113,.12);border:1px solid var(--line)}
+.member-card .m-name{font-size:24px;font-weight:800;color:var(--purple);margin:0 0 4px}
+.member-card .m-row{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-top:1px solid var(--line);font-size:16px}
+.member-card .m-row span:first-child{color:var(--muted)}
+.member-card .m-row span:last-child{font-weight:700;text-align:right}
+.pill{display:inline-block;padding:6px 16px;border-radius:999px;font-size:14px;font-weight:800}
+.pill.on{background:#E7F6EE;color:#0E6B3C}
+.pill.off{background:#FDECEA;color:#9B1C1C}
+/* ticket price lines on event rows */
+.ticket-line{margin-top:10px;font-size:16px;font-weight:700;color:var(--purple)}
+.ticket-line .save{color:var(--green)}
+.ticket-nudge{font-size:14.5px;color:var(--muted);margin-top:6px}
+.ticket-nudge a{color:var(--purple);font-weight:700}
+/* check-in */
+.checkin-wrap{max-width:560px;margin:0 auto;padding:40px 18px 70px;text-align:center}
+.checkin-input{
+  width:100%;box-sizing:border-box;font-size:30px;font-weight:800;letter-spacing:3px;
+  text-transform:uppercase;text-align:center;padding:20px 16px;border-radius:18px;
+  border:3px solid var(--purple);margin:18px 0;
+}
+.checkin-result{border-radius:18px;padding:28px 20px;margin-top:20px;display:none}
+.checkin-result.show{display:block}
+.checkin-result h2{margin:0 0 8px;font-size:30px}
+.checkin-result p{margin:6px 0;font-size:18px}
+.checkin-result.good{background:#E7F6EE;border:2px solid #0E6B3C}
+.checkin-result.good h2{color:#0E6B3C}
+.checkin-result.bad{background:#FDECEA;border:2px solid #9B1C1C}
+.checkin-result.bad h2{color:#9B1C1C}
+.checkin-result.warn{background:#FFF8E1;border:2px solid #B78A00}
+.checkin-result.warn h2{color:#7A5B00}
+/* approval list */
+.appr-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;margin:16px 0}
+.appr-card h3{margin:0 0 8px;color:var(--purple)}
+.appr-card dl{margin:0 0 14px;font-size:15.5px}
+.appr-card dt{font-weight:700;color:var(--muted);margin-top:8px}
+.appr-card dd{margin:2px 0 0}
+.appr-actions{display:flex;gap:12px}
+.appr-actions .btn{flex:1;text-align:center;padding:14px 10px;font-size:16px}
+.btn-red{background:linear-gradient(180deg,#C0392B,#96281B);color:#fff}
