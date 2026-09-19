@@ -48,6 +48,7 @@
     <div id="list-card" style="display:none">
       <h1 style="font-size:clamp(26px,6vw,32px);color:var(--purple);margin:0 0 6px">Events waiting for review</h1>
       <p class="sub" style="color:var(--muted)">Approving puts the event on the site and turns on ticket sales with these prices.</p>
+      <div class="notice ok" id="approved-note" role="status"></div>
       <div id="pending-list"></div>
       <div class="notice info show" id="empty-note" style="display:none">Nothing waiting. All caught up.</div>
       <div class="notice error" id="list-error" role="alert"></div>
@@ -143,7 +144,14 @@
     })
       .then(function (r) { return r.json(); })
       .then(function (data) {
-        if (data.ok) { loadPending(); return; }
+        if (data.ok) {
+          loadPending();
+          var note = document.getElementById("approved-note");
+          note.textContent = action === "approve" ? "Event is live." : "Event rejected.";
+          note.classList.add("show");
+          window.scrollTo(0, 0);
+          return;
+        }
         btn.disabled = false;
         btn.textContent = action === "approve" ? "Approve" : "Reject";
         var errBox = document.getElementById("list-error");
