@@ -36,7 +36,7 @@ a{color:var(--orange)}
 
 /* org banner: big TAMA header with Telugu name */
 .org-banner{background:#fff;border-bottom:3px solid var(--gold);padding:10px 16px 8px}
-.org-banner img{display:block;width:100%;max-width:940px;height:auto;margin:0 auto}
+.org-banner img{display:block;width:100%;max-width:940px;height:auto;margin:0 auto;aspect-ratio:927/37}
 
 /* sticky header */
 .site-header{
@@ -597,9 +597,6 @@ img{max-width:100%}
 }
 
 /* org banner: gentle settle-in on load */
-.org-banner img{animation:bannerIn .8s cubic-bezier(.2,.7,.2,1) both}
-@keyframes bannerIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
-
 /* buttons: sheen sweep + satisfying press */
 .btn{transition:transform .16s ease,box-shadow .16s ease,filter .16s ease,background-color .16s ease}
 .btn:hover{filter:brightness(1.05)}
