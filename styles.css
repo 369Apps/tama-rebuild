@@ -680,6 +680,18 @@ img{max-width:100%}
   .event-row{padding:16px}
 }
 
+/* ============ Wall of Memories ============ */
+.page-hero-slim{padding:36px 0 32px}
+.page-hero-slim h1{font-size:clamp(26px,7vw,38px)}
+.year-label{color:var(--purple);font-size:20px;font-weight:800;margin:28px 0 14px;letter-spacing:.5px}
+.founder-card{border:2px solid var(--gold);background:linear-gradient(180deg,#FFFDF7,#FFF8E6)}
+.card-detail{color:var(--muted);font-size:14.5px;margin:8px 0 0;line-height:1.55}
+.prez-list{list-style:none;margin:26px 0 0;padding:0;display:grid;gap:10px}
+.prez-list li{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:14px;padding:13px 16px;box-shadow:0 8px 20px rgba(149,43,113,.07)}
+.prez-year{flex:none;min-width:52px;font-weight:800;color:var(--purple);font-size:16px}
+.prez-list strong{display:block;font-size:16px}
+.prez-detail{display:block;color:var(--muted);font-size:14px;margin-top:3px}
+@media(min-width:700px){.prez-list{grid-template-columns:1fr 1fr}}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;
     transition-duration:.01ms!important}
