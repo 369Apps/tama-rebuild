@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clinic Volunteer - Telugu Association of Metro Atlanta (TAMA)</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="logo.png">
+<meta name="theme-color" content="#952b71">
+<meta name="description" content="Volunteer at the TAMA Free Clinic. Volunteer registration and the GADPH certified volunteers roster.">
+</head>
+<body>
+<div class="preview-note">Draft rebuild preview. Not the live tama.org.</div>
+<header class="site-header">
+  <div class="wrap head-row">
+    <a class="brand" href="index.html">
+      <img class="brand-logo" src="logo.png" alt="TAMA logo">
+      <span class="brand-text">Telugu Association<br>of Metro Atlanta</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="events.html">Events</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="membership.html">Membership</a>
+      <a href="clinic.html" class="active">Free Clinic</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Member Login</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow on-dark">Free clinic</p>
+      <h1>Clinic Volunteer Registration</h1>
+      <p>Sign up to volunteer at the TAMA Free Clinic, alongside our GADPH certified volunteers.</p>
+    </div>
+  </div>
+  <div class="garland" aria-hidden="true"></div>
+
+  <section class="band tint">
+    <div class="wrap">
+      <p class="eyebrow">Volunteer registration</p>
+      <h2>Volunteer Details</h2>
+      <form class="auth-form" id="volForm" novalidate>
+        <div class="form-sec">
+          <h2 class="form-sec-h">Volunteer Details</h2>
+          <div class="form-sec-b">
+            <label for="vFirst">First Name <span class="req">*</span></label>
+            <input id="vFirst" name="vFirst" type="text" autocomplete="given-name">
+            <p class="field-err" id="err-vFirst">First Name Required</p>
+            <label for="vLast">Last Name <span class="req">*</span></label>
+            <input id="vLast" name="vLast" type="text" autocomplete="family-name">
+            <p class="field-err" id="err-vLast">Last Name Required</p>
+            <label for="vPhone">Contact Number <span class="req">*</span></label>
+            <input id="vPhone" name="vPhone" type="tel" autocomplete="tel" inputmode="tel" maxlength="12">
+            <p class="field-err" id="err-vPhone">Phone No Required</p>
+            <label for="vEmail">Email Address <span class="req">*</span></label>
+            <input id="vEmail" name="vEmail" type="email" autocomplete="email" inputmode="email">
+            <p class="field-err" id="err-vEmail">Enter a valid email</p>
+            <label for="vClinic">Select an Clinic you would like to Volunteer <span class="req">*</span></label>
+            <select id="vClinic" name="vClinic">
+              <option value="">Choose</option>
+              <option value="Free Clinic">Free Clinic</option>
+            </select>
+            <p class="field-err" id="err-vClinic">Select Clinic</p>
+            <div style="margin-top:20px">
+              <button class="btn btn-gold btn-block" type="submit">Submit</button>
+            </div>
+            <div class="notice info" id="volNotice" role="status"></div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <p class="eyebrow">Our people</p>
+      <h2 class="gadph-title">gadph certified volunteers</h2>
+      <div class="year-pick">
+        <label for="yearSel">Year</label>
+        <select id="yearSel" name="year">
+          <option value="">Select Year</option>
+          <option value="2026" selected>2026</option>
+          <option value="2025">2025</option>
+          <option value="2024">2024</option>
+          <option value="2023">2023</option>
+          <option value="2022">2022</option>
+          <option value="2021">2021</option>
+          <option value="2020">2020</option>
+          <option value="2019">2019</option>
+          <option value="2018">2018</option>
+          <option value="2017">2017</option>
+        </select>
+      </div>
+      <div class="vol-grid" id="volGrid">
+          <div class="vol-card" data-year="2026">
+            <div class="vn">Bilhan Alapati</div>
+          </div>
+          <div class="vol-card" data-year="2026">
+            <div class="vn">Venkat Adusumilli</div>
+          </div>
+          <div class="vol-card" data-year="2026">
+            <div class="vn">Bharath Avirneni</div>
+          </div>
+          <div class="vol-card" data-year="2026">
+            <div class="vn">Ram Bandreddi</div>
+          </div>
+          <div class="vol-card" data-year="2026">
+            <div class="vn">Suresh Bandaru</div>
+          </div>
+          <div class="vol-card" data-year="2026">
+            <div class="vn">Murali Boddu</div>
+          </div>
+          <div class="vol-card" data-year="2026">
+            <div class="vn">Praveen Boppana</div>
+          </div>
+          <div class="vol-card" data-year="2026">
+            <div class="vn">Naga Tirumala Rao Chilapalli</div>
+          </div>
+          <div class="vol-card" data-year="2026">
+            <div class="vn">Ramki Chowdarapu</div>
+          </div>
+          <div class="vol-card" data-year="2026">
+            <div class="vn">Rajasekhar Chunduri</div>
+          </div>
+          <div class="vol-card" data-year="2026">
+            <div class="vn">Rohan Chunduri</div>
+          </div>
+          <div class="vol-card" data-year="2026">
+            <div class="vn">Sasi Daggula</div>
+          </div>
+          <div class="vol-card" data-year="2026">
+            <div class="vn">Sivaram Devabhaktuni</div>
+          </div>
+          <div class="vol-card" data-year="2026">
+            <div class="vn">Nagesh Doddaka</div>
+          </div>
+          <div class="vol-card" data-year="2026">
+            <div class="vn">Anand Akkineni</div>
+          </div>
+          <div class="vol-card" data-year="2026">
+            <div class="vn">Priya Balusu</div>
+          </div>
+          <div class="vol-card" data-year="2026">
+            <div class="vn">Krishna Bojja</div>
+          </div>
+          <div class="vol-card" data-year="2026">
+            <div class="vn">Viju Chiluveru</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Bharath Maddineni</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Nagesh Doddaka</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Mahesh Pawar</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Manoj tatikonda</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Murali Boddu</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Rajesh Jampala</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Ram Maddi</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Srinivas Lavu</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Subbarao Maddali</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Venkat Adusumilli</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Venky Gadde</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Innaiah Yenumula</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Rajesh Tadikamalla</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Ramki Chowdarapu</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Priya Balusu</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Vinay Maddineni</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Venkatapathi Raju Mandapati</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Ram Bandreddi</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Prabhakar Kadiyala</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Bharath Avirneni</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Sivaram Devabhaktuni</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Abdul Shaik</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Aditya Gali</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Anand Akkineni</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Hemanth Verma Penmetsa</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Kamalakanth Satuluru</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Kiran Shetty</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Krishna Bojja</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Rajasekhar Chunduri</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Ramesh Vennalakanti</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Ramesh Kotike</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Parupalli Ramu</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Rohan Chunduri</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Rookesh Surapaneni</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Rupendra Vemulapalli</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Venkata Nagendra Sai Ram Karumanchi</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Santosh Srivastava Reddy</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Saritha Kotike</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Shree Sravani Rachakulla</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Srinivas Uppu</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Suresh Bandaru</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Sri Harsha Yerneni</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Naga Tirumala Rao Chilapalli</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Venkata Srivastava Guntaka</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Viju Chiluveru</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Gowri V Sundararaman</div>
+          <div class="vr">Board - Director</div>
+          </div>
+          <div class="vol-card" data-year="2020">
+            <div class="vn">Sahithi Doddaka</div>
+          <div class="vr">Board - Director</div>
+          </div>
+      </div>
+      <p class="body-copy" id="noVols" style="display:none">No volunteers listed for this year yet.</p>
+    </div>
+  </section>
+</main>
+
+<div class="garland" aria-hidden="true"></div>
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>Telugu Association of Metro Atlanta</strong> &middot; Serving Telugu families in metro Atlanta since 1981.</p>
+    <p class="footer-links"><a href="clinic.html">Free Clinic</a> &middot; <a href="clinic-dates.html">Clinic Dates</a> &middot; <a href="clinic-volunteer.html">Volunteer</a> &middot; <a href="clinic-donations.html">Donate</a></p>
+    <p class="fine">This is a draft preview of a rebuilt tama.org. Content is based on public sources. Details are marked for review by the TAMA committee before going live.</p>
+  </div>
+</footer>
+
+<nav class="mobile-cta" aria-label="Quick actions">
+  <a class="btn btn-gold" href="https://www.tama.org/member-registration">Join TAMA</a>
+  <a class="btn btn-outline" href="events.html">Events</a>
+</nav>
+
+<script>
+(function(){
+  var yearSel = document.getElementById('yearSel');
+  var cards = document.querySelectorAll('#volGrid .vol-card');
+  var noVols = document.getElementById('noVols');
+  function filter(){
+    var y = yearSel.value;
+    var shown = 0;
+    cards.forEach(function(c){
+      var vis = (c.getAttribute('data-year') === y);
+      c.style.display = vis ? '' : 'none';
+      if (vis) shown++;
+    });
+    noVols.style.display = shown ? 'none' : '';
+  }
+  yearSel.addEventListener('change', filter);
+  filter();
+
+  function showErr(id){ var el = document.getElementById(id); if (el) el.classList.add('show'); }
+  document.getElementById('volForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    document.querySelectorAll('.field-err.show').forEach(function(el){ el.classList.remove('show'); });
+    var ok = true;
+    function need(cond, id){ if (!cond) { showErr(id); ok = false; } }
+    need(document.getElementById('vFirst').value.trim() !== '', 'err-vFirst');
+    need(document.getElementById('vLast').value.trim() !== '', 'err-vLast');
+    need(document.getElementById('vPhone').value.trim() !== '', 'err-vPhone');
+    var email = document.getElementById('vEmail').value.trim();
+    need(email !== '' && /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email), 'err-vEmail');
+    need(document.getElementById('vClinic').value !== '', 'err-vClinic');
+    var notice = document.getElementById('volNotice');
+    if (!ok) {
+      notice.className = 'notice error show';
+      notice.textContent = 'Please fix the highlighted fields above and try again.';
+      notice.scrollIntoView({behavior:'smooth', block:'center'});
+      return;
+    }
+    // Backend (Cloudflare Worker) is not deployed yet: no data is sent anywhere.
+    notice.className = 'notice info show';
+    notice.textContent = 'Volunteer registration on the new system is coming soon. Please check back shortly to sign up online.';
+    notice.scrollIntoView({behavior:'smooth', block:'center'});
+  });
+})();
+</script>
+</body>
+</html>
