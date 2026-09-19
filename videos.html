@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video Gallery - Telugu Association of Metro Atlanta (TAMA)</title>
+<link rel="stylesheet" href="styles.css?v=4">
+<link rel="icon" href="logo.png">
+<meta name="theme-color" content="#952b71">
+</head>
+<body>
+<div class="preview-note">Draft rebuild preview. Not the live tama.org.</div>
+<div class="org-banner"><a class="org-brand" href="index.html"><img class="org-emblem" src="logo.png" alt="TAMA emblem" fetchpriority="high"><img class="org-name" src="logo-right.png" alt="Telugu Association of Metro Atlanta — అట్లాంటా తెలుగు సంఘం" fetchpriority="high"></a></div>
+<header class="site-header">
+  <div class="wrap head-row">
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <div class="nav-item"><a href="about.html" aria-haspopup="true">About Us</a><div class="drop" role="menu"><a href="about.html">Who we are</a><a href="executive-committee.html">Executive Committee</a><a href="board-of-directors.html">Board of Directors</a><a href="adhoc-committees.html">Ad Hoc Committees</a><a href="bylaws.html">Bylaws</a><a href="financials.html">Financials</a><a href="meeting-minutes.html">Meeting Minutes</a><a href="elections.html">Elections</a></div></div>
+      <div class="nav-item"><a href="activities.html" aria-haspopup="true">Activities</a><div class="drop" role="menu"><a href="activities.html">Activities home</a><a href="kalasala.html">Kalasala</a><a href="scholarship.html">Scholarship</a><a href="manabadi.html">Manabadi</a><a href="about-manabadi.html">About Manabadi</a><a href="locations-teachers.html">Locations & Teachers</a></div></div>
+      <a href="events.html">Events</a>
+      <div class="nav-item"><a href="gallery.html" class="active" aria-haspopup="true">Media</a><div class="drop" role="menu"><a href="gallery.html">Photo Gallery</a><a href="videos.html">Videos</a><a href="magazine.html">Magazine</a></div></div>
+      <a href="digital-library.html">Digital Library</a>
+      <a href="directory.html">Directory</a>
+      <a href="membership.html">Membership</a>
+      <a href="clinic.html">Free Clinic</a>
+      <div class="nav-item"><a href="sponsor-a-program.html" aria-haspopup="true">Support Us</a><div class="drop" role="menu"><a href="sponsor-a-program.html">Sponsor a program</a><a href="sponsors.html">Sponsors</a><a href="volunteers-list.html">Volunteers List</a></div></div>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Member Login</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow on-dark">Media</p>
+      <h1>Video Gallery</h1>
+      <p>Event highlights and greetings from TAMA's video archive.</p>
+    </div>
+  </div>
+  <div class="garland" aria-hidden="true"></div>
+
+  <section class="band">
+    <div class="wrap">
+
+      <div class="filter-bar">
+        <label for="yearSel">Year</label>
+        <select id="yearSel"><option value="all">All years</option></select>
+        <span class="filter-count" id="count"></span>
+      </div>
+      <div id="albums"></div>
+      <div class="empty-state" id="empty" style="display:none">No videos found for this year.</div>
+<script>
+var DATA = {
+ "years": [
+  2011,
+  2017,
+  2018,
+  2019,
+  2020
+ ],
+ "videos": [
+  {
+   "year": 2020,
+   "album": "2020 New Year Celebrations",
+   "video": "https://www.youtube.com/embed/ACur4tR3u1g",
+   "thumb": "http://i1.ytimg.com/vi/ACur4tR3u1g/hqdefault.jpg",
+   "title": "Happy New Year Greetings from TAMA"
+  },
+  {
+   "year": 2020,
+   "album": "2020 Sankranthi Sambaralu",
+   "video": "https://www.youtube.com/embed/zhpnX6_O4ec",
+   "thumb": "http://i1.ytimg.com/vi/zhpnX6_O4ec/hqdefault.jpg",
+   "title": "TAMA Sankranthi Sambharalu 2020 : Dance - Girls Dance - Performance with 4 movie songs"
+  },
+  {
+   "year": 2020,
+   "album": "2020 Sankranthi Sambaralu",
+   "video": "https://www.youtube.com/embed/mRYaNUj4vIc",
+   "thumb": "http://i1.ytimg.com/vi/mRYaNUj4vIc/hqdefault.jpg",
+   "title": "TAMA Sankranthi Sambaralu 2020 PROMO"
+  },
+  {
+   "year": 2020,
+   "album": "2020 Sankranthi Sambaralu",
+   "video": "https://www.youtube.com/embed/aU_gpEmr2XA",
+   "thumb": "http://i1.ytimg.com/vi/aU_gpEmr2XA/hqdefault.jpg",
+   "title": "TAMA Sankranthi Sambharalu 2020 : Nataraja Natyanjali Kuchipudi Dance Academy"
+  },
+  {
+   "year": 2020,
+   "album": "2020 Sankranthi Sambaralu",
+   "video": "https://www.youtube.com/embed/87yPS-DsXnY",
+   "thumb": "http://i1.ytimg.com/vi/87yPS-DsXnY/hqdefault.jpg",
+   "title": "TAMA Sankranthi Sambharalu 2020 : Performances"
+  },
+  {
+   "year": 2020,
+   "album": "2020 Sankranthi Sambaralu",
+   "video": "https://www.youtube.com/embed/fWrrHzxclxg",
+   "thumb": "http://i1.ytimg.com/vi/fWrrHzxclxg/hqdefault.jpg",
+   "title": "TAMA Sankranthi Sambharalu 2020 : Singing - Telugu Medley - Team RTP"
+  },
+  {
+   "year": 2020,
+   "album": "2020 Sankranthi Sambaralu",
+   "video": "https://www.youtube.com/embed/h3N1xwYNqbA",
+   "thumb": "http://i1.ytimg.com/vi/h3N1xwYNqbA/hqdefault.jpg",
+   "title": "TAMA Sankranthi Sambharalu 2020 : Musical Night by Damini Bhatla and Dhanunjay"
+  },
+  {
+   "year": 2020,
+   "album": "2020 Sankranthi Sambaralu",
+   "video": "https://www.youtube.com/embed/ru7xC3i66VA",
+   "thumb": "http://i1.ytimg.com/vi/ru7xC3i66VA/hqdefault.jpg",
+   "title": "TAMA Sankranthi Sambharalu 2020 : Damini Bhatla Performance."
+  },
+  {
+   "year": 2020,
+   "album": "2020 Sankranthi Sambaralu",
+   "video": "https://www.youtube.com/embed/mS0xozHTdVg",
+   "thumb": "http://i1.ytimg.com/vi/mS0xozHTdVg/hqdefault.jpg",
+   "title": "Special Guest Lohit Kumar Inviting you to TAMA Sankranthi Sambharalu on Jan 18th"
+  },
+  {
+   "year": 2020,
+   "album": "2020 Sankranthi Sambaralu",
+   "video": "https://www.youtube.com/embed/D8nJDydHNqg",
+   "thumb": "http://i1.ytimg.com/vi/D8nJDydHNqg/hqdefault.jpg",
+   "title": "TAMA Sankranthi Sambharalu - Special Guest Damini Bhatla"
+  },
+  {
+   "year": 2019,
+   "album": "Ugadi Celebrations",
+   "video": "https://www.youtube.com/embed/GdBsRFG4GtM",
+   "thumb": "http://i1.ytimg.com/vi/GdBsRFG4GtM/hqdefault.jpg",
+   "title": "TAMA Ugadi 2019 Part 4"
+  },
+  {
+   "year": 2019,
+   "album": "Ugadi Celebrations",
+   "video": "https://www.youtube.com/embed/fwUWlKxzr4Q",
+   "thumb": "http://i1.ytimg.com/vi/fwUWlKxzr4Q/hqdefault.jpg",
+   "title": "TAMA Ugadi 2019 Part 7"
+  },
+  {
+   "year": 2019,
+   "album": "Ugadi Celebrations",
+   "video": "https://www.youtube.com/embed/p1T4wp8cEaA",
+   "thumb": "http://i1.ytimg.com/vi/p1T4wp8cEaA/hqdefault.jpg",
+   "title": "TAMA Ugadi 2019 Sahapankti Bhojanalu"
+  },
+  {
+   "year": 2019,
+   "album": "Ugadi Celebrations",
+   "video": "https://www.youtube.com/embed/QUkJBXpohmw",
+   "thumb": "http://i1.ytimg.com/vi/QUkJBXpohmw/hqdefault.jpg",
+   "title": "TAMA Ugadi 2019 Highlights"
+  },
+  {
+   "year": 2019,
+   "album": "Ugadi Celebrations",
+   "video": "https://www.youtube.com/embed/Mo3CPjrQo_k",
+   "thumb": "http://i1.ytimg.com/vi/Mo3CPjrQo_k/hqdefault.jpg",
+   "title": "Ugadi Celebrations"
+  },
+  {
+   "year": 2019,
+   "album": "Ugadi Celebrations",
+   "video": "https://www.youtube.com/embed/54IIO2tE7H8",
+   "thumb": "http://i1.ytimg.com/vi/54IIO2tE7H8/hqdefault.jpg",
+   "title": "Ugadi Celebrations"
+  },
+  {
+   "year": 2019,
+   "album": "Sankranthi Celebrations",
+   "video": "https://www.youtube.com/embed/UVlvFwl7B_s",
+   "thumb": "http://i1.ytimg.com/vi/UVlvFwl7B_s/hqdefault.jpg",
+   "title": "Sankranthi sambaralu"
+  },
+  {
+   "year": 2019,
+   "album": "Sankranthi Celebrations",
+   "video": "https://www.youtube.com/embed/gk6ZSyRx1sg",
+   "thumb": "http://i1.ytimg.com/vi/gk6ZSyRx1sg/hqdefault.jpg",
+   "title": "Sankranthi sambaralu"
+  },
+  {
+   "year": 2019,
+   "album": "Sankranthi Celebrations",
+   "video": "https://www.youtube.com/embed/5ZvKKlWxgE0",
+   "thumb": "http://i1.ytimg.com/vi/5ZvKKlWxgE0/hqdefault.jpg",
+   "title": "Sankranthi sambaralu"
+  },
+  {
+   "year": 2018,
+   "album": "Tama Sankranthi",
+   "video": "https://www.youtube.com/embed/kVN1nzqFiFs",
+   "thumb": "http://i1.ytimg.com/vi/kVN1nzqFiFs/hqdefault.jpg",
+   "title": "Tama sankranthi 2018 part 2"
+  },
+  {
+   "year": 2018,
+   "album": "Tama Sankranthi",
+   "video": "https://www.youtube.com/embed/l3JU8GNj9AM",
+   "thumb": "http://i1.ytimg.com/vi/l3JU8GNj9AM/hqdefault.jpg",
+   "title": "Tama Sankranthi 2018 part 1"
+  },
+  {
+   "year": 2017,
+   "album": "2017 Ugadi Celebrations",
+   "video": "https://www.youtube.com/embed/n3Isi_xJBu0",
+   "thumb": "http://i1.ytimg.com/vi/n3Isi_xJBu0/hqdefault.jpg",
+   "title": "Welcome Audience – Jyothi Prajvalana"
+  },
+  {
+   "year": 2017,
+   "album": "2017 Ugadi Celebrations",
+   "video": "https://www.youtube.com/embed/1XLhd5Sz1p0",
+   "thumb": "http://i1.ytimg.com/vi/1XLhd5Sz1p0/hqdefault.jpg",
+   "title": "Sumangali Performance"
+  },
+  {
+   "year": 2017,
+   "album": "2017 Ugadi Celebrations",
+   "video": "https://www.youtube.com/embed/0DT0fcUeVpo",
+   "thumb": "http://i1.ytimg.com/vi/0DT0fcUeVpo/hqdefault.jpg",
+   "title": "Classical presentation on Ramadasu Keertanas"
+  },
+  {
+   "year": 2017,
+   "album": "2017 Sankranthi Sambaralu",
+   "video": "https://www.youtube.com/embed/0EFkhZC5HKs",
+   "thumb": "http://i1.ytimg.com/vi/0EFkhZC5HKs/hqdefault.jpg",
+   "title": "Medley Dance by Lasya Sarraff"
+  },
+  {
+   "year": 2017,
+   "album": "2017 Sankranthi Sambaralu",
+   "video": "https://www.youtube.com/embed/Z5BcW7rzcCU",
+   "thumb": "http://i1.ytimg.com/vi/Z5BcW7rzcCU/hqdefault.jpg",
+   "title": "Felicitation of Shekar's Realty"
+  },
+  {
+   "year": 2017,
+   "album": "2017 Sankranthi Sambaralu",
+   "video": "https://www.youtube.com/embed/dIEWKLHWQbg",
+   "thumb": "http://i1.ytimg.com/vi/dIEWKLHWQbg/hqdefault.jpg",
+   "title": "Telugu songs by Srivalli Sridhar and Sandeep Kowtha"
+  },
+  {
+   "year": 2011,
+   "album": "2011 Ugadi utsavaalu",
+   "video": "https://www.youtube.com/embed/nJi4VhDIUaA",
+   "thumb": "http://i1.ytimg.com/vi/nJi4VhDIUaA/hqdefault.jpg",
+   "title": "Instrumental (Violin) - Ninnu Kori Song -"
+  },
+  {
+   "year": 2011,
+   "album": "2011 Ugadi utsavaalu",
+   "video": "https://www.youtube.com/embed/oABB8E3lvLs",
+   "thumb": "http://i1.ytimg.com/vi/oABB8E3lvLs/hqdefault.jpg",
+   "title": "Bollywood dance/TAMMA TAMMA"
+  },
+  {
+   "year": 2011,
+   "album": "2011 Ugadi utsavaalu",
+   "video": "https://www.youtube.com/embed/968YK4dKWZk",
+   "thumb": "http://i1.ytimg.com/vi/968YK4dKWZk/hqdefault.jpg",
+   "title": "Dance - Hello Rammante"
+  },
+  {
+   "year": 2011,
+   "album": "2011 Sankranthi Sambaralu",
+   "video": "https://www.youtube.com/embed/Ccg2NGMIKB0",
+   "thumb": "http://i1.ytimg.com/vi/Ccg2NGMIKB0/hqdefault.jpg",
+   "title": "Jyothi Prajwalana"
+  },
+  {
+   "year": 2011,
+   "album": "2011 Sankranthi Sambaralu",
+   "video": "https://www.youtube.com/embed/tNtWJH3g5DM",
+   "thumb": "http://i1.ytimg.com/vi/tNtWJH3g5DM/hqdefault.jpg",
+   "title": "Dance Medley (Orange & Brindavanam)"
+  },
+  {
+   "year": 2011,
+   "album": "2011 Sankranthi Sambaralu",
+   "video": "https://www.youtube.com/embed/eo5wkZQ2yks",
+   "thumb": "http://i1.ytimg.com/vi/eo5wkZQ2yks/hqdefault.jpg",
+   "title": "Karaoke song \"Ninnu kori\""
+  }
+ ]
+};
+
+function initials(name){return name.split(/\s+/).map(function(w){return w.charAt(0)}).join('').slice(0,2).toUpperCase();}
+function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function photoTag(rec, cls){
+  cls = cls || '';
+  var src = rec.local || rec.photo;
+  if(src){return '<img loading="lazy" class="'+cls+'" src="'+esc(src)+'" alt="'+esc(rec.name||rec.title||'')+'" onerror="this.onerror=null;this.outerHTML=\'<div class=&quot;initials&quot;\'>\'+initials(esc(rec.name||rec.title||\'?\'))+\'</div>\';">';}
+  return '<div class="initials">'+initials(rec.name||rec.title||'?')+'</div>';
+}
+
+var sel = document.getElementById('yearSel'), wrap = document.getElementById('albums'),
+    empty = document.getElementById('empty'), count = document.getElementById('count');
+var years = DATA.years.slice().sort(function(a,b){return b-a;});
+years.forEach(function(y){var o=document.createElement('option');o.value=y;o.textContent=y;sel.appendChild(o);});
+function render(){
+  var y = sel.value;
+  var list = DATA.videos.filter(function(v){return y==='all' || v.year===parseInt(y,10);});
+  count.textContent = list.length + (list.length===1?' video':' videos');
+  empty.style.display = list.length? 'none':'block';
+  var albums = {};
+  list.forEach(function(v){(albums[v.album]=albums[v.album]||[]).push(v);});
+  wrap.innerHTML = Object.keys(albums).map(function(a){
+    var cards = albums[a].map(function(v){
+      var thumb = v.local || v.thumb;
+      return '<a class="video-card" href="'+esc(v.video).replace('/embed/','/watch?v=')+'" target="_blank" rel="noopener">'
+        + (thumb?'<img loading="lazy" src="'+esc(thumb)+'" alt="'+esc(v.title)+'" onerror="this.style.display=\'none\'">' : '')
+        + '<div class="vt">'+esc(v.title||a)+'</div></a>';
+    }).join('');
+    return '<div class="video-album"><h3>'+esc(a)+'</h3><div class="video-grid">'+cards+'</div></div>';
+  }).join('');
+}
+sel.addEventListener('change', render);
+render();
+</script>
+    </div>
+  </section>
+</main>
+
+<div class="garland" aria-hidden="true"></div>
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>Telugu Association of Metro Atlanta</strong> &middot; Serving Telugu families in metro Atlanta since 1981.</p>
+    <p class="footer-links"><a href="about.html">About Us</a> &middot; <a href="executive-committee.html">Executive Committee</a> &middot; <a href="board-of-directors.html">Board of Directors</a> &middot; <a href="bylaws.html">Bylaws</a> &middot; <a href="financials.html">Financials</a> &middot; <a href="meeting-minutes.html">Meeting Minutes</a> &middot; <a href="elections.html">Elections</a></p>
+    <p class="footer-links"><a href="activities.html">Activities</a> &middot; <a href="kalasala.html">Kalasala</a> &middot; <a href="scholarship.html">Scholarship</a> &middot; <a href="manabadi.html">Manabadi</a> &middot; <a href="locations-teachers.html">Locations &amp; Teachers</a></p>
+    <p class="footer-links"><a href="events.html">Events</a> &middot; <a href="past-events.html">Past Events</a> &middot; <a href="gallery.html">Photo Gallery</a> &middot; <a href="videos.html">Videos</a> &middot; <a href="magazine.html">Magazine</a> &middot; <a href="digital-library.html">Digital Library</a></p>
+    <p class="footer-links"><a href="directory.html">Directory</a> &middot; <a href="sponsor-a-program.html">Sponsor a Program</a> &middot; <a href="sponsors.html">Sponsors</a> &middot; <a href="volunteers-list.html">Volunteers List</a></p>
+    <p class="footer-links"><a href="membership.html">Membership</a> &middot; <a href="membership-benefits.html">Benefits</a> &middot; <a href="members.html">Members List</a></p>
+    <p class="footer-links"><a href="clinic.html">Free Clinic</a> &middot; <a href="clinic-dates.html">Clinic Dates</a> &middot; <a href="clinic-volunteer.html">Volunteer</a> &middot; <a href="clinic-donations.html">Donate</a></p>
+    <p class="fine">This is a draft preview of a rebuilt tama.org. Content is based on public sources. Details are marked for review by the TAMA committee before going live.</p>
+  </div>
+</footer>
+
+<nav class="mobile-cta" aria-label="Quick actions">
+  <a class="btn btn-gold" href="membership.html#join">Join TAMA</a>
+  <a class="btn btn-outline" href="events.html">Events</a>
+</nav>
+</body>
+</html>
