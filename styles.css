@@ -38,7 +38,8 @@ a{color:var(--orange)}
 .org-banner{background:#fff;border-bottom:3px solid var(--gold);padding:10px 16px 8px}
 .org-brand{display:flex;align-items:center;justify-content:center;gap:16px;max-width:1020px;margin:0 auto;text-decoration:none}
 .org-emblem{height:76px;width:76px;flex:none;border-radius:50%;box-shadow:0 4px 12px rgba(0,0,0,.18)}
-.org-name{display:block;width:100%;max-width:840px;min-width:0;height:auto;aspect-ratio:927/37}
+.org-name{display:block;min-width:0}
+.org-name-te{font-family:inherit;font-weight:800;color:#0B6B3C;font-size:clamp(17px,4.4vw,36px);line-height:1.2;white-space:nowrap;letter-spacing:.5px}
 @media(max-width:520px){.org-brand{gap:10px;padding:0 4px}.org-emblem{height:54px;width:54px}}
 
 /* sticky header */
