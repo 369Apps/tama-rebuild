@@ -32,16 +32,41 @@
     <div class="wrap">
       <p class="eyebrow on-dark">For TAMA team members</p>
       <h1>Updating the website</h1>
-      <p>No code needed. Event, news, and clinic updates are made in a shared Google Sheet, and the site picks them up automatically.</p>
+      <p>No code needed. New events are submitted through a form and approved before going live. News and clinic updates are made in a shared Google Sheet, and the site picks them up automatically.</p>
     </div>
   </div>
   <div class="garland" aria-hidden="true"></div>
 
   <section class="band">
     <div class="wrap">
+      <p class="eyebrow">Events with tickets</p>
+      <h2>Adding a new event</h2>
+      <p class="body-copy">Events with ticket sales are added in two steps. First a team member submits the event. Then the president approves it. Approving puts the event on the website and turns on ticket sales at the same time.</p>
+      <div class="cards">
+        <div class="card">
+          <h3>1. Submit</h3>
+          <p>Fill in the event name, date, time, venue, description, and member and public ticket prices. Works on a phone.</p>
+          <p><a class="btn btn-gold btn-sm" href="submit-event.html">Submit an event</a></p>
+        </div>
+        <div class="card">
+          <h3>2. Approve</h3>
+          <p>The president reviews each submission. Approving makes the event live with ticket sales. Rejecting hides it.</p>
+          <p><a class="btn btn-gold btn-sm" href="approve.html">Review submissions</a></p>
+        </div>
+        <div class="card">
+          <h3>At the door</h3>
+          <p>Volunteers check in guests on a phone. Type or scan a ticket code and tap CHECK IN.</p>
+          <p><a class="btn btn-gold btn-sm" href="checkin.html">Open check-in</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
       <p class="eyebrow">How it works</p>
       <h2>Edit the sheet, the site updates itself</h2>
-      <p class="body-copy">The homepage reads its events, news, and clinic sections from a Google Sheet. When you edit the sheet, the changes appear on the website within a few minutes. You never touch the website code. You only need a Google account.</p>
+      <p class="body-copy">The homepage reads its news and clinic sections from a Google Sheet. When you edit the sheet, the changes appear on the website within a few minutes. You never touch the website code. You only need a Google account. (Events are handled through the submission form above, not the sheet.)</p>
       <div class="flag">If the sheet is ever unavailable or has a problem, the website simply keeps showing its built-in content. The site never looks broken.</div>
     </div>
   </section>
@@ -53,7 +78,7 @@
       <div class="cards">
         <div class="card">
           <h3>1. Create the sheet</h3>
-          <p>Create a new Google Sheet. Make three tabs named exactly <strong>Events</strong>, <strong>News</strong>, and <strong>Clinic</strong>.</p>
+          <p>Create a new Google Sheet. Make two tabs named exactly <strong>News</strong> and <strong>Clinic</strong>.</p>
         </div>
         <div class="card">
           <h3>2. Add the template</h3>
@@ -80,21 +105,6 @@
       <p class="eyebrow">Column guide</p>
       <h2>What goes in each column</h2>
       <div class="news">
-        <div class="news-head"><h2>Events tab</h2></div>
-        <div class="news-body">
-          <ul class="plain">
-            <li><strong>name:</strong> the event name, exactly as it should appear.</li>
-            <li><strong>date:</strong> plain text, like "Saturday, October 10, 2026". Leave blank if not known.</li>
-            <li><strong>time:</strong> plain text, like "10 AM - 6 PM". Leave blank if not known.</li>
-            <li><strong>venue:</strong> plain text address or hall name. Leave blank if not known.</li>
-            <li><strong>description:</strong> one or two short sentences about the event.</li>
-            <li><strong>register_url:</strong> the full registration link, starting with https://. Leave blank if there is none yet.</li>
-            <li><strong>banner_url:</strong> optional. A direct link to an event banner image. Leave blank to show the standard date box instead.</li>
-            <li><strong>status:</strong> write "upcoming" for events to show. Write "hidden" to hide a row without deleting it.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="news" style="margin-top:24px">
         <div class="news-head"><h2>News tab</h2></div>
         <div class="news-body">
           <ul class="plain">
@@ -126,7 +136,6 @@
         <li>Never rename the tabs or the columns.</li>
         <li>Never reorder or delete columns.</li>
         <li>Type dates and times as plain text, not as Sheet date formats.</li>
-        <li>To remove an event from the site, set its status to "hidden" instead of deleting the row.</li>
         <li>Keep banner images under 300 KB so the site stays fast on phones.</li>
       </ul>
       <div class="flag">The membership signup still uses the existing tama.org registration system. That part is unchanged and is not edited through the sheet.</div>
