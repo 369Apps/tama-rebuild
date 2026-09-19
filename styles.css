@@ -463,3 +463,92 @@ a{-webkit-tap-highlight-color:rgba(149,43,113,.18)}
 .appr-actions{display:flex;gap:12px}
 .appr-actions .btn{flex:1;text-align:center;padding:14px 10px;font-size:16px}
 .btn-red{background:linear-gradient(180deg,#C0392B,#96281B);color:#fff}
+
+/* ===== Free Clinic section ===== */
+.info-cards{display:grid;grid-template-columns:1fr;gap:16px;margin:26px 0 0}
+@media(min-width:640px){.info-cards{grid-template-columns:repeat(3,1fr)}}
+.info-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px 18px;text-align:center;
+  box-shadow:0 12px 30px rgba(149,43,113,.10)}
+.info-card .ic{font-size:32px}
+.info-card h3{margin:10px 0 6px;color:var(--purple);font-size:18px;font-weight:800}
+.info-card p{margin:0;font-size:16px;color:var(--ink);line-height:1.6}
+.steps{display:grid;grid-template-columns:1fr;gap:14px;margin:26px 0 0}
+@media(min-width:640px){.steps{grid-template-columns:repeat(3,1fr)}}
+.step{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px 16px;text-align:center}
+.step-num{width:44px;height:44px;margin:0 auto 10px;border-radius:50%;background:var(--green);color:#fff;
+  font-weight:800;font-size:20px;display:flex;align-items:center;justify-content:center}
+.step h3{margin:0 0 4px;color:var(--purple);font-size:18px;font-weight:800}
+.step p{margin:0;color:var(--muted);font-size:15px}
+.form-sec{background:#fff;border:1px solid var(--line);border-radius:20px;margin:26px 0;
+  box-shadow:0 12px 30px rgba(149,43,113,.10);overflow:hidden}
+.form-sec-h{background:linear-gradient(180deg,#952b71,#7A2359);color:#fff;font-weight:800;font-size:18px;
+  padding:16px 22px;margin:0}
+.form-sec-b{padding:22px}
+@media(max-width:560px){.form-sec-b{padding:18px 14px}}
+.svc-grid{display:grid;grid-template-columns:1fr;gap:12px}
+@media(min-width:560px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
+.svc-card{display:flex;align-items:center;gap:12px;min-height:64px;padding:14px 16px;border:2px solid var(--line);
+  border-radius:16px;cursor:pointer;font-size:16px;transition:border-color .15s,background .15s}
+.svc-card:hover{border-color:var(--purple)}
+.svc-card input{width:24px;height:24px;flex:none;accent-color:var(--purple)}
+.svc-card.on{border-color:var(--green);background:#EFFAF3}
+.svc-card .svc-t{font-weight:800;color:var(--purple)}
+.svc-card .svc-s{font-size:14px;color:var(--muted)}
+.svc-hint{color:var(--muted);font-size:15px;margin-top:12px}
+.radio-row{display:flex;gap:12px;margin-top:8px}
+.radio-pill{flex:1;display:flex;align-items:center;justify-content:center;gap:10px;min-height:52px;
+  border:2px solid var(--line);border-radius:16px;font-weight:800;font-size:17px;cursor:pointer}
+.radio-pill input{width:22px;height:22px;accent-color:var(--purple)}
+.radio-pill.on{border-color:var(--green);background:#EFFAF3}
+.field-err{color:#9B1C1C;font-size:15px;font-weight:600;margin-top:8px;display:none}
+.field-err.show{display:block}
+.consent-box{background:var(--cream);border:1px solid var(--line);border-radius:16px;padding:18px;font-size:16px;
+  line-height:1.7;margin-top:8px}
+.consent-check{display:flex;gap:12px;align-items:flex-start;margin-top:16px;cursor:pointer;font-size:16px}
+.consent-check input{width:26px;height:26px;flex:none;margin-top:2px;accent-color:var(--purple)}
+.lock-note{text-align:center;color:var(--muted);font-size:15px;margin-top:16px}
+.clinic-links{display:grid;grid-template-columns:1fr;gap:14px;margin-top:24px}
+@media(min-width:640px){.clinic-links{grid-template-columns:repeat(2,1fr)}}
+.clinic-link{display:flex;align-items:center;gap:14px;background:#fff;border:1px solid var(--line);
+  border-radius:18px;padding:18px;text-decoration:none;box-shadow:0 10px 24px rgba(149,43,113,.10);
+  min-height:64px}
+.clinic-link .cl-t{font-weight:800;color:var(--purple);font-size:17px}
+.clinic-link .cl-s{color:var(--muted);font-size:14.5px}
+.clinic-link .cl-a{margin-left:auto;color:var(--orange);font-weight:800;font-size:20px}
+/* date cards */
+.date-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:24px 0}
+@media(min-width:640px){.date-grid{grid-template-columns:repeat(4,1fr)}}
+.date-card{background:#fff;border:2px solid var(--line);border-radius:18px;padding:18px 12px;text-align:center;
+  cursor:pointer;transition:border-color .15s,transform .15s;min-height:120px}
+.date-card:hover{border-color:var(--purple)}
+.date-card.sel{border-color:var(--green);background:#EFFAF3;box-shadow:0 10px 24px rgba(21,158,88,.18)}
+.date-card .dc-m{font-size:13px;font-weight:800;letter-spacing:1.5px;color:var(--muted);text-transform:uppercase}
+.date-card .dc-d{font-size:38px;font-weight:800;color:var(--purple);line-height:1.15}
+.date-card .dc-w{font-size:15px;color:var(--muted)}
+.date-card .dc-t{display:inline-block;margin-top:8px;background:var(--gold);color:#3A2E00;font-size:13px;
+  font-weight:800;padding:6px 12px;border-radius:999px}
+.scroll-cta{text-align:center;margin:8px 0 4px}
+.scroll-cta .btn{min-height:56px;display:inline-flex;align-items:center}
+/* volunteer roster */
+.year-pick{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:20px 0 6px}
+.year-pick label{font-weight:800;color:var(--purple);font-size:17px}
+.year-pick select{font:inherit;font-size:17px;min-height:48px;border-radius:14px;border:2px solid var(--line);
+  padding:10px 16px;background:#fff;color:var(--ink)}
+.vol-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px}
+@media(min-width:700px){.vol-grid{grid-template-columns:repeat(3,1fr)}}
+.vol-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 12px;text-align:center;
+  box-shadow:0 8px 20px rgba(149,43,113,.08)}
+.vol-card .vn{font-weight:800;color:var(--purple);font-size:16px}
+.vol-card .vr{font-size:14px;color:var(--muted)}
+.gadph-title{text-transform:uppercase}
+.req{color:#C0392B;font-weight:800}
+.footer-links{font-size:14px}
+.footer-links a{margin:0 4px}
+.field-label{font-weight:700;margin:0 0 12px;font-size:16px}
+/* keep auth-form label defaults from breaking clinic card labels */
+.auth-form .svc-card{display:flex;align-items:center;gap:12px;margin:0}
+.auth-form .radio-pill{display:flex;align-items:center;justify-content:center;margin:0}
+.auth-form .consent-check{display:flex;gap:12px;align-items:flex-start;margin-top:16px}
+.auth-form .svc-card input,.auth-form .radio-pill input,.auth-form .consent-check input{
+  width:26px;height:26px;flex:none;padding:0;border:none;background:none}
+.auth-form .svc-card input[type="checkbox"]{width:26px;height:26px}
