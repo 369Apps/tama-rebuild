@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clinic Donations - Telugu Association of Metro Atlanta (TAMA)</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="logo.png">
+<meta name="theme-color" content="#952b71">
+<meta name="description" content="Donate to the TAMA Free Clinic. Your support keeps free community health services running in Metro Atlanta.">
+</head>
+<body>
+<div class="preview-note">Draft rebuild preview. Not the live tama.org.</div>
+<header class="site-header">
+  <div class="wrap head-row">
+    <a class="brand" href="index.html">
+      <img class="brand-logo" src="logo.png" alt="TAMA logo">
+      <span class="brand-text">Telugu Association<br>of Metro Atlanta</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="events.html">Events</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="membership.html">Membership</a>
+      <a href="clinic.html" class="active">Free Clinic</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Member Login</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow on-dark">Free clinic</p>
+      <h1>Donate Now</h1>
+      <p>Your donation keeps the TAMA Free Clinic running &mdash; free medical, dental, and tele-dental services for the community.</p>
+    </div>
+  </div>
+  <div class="garland" aria-hidden="true"></div>
+
+  <section class="band tint">
+    <div class="wrap">
+      <p class="eyebrow">Clinic donations</p>
+      <h2>Donor Details</h2>
+      <form class="auth-form" id="donForm" novalidate>
+        <div class="form-sec">
+          <h2 class="form-sec-h">Donor Details</h2>
+          <div class="form-sec-b">
+            <label for="dFirst">First Name <span class="req">*</span></label>
+            <input id="dFirst" name="dFirst" type="text" autocomplete="given-name">
+            <p class="field-err" id="err-dFirst">First Name Required</p>
+            <label for="dLast">Last Name <span class="req">*</span></label>
+            <input id="dLast" name="dLast" type="text" autocomplete="family-name">
+            <p class="field-err" id="err-dLast">Last Name Required</p>
+            <label for="dEmail">Email Id <span class="req">*</span></label>
+            <input id="dEmail" name="dEmail" type="email" autocomplete="email" inputmode="email">
+            <p class="field-err" id="err-dEmail">Enter a valid email</p>
+            <label for="dPhone">Phone No <span class="req">*</span></label>
+            <input id="dPhone" name="dPhone" type="tel" autocomplete="tel" inputmode="tel">
+            <p class="field-err" id="err-dPhone">Phone No Required</p>
+          </div>
+        </div>
+
+        <div class="form-sec">
+          <h2 class="form-sec-h">Donation</h2>
+          <div class="form-sec-b">
+            <label for="dCat">Donation Category <span class="req">*</span></label>
+            <select id="dCat" name="dCat">
+              <option value="Choose">Choose</option>
+              <option value="Covid-19 Fundraiser For India">Covid-19 Fundraiser For India</option>
+              <option value="TAMA Free Clinic" selected>TAMA Free Clinic</option>
+              <option value="Platinum Sponsorship">Platinum Sponsorship</option>
+              <option value="Gold Sponsorship">Gold Sponsorship</option>
+              <option value="Silver Sponsorship">Silver Sponsorship</option>
+              <option value="Bronze Sponsorship">Bronze Sponsorship</option>
+              <option value="Clinic - Benefactor">Clinic - Benefactor</option>
+              <option value="Clinic - Patron">Clinic - Patron</option>
+              <option value="Clinic - Supporter">Clinic - Supporter</option>
+              <option value="Magazine Full Page">Magazine Full Page</option>
+              <option value="Magazine Half Page">Magazine Half Page</option>
+              <option value="Magazine Quarter Page">Magazine Quarter Page</option>
+              <option value="Magazine Business Card Size">Magazine Business Card Size</option>
+              <option value="Magazine Back Cover">Magazine Back Cover</option>
+              <option value="Magazine Inside Front Cover">Magazine Inside Front Cover</option>
+              <option value="Magazine Inside Front Right Page">Magazine Inside Front Right Page</option>
+              <option value="Magazine Inside Back Cover">Magazine Inside Back Cover</option>
+              <option value="Magazine Inside Back Left Page">Magazine Inside Back Left Page</option>
+              <option value="Magazine Center Page Single">Magazine Center Page Single</option>
+              <option value="Magazine Center Two Page Spread">Magazine Center Two Page Spread</option>
+              <option value="Avana Apartments Fire Incident">Avana Apartments Fire Incident</option>
+              <option value="General Donation">General Donation</option>
+              <option value="Surabhi Drama Theatre Donation">Surabhi Drama Theatre Donation</option>
+            </select>
+            <p class="field-err" id="err-dCat">Please select a donation category</p>
+            <label for="dAddr">Address <span class="req">*</span></label>
+            <textarea id="dAddr" name="dAddr" autocomplete="street-address"></textarea>
+            <p class="field-err" id="err-dAddr">Please enter your address</p>
+            <label for="dCause">Donation Cause</label>
+            <textarea id="dCause" name="dCause"></textarea>
+            <label for="dAmt">Amount( $ ) <span class="req">*</span></label>
+            <input id="dAmt" name="dAmt" type="number" min="1" step="0.01" inputmode="decimal" placeholder="Amount ($)">
+            <p class="field-err" id="err-dAmt">Please enter an amount</p>
+          </div>
+        </div>
+
+        <div class="form-sec">
+          <h2 class="form-sec-h">Payment</h2>
+          <div class="form-sec-b">
+            <p class="svc-hint">Note: We do not store any card information. All payments are securely processed by Stripe.</p>
+            <label class="consent-check">
+              <input type="checkbox" id="dTerms" name="dTerms">
+              <span>By clicking this check box, that they have agreed to the terms and conditions. <span class="req">*</span></span>
+            </label>
+            <p class="field-err" id="err-dTerms">Please agree to the terms and conditions</p>
+            <div style="margin-top:20px">
+              <button class="btn btn-gold btn-block" type="submit">Submit</button>
+            </div>
+            <div class="notice info" id="donNotice" role="status"></div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<div class="garland" aria-hidden="true"></div>
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>Telugu Association of Metro Atlanta</strong> &middot; Serving Telugu families in metro Atlanta since 1981.</p>
+    <p class="footer-links"><a href="clinic.html">Free Clinic</a> &middot; <a href="clinic-dates.html">Clinic Dates</a> &middot; <a href="clinic-volunteer.html">Volunteer</a> &middot; <a href="clinic-donations.html">Donate</a></p>
+    <p class="fine">This is a draft preview of a rebuilt tama.org. Content is based on public sources. Details are marked for review by the TAMA committee before going live.</p>
+  </div>
+</footer>
+
+<nav class="mobile-cta" aria-label="Quick actions">
+  <a class="btn btn-gold" href="https://www.tama.org/member-registration">Join TAMA</a>
+  <a class="btn btn-outline" href="events.html">Events</a>
+</nav>
+
+<script>
+(function(){
+  function showErr(id){ var el = document.getElementById(id); if (el) el.classList.add('show'); }
+  document.getElementById('donForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    document.querySelectorAll('.field-err.show').forEach(function(el){ el.classList.remove('show'); });
+    var ok = true;
+    function need(cond, id){ if (!cond) { showErr(id); ok = false; } }
+    need(document.getElementById('dFirst').value.trim() !== '', 'err-dFirst');
+    need(document.getElementById('dLast').value.trim() !== '', 'err-dLast');
+    var email = document.getElementById('dEmail').value.trim();
+    need(email !== '' && /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email), 'err-dEmail');
+    need(document.getElementById('dPhone').value.trim() !== '', 'err-dPhone');
+    need(document.getElementById('dCat').value !== '' && document.getElementById('dCat').value !== 'Choose', 'err-dCat');
+    need(document.getElementById('dAddr').value.trim() !== '', 'err-dAddr');
+    need(parseFloat(document.getElementById('dAmt').value) > 0, 'err-dAmt');
+    need(document.getElementById('dTerms').checked, 'err-dTerms');
+    var notice = document.getElementById('donNotice');
+    if (!ok) {
+      notice.className = 'notice error show';
+      notice.textContent = 'Please fix the highlighted fields above and try again.';
+      notice.scrollIntoView({behavior:'smooth', block:'center'});
+      return;
+    }
+    // Backend (Cloudflare Worker) is not deployed yet: no data is sent anywhere.
+    notice.className = 'notice info show';
+    notice.textContent = 'Online donations on the new system are coming soon. Please check back shortly to donate online.';
+    notice.scrollIntoView({behavior:'smooth', block:'center'});
+  });
+})();
+</script>
+</body>
+</html>
