@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Approve Events | TAMA Team</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="logo.png">
+<meta name="theme-color" content="#952b71">
+</head>
+<body>
+<div class="preview-note">Draft rebuild preview. Team page, not public.</div>
+<header class="site-header">
+  <div class="wrap head-row">
+    <a class="brand" href="index.html">
+      <img class="brand-logo" src="logo.png" alt="TAMA logo">
+      <span class="brand-text">Telugu Association<br>of Metro Atlanta</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="events.html">Events</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="membership.html">Membership</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Member Login</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="auth-wrap" style="max-width:640px">
+    <div class="auth-card" id="key-card">
+      <h1>Approve events</h1>
+      <p class="sub">For the president and authorized team members. Enter the team key to see events waiting for review.</p>
+      <form class="auth-form" id="key-form">
+        <label for="adminkey">Team key</label>
+        <div class="pw-wrap">
+          <input type="password" id="adminkey" autocomplete="off" placeholder="Team key">
+          <button type="button" class="pw-toggle" id="key-toggle">Show</button>
+        </div>
+        <div class="notice error" id="key-error" role="alert"></div>
+        <div style="margin-top:22px">
+          <button type="submit" class="btn btn-gold btn-block" id="key-btn">Show pending events</button>
+        </div>
+      </form>
+    </div>
+    <div id="list-card" style="display:none">
+      <h1 style="font-size:clamp(26px,6vw,32px);color:var(--purple);margin:0 0 6px">Events waiting for review</h1>
+      <p class="sub" style="color:var(--muted)">Approving puts the event on the site and turns on ticket sales with these prices.</p>
+      <div id="pending-list"></div>
+      <div class="notice info show" id="empty-note" style="display:none">Nothing waiting. All caught up.</div>
+      <div class="notice error" id="list-error" role="alert"></div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="fine">Team page for the TAMA website rebuild preview.</p>
+  </div>
+</footer>
+
+<script src="assets/js/tickets.js"></script>
+<script>
+(function () {
+  var WORKER = window.TAMA_WORKER_URL;
+  var key = sessionStorage.getItem("tama_admin_key") || "";
+  var keyInput = document.getElementById("adminkey");
+
+  document.getElementById("key-toggle").addEventListener("click", function () {
+    var show = keyInput.type === "password";
+    keyInput.type = show ? "text" : "password";
+    this.textContent = show ? "Hide" : "Show";
+  });
+
+  function authHeaders() {
+    return { "Content-Type": "application/json", "Authorization": "Bearer " + key };
+  }
+  function dollars(c) { return "$" + (c / 100).toFixed(c % 100 ? 2 : 0); }
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  }
+
+  function loadPending() {
+    var errBox = document.getElementById("list-error");
+    errBox.classList.remove("show");
+    fetch(WORKER + "/api/admin/events/pending", { headers: authHeaders() })
+      .then(function (r) { return r.json().then(function (d) { return { status: r.status, d: d }; }); })
+      .then(function (res) {
+        if (res.status === 403) {
+          document.getElementById("list-card").style.display = "none";
+          document.getElementById("key-card").style.display = "block";
+          var ke = document.getElementById("key-error");
+          ke.textContent = "That key did not work. Please try again.";
+          ke.classList.add("show");
+          return;
+        }
+        document.getElementById("key-card").style.display = "none";
+        document.getElementById("list-card").style.display = "block";
+        var list = document.getElementById("pending-list");
+        var events = res.d.events || [];
+        document.getElementById("empty-note").style.display = events.length ? "none" : "block";
+        list.innerHTML = "";
+        events.forEach(function (ev) {
+          var card = document.createElement("div");
+          card.className = "appr-card";
+          card.innerHTML =
+            "<h3>" + esc(ev.name) + "</h3><dl>" +
+            "<dt>Date</dt><dd>" + esc(ev.date || "-") + "</dd>" +
+            "<dt>Time</dt><dd>" + esc(ev.time || "-") + "</dd>" +
+            "<dt>Venue</dt><dd>" + esc(ev.venue || "-") + "</dd>" +
+            "<dt>Description</dt><dd>" + esc(ev.description || "-") + "</dd>" +
+            "<dt>Member price</dt><dd>" + dollars(ev.member_price_cents) + "</dd>" +
+            "<dt>Public price</dt><dd>" + dollars(ev.public_price_cents) + "</dd>" +
+            "</dl>" +
+            '<div class="appr-actions">' +
+            '<button class="btn btn-gold" data-approve="' + esc(ev.id) + '">Approve</button>' +
+            '<button class="btn btn-red" data-reject="' + esc(ev.id) + '">Reject</button>' +
+            "</div>";
+          list.appendChild(card);
+        });
+        list.querySelectorAll("[data-approve]").forEach(function (b) {
+          b.addEventListener("click", function () { decide(b, "approve", b.getAttribute("data-approve")); });
+        });
+        list.querySelectorAll("[data-reject]").forEach(function (b) {
+          b.addEventListener("click", function () { decide(b, "reject", b.getAttribute("data-reject")); });
+        });
+      })
+      .catch(function () {
+        errBox.textContent = "Could not reach the server. Check your connection and try again.";
+        errBox.classList.add("show");
+      });
+  }
+
+  function decide(btn, action, eventId) {
+    btn.disabled = true;
+    btn.textContent = action === "approve" ? "Approving..." : "Rejecting...";
+    fetch(WORKER + "/api/admin/events/" + action, {
+      method: "POST",
+      headers: authHeaders(),
+      body: JSON.stringify({ event_id: eventId })
+    })
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        if (data.ok) { loadPending(); return; }
+        btn.disabled = false;
+        btn.textContent = action === "approve" ? "Approve" : "Reject";
+        var errBox = document.getElementById("list-error");
+        errBox.textContent = data.error || "Something went wrong. Please try again.";
+        errBox.classList.add("show");
+      })
+      .catch(function () {
+        btn.disabled = false;
+        btn.textContent = action === "approve" ? "Approve" : "Reject";
+      });
+  }
+
+  document.getElementById("key-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    key = keyInput.value.trim();
+    if (!key) return;
+    sessionStorage.setItem("tama_admin_key", key);
+    loadPending();
+  });
+
+  if (key) { keyInput.value = key; loadPending(); }
+})();
+</script>
+</body>
+</html>
