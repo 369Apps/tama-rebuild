@@ -116,7 +116,7 @@ a{color:var(--orange)}
 .btn-outline:hover{background:#fff;color:var(--purple-dark);transform:translateY(-2px)}
 
 /* section bands */
-.band{padding:60px 0}
+.band{padding:48px 0}
 .band.tint{background:var(--cream)}
 .band.plum{background:var(--plum-tint)}
 .band h2{
@@ -335,7 +335,7 @@ ul.plain li::before{
 @media(max-width:560px){
   .hero{padding:60px 0 54px}
   .btn-row .btn{flex:1 1 100%;text-align:center}
-  .band{padding:44px 0}
+  .band{padding:30px 0}
   .strip{padding:40px 22px;border-radius:20px}
   .head-row{padding:10px 16px}
   .brand-text{font-size:13.5px}
@@ -639,9 +639,9 @@ img{max-width:100%}
 /* ============ festive pass: old-site character, modern build ============ */
 
 /* slim hero: compact welcome band so content shows without scrolling */
-.hero-slim{padding:38px 0 34px}
-.hero-slim h1{font-size:clamp(24px,6vw,34px);margin-bottom:10px}
-.hero-slim .lede{font-size:15.5px;margin-bottom:18px;max-width:640px}
+.hero-slim{padding:30px 0 26px}
+.hero-slim h1{font-size:clamp(24px,6vw,34px);margin-bottom:8px}
+.hero-slim .lede{font-size:15.5px;margin-bottom:16px;max-width:640px}
 
 /* chevron section header, mint like the old site */
 .chevron-wrap{text-align:center;margin:0 0 20px}
@@ -675,6 +675,9 @@ img{max-width:100%}
   .cta-band .wrap{flex-direction:column;align-items:stretch;text-align:center}
   .btn-band{text-align:center}
   .news-festive .news-body{margin:12px 12px 16px}
+  .chevron-wrap{margin-bottom:14px}
+  .event-list{margin-top:20px;gap:12px}
+  .event-row{padding:16px}
 }
 
 @media (prefers-reduced-motion:reduce){
